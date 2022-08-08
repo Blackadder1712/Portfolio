@@ -1,24 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap");
-.nav-bar {
-  background-color: green;
-  width: 20px;
+.vertical-menu {
+  width: 100px;
+  float: left;
+  top: 0px;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
-button {
+.vertical-menu a, .initial {
   background-color: green;
-  border-color: white;
-  box-shadow: none;
-  padding: 10px;
-  font-family: "Roboto", sans-serif;
-}
-
-.initial {
   color: white;
+  display: block;
+  padding: 10px;
   text-decoration: none;
-  font-size: 30px;
-  margin: 15px;
-  border-color: white solid 10px;
-  font-family: "Roboto", sans-serif;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
 }
 
 .buttons {
@@ -28,12 +25,11 @@ button {
   margin: 15px;
   font-family: "Roboto", sans-serif;
   background-color: green;
-  width: 20px;
+  width: 10px;
   padding: 10px;
-}
-
-header {
-  margin-top: 54px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
 }
 
 body {
@@ -51,14 +47,17 @@ body {
 }
 
 .page-image {
-  width: 100%;
-  height: 250px;
+  width: auto;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  float: r;
+  top: 0%;
 }
 
 .main-image {
+  top: 0%;
   width: 100%;
   height: 25%;
   align-items: center;
