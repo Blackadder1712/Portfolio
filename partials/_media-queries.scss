@@ -1,5 +1,51 @@
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
+  .vertical-menu
+{
+  width:100px;
+  float:left;
+ 
+  top:0px;
+  position: sticky;
+  position:-webkit-sticky;
+}
+
+.vertical-menu a, .initial
+{
+  background-color: green;
+  color: white;
+  display: block;
+  padding:10px;
+  text-decoration: none;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0px;
+  
+}
+  
+
+
+
+
+
+.buttons
+{
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  margin:15px;
+  font-family: 'Roboto', sans-serif;
+  background-color: green;
+  width: 10px;
+  padding:10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0px;
+ 
+}
+ 
+
+
 
   }
 

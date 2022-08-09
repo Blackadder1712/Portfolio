@@ -2,51 +2,6 @@
  
 
 
-.vertical-menu
-{
-  width:100px;
-  float:left;
- 
-  top:0px;
-  position: sticky;
-  position:-webkit-sticky;
-}
-
-.vertical-menu a, .initial
-{
-  background-color: green;
-  color: white;
-  display: block;
-  padding:10px;
-  text-decoration: none;
-  position: sticky;
-  position: -webkit-sticky;
-  top:0px;
-  
-}
-  
-
-
-
-
-
-.buttons
-{
-  color: white;
-  text-decoration: none;
-  font-size: 10px;
-  margin:15px;
-  font-family: 'Roboto', sans-serif;
-  background-color: green;
-  width: 10px;
-  padding:10px;
-  position: sticky;
-  position: -webkit-sticky;
-  top:0px;
- 
-}
- 
-
 
 
  header
@@ -65,20 +20,69 @@ body
 
 #logo{ display:none;}
 
-.page-image {
-    width:auto;
-    height: 300px;
-    object-fit: cover;
-    position: relative;
-    float: r;
-    top:0%
-   
+
+//hamburger
+
+.caption-text a {
+ 
+  position:fixed;
+  top: 0;
+  left:0;
+  top: 0;
+
+  
+  
+}
+.hamburger {
+ 
+  width:33px;
+  display:block;
+   border: none;
+   background-color: transparent;
+ }
+
+.fa-bars {
+
+  overflow: hidden;
+   font-size: 30px;
+ background-color: black;
+   padding: 15px;
+   color: white;
+  
+   border-radius: 3px;
 }
 
+//Main image and caption 
+
+.page-image {
+    
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+ 
+    
+}
+
+//Navbar for bigger viewports
+
+.vertical-menu a, .initial
+{
+  background-color: green;
+  color: white;
+  display: block;
+  padding:10px;
+  text-decoration: none;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0px;
+  display:none;
+  
+}
 .main-image {
   top: 0%;
-    width : 100%;
-    height: 25%;
+   width:100%;
+   
+   
   align-items:center;
   justify-content: center;
   
@@ -92,13 +96,13 @@ body
 .img-title 
 {
     
-   font-family: 'Roboto', sans-serif;
+   font-family: $main-font;
     color:white;
     display: block;
   text-align: center;
   line-height: 1.4;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
 
   letter-spacing: .4px;
 
@@ -106,13 +110,34 @@ body
 
 .img-text 
 {
-  font-family: 'Roboto', sans-serif;
+  font-family: $main-font;
     color:white;
     display: block;
   text-align: center;
   line-height: 1.4;
-  font-size: 15px;
-  font-weight:400;
+  font-size:$text-font-size;
+  font-weight:$text-font-weigh;
   letter-spacing: .4px;
+}
+
+.scroll {
+  background-color: transparent;
+}
+
+.scroll-down
+{
+  position: absolute;
+  top: 290%;
+  left: 25%;
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight:$text-font-weigh;
+  letter-spacing: .4px;
+  background-color: transparent;
+
 }
 

@@ -10,14 +10,14 @@ function draw()
 
      {
         if (Math.floor(Math.random() * 2) === 0 && lines.length < 100)
-       {lines.push(new textLine()); }
+       {lines.push(new textLine("Hello World")); }
     } 
      
 ctx.clearRect(0, 0, canvas.width, canvas.height); 
 
 lines.forEach(function(tl)
 {
- ctx.drawImage(tl.text, tl.posX, tl.animate (), 20, 1000);});
+ ctx.drawImage(tl.text, tl.posX, tl.animate ("Hello World"), 20, 1000);});
 
 
  ctx.drawImage(logo, 100, 155, 400, 70);
