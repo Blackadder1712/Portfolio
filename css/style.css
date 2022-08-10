@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap");
+.main-pages {
+  display: none;
+}
+
+.dropdown, .dropdown-toggle {
+  display: none;
+}
+
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 
 #canvas {
-  background-color: #000;
+  background-color: black;
   display: block;
   margin: auto;
 }
@@ -18,13 +27,19 @@ body {
   top: 0;
   left: 0;
   top: 0;
+  cursor: pointer;
 }
 
 .hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: 0;
   width: 33px;
   display: block;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .fa-bars {
@@ -37,14 +52,16 @@ body {
 }
 
 .page-image {
-  height: 500px;
+  height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  filter: brightness(0.5);
+  padding-bottom: 50px;
 }
 
 .vertical-menu a, .initial {
-  background-color: green;
+  background-color: #1ca152;
   color: white;
   display: block;
   padding: 10px;
@@ -52,6 +69,14 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
+  display: none;
+}
+
+.main-image-2 {
+  display: none;
+}
+
+.page-image-2 {
   display: none;
 }
 
@@ -70,8 +95,8 @@ body {
   display: block;
   text-align: center;
   line-height: 1.4;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 45px;
+  font-weight: 700;
   letter-spacing: 0.4px;
 }
 
@@ -81,18 +106,19 @@ body {
   display: block;
   text-align: center;
   line-height: 1.4;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: 0.4px;
 }
 
 .scroll {
   background-color: transparent;
+  border: none;
 }
 
 .scroll-down {
   position: absolute;
-  top: 290%;
+  top: 200%;
   left: 25%;
   font-family: "Roboto", "sans serif";
   color: white;
@@ -103,11 +129,61 @@ body {
   font-weight: 400;
   letter-spacing: 0.4px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.contact {
+  display: grid;
+  font-family: "Roboto", "sans serif";
+  background-color: black;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  font-weight: lighter;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+}
+
+.mb-3 {
+  display: grid;
+  font-family: "Roboto", "sans serif";
+  background-color: black;
+}
+
+.form-label {
+  color: white;
+  font-family: "Roboto", "sans serif";
+}
+
+#FirstName {
+  color: white;
+  font-family: "Roboto", "sans serif";
+}
+
+.form-control {
+  background-color: #1ca152;
+  color: white;
+  border-color: white;
 }
 
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
-  .vertical-menu {
+  .main-image-2 {
+    top: 0%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .page-image-2 {
+    height: 700px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  .dropdown-menu {
     width: 100px;
     float: left;
     top: 0px;

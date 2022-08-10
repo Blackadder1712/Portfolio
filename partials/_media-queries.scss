@@ -1,6 +1,30 @@
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
-  .vertical-menu
+
+  
+
+  .main-image-2{
+    top: 0%;
+   width:100%;
+   
+   
+  align-items:center;
+  justify-content: center;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+
+  .page-image-2
+{
+  height: 700px;
+    object-fit: cover;
+    position: relative;
+}
+  
+  
+  .dropdown-menu
 {
   width:100px;
   float:left;

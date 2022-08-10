@@ -20,7 +20,7 @@
               <!--Sticky menu -->
               <div class="vertical-menu">
                 <a href="#" class="initial">A</a>
-                <a href="#"class="buttons-1">About Me</a>
+                <a href="About-me.html" class="nav-link">About Me</a>
                 <a href="#"class="buttons-2">My Portfolio</a>
                 <a href="#"class="buttons-3">SCS Scheme</a>
                 <a href="#"class="buttons-4">Contact Me</a>
@@ -44,21 +44,39 @@
                           display:grid;
                           place-items: center;
                           ">
-                          <img src="img/matrix.jpg" class="page-image">
+                          <img src="img/matrix-2.jpg" class="page-image">
                           <div style="
                                       position:absolute;
                                     
                                       ">
+
+                          
+                                    
+                                      
+
                       
 
                                 <div class="caption-text">
-
+                                   <!--Burger menu-->
+ 
                                   <a href="#"><button class="hamburger"><i class="fa-2x fa-solid fa-bars"></i></button></a>
-                                
-                                    <div class="img-title">My Name is Amy Vincent</div>
+
+                                   <!--Dropdown for larger viewports-->
+
+                                  <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                     
+                                    </button>
+                                   
+                                  </div>
+                                </div>
+                                  <!--Captions-->
+                                    <div class="img-title">My Name is <br> Amy Vincent</div>
 
                                       
                                     <div class="img-text">I'm a Web Developer</div> 
+
+                                  <!--Scroll Down Button-->
 
                                     <button class="scroll">
                   
@@ -72,15 +90,49 @@
                                 
                                 
                 </header>
+                <nav id="myPages" class="main-pages">
+                  <ul class="pages">
+                    <li><a href="About-me.html" class="nav-link">About Me</a></li>
+                    <li><a href="Portfolio-me.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="coding.html" class="nav-link"></a></li>
+                    <li><a href="scs-scheme" class="nav-link"></a></li>
+                  </ul>
+                </nav>
         
 
-          <main>
+                <main>
+                                <!--Contact Form-->
+                            <div class="contact">
+                                  <div class="mb-3">
+                                    <label for="mb-label" class="form-label">First Name</label>
+                                    <input type="first-name" class="form-control" id="FirstName" >
+                                  </div>
+                                  
 
-    
-           
+                                    <div class="mb-3">
+                                      <label for="mb-label" class="form-label">Last Name</label>
+                                      <input type="last-name" class="form-control" id="LastName" >
+                                    </div>
+                                  
+
+                                      <div class="mb-3">
+                                        <label for="mb-label" class="form-label">Email Address</label>
+                                        <input type="Email-address" class="form-control" id="Email" >
+                                      </div>
+                                     
+
+                                        <div class="mb-3">
+                                          <label for="mb-label" class="form-label">Message</label>
+                                          <input type="Subject" class="form-control" id="Subject" >
+                                        </div>
+                                    
+                                   
+                         
 
 
-            </main>
+
+
+                  </main>
       
     </body>
     </html>

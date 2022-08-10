@@ -2,21 +2,22 @@
  
 
 
-
-
- header
-{ 
-
-
+.main-pages
+{
+display: none;
 }
+.dropdown, .dropdown-toggle 
+{display:none}
 
 body
 {
-    background-color: black;
+    background-color: $background-color;
+    overflow-x: hidden;
+   
 }
 
 #canvas
-{ background-color:#000; display:block; margin:auto;}
+{ background-color:$background-color; display:block; margin:auto;}
 
 #logo{ display:none;}
 
@@ -29,23 +30,30 @@ body
   top: 0;
   left:0;
   top: 0;
+  cursor: pointer;
+  
 
   
   
 }
 .hamburger {
- 
+  position:fixed;
+  top: 0;
+  left:0;
+  top: 0;
   width:33px;
   display:block;
    border: none;
    background-color: transparent;
+   cursor: pointer;
+   
  }
 
 .fa-bars {
 
   overflow: hidden;
    font-size: 30px;
- background-color: black;
+ background-color: $background-color;
    padding: 15px;
    color: white;
   
@@ -56,18 +64,22 @@ body
 
 .page-image {
     
-    height: 500px;
+    height: 700px;
     object-fit: cover;
     position: relative;
+    filter: brightness(0.5);
+    @include image-padding;
+
+}
  
     
-}
+
 
 //Navbar for bigger viewports
 
 .vertical-menu a, .initial
 {
-  background-color: green;
+  background-color:$matrix-green;
   color: white;
   display: block;
   padding:10px;
@@ -78,6 +90,15 @@ body
   display:none;
   
 }
+.main-image-2{
+  display:none
+}
+
+.page-image-2
+{
+ display: none;
+}
+
 .main-image {
   top: 0%;
    width:100%;
@@ -116,18 +137,19 @@ body
   text-align: center;
   line-height: 1.4;
   font-size:$text-font-size;
-  font-weight:$text-font-weigh;
+  font-weight:$text-font-weight;
   letter-spacing: .4px;
 }
 
 .scroll {
   background-color: transparent;
+  border: none;
 }
 
 .scroll-down
 {
   position: absolute;
-  top: 290%;
+  top: 200%;
   left: 25%;
   font-family: $main-font;
     color:white;
@@ -135,9 +157,58 @@ body
   text-align: center;
   line-height: 1.4;
   font-size: 25px;
-  font-weight:$text-font-weigh;
+  font-weight:$text-font-weight;
   letter-spacing: .4px;
   background-color: transparent;
+  cursor: pointer;
+  
 
 }
+
+//Email form
+
+.contact
+{
+  display: grid;
+  font-family: $main-font; 
+  background-color:$background-color;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  font-weight: lighter;
+  @include section-padding;
+}
+
+.mb-3
+{
+  display: grid;
+  font-family: $main-font; 
+  background-color:$background-color;
+
+  
+
+}
+
+.form-label
+{
+  color: white;
+  font-family: $main-font;
+}
+
+#FirstName 
+
+{
+ color: white;
+ font-family: $main-font;
+
+}
+
+.form-control
+
+{
+  background-color:$matrix-green;
+  color: white;
+border-color:white;
+
+}
+
 
