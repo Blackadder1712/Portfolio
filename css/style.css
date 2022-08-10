@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap");
-.main-pages {
-  display: none;
-}
-
-.dropdown, .dropdown-toggle {
-  display: none;
-}
-
 body {
   background-color: black;
   overflow-x: hidden;
@@ -60,15 +52,11 @@ body {
   padding-bottom: 50px;
 }
 
-.vertical-menu a, .initial {
-  background-color: #1ca152;
-  color: white;
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0px;
+.nav-link {
+  display: none;
+}
+
+.main-pages {
   display: none;
 }
 
@@ -169,51 +157,63 @@ body {
 
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
-  .main-image-2 {
-    top: 0%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  .main-pages {
+    display: none;
   }
-  .page-image-2 {
-    height: 700px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    position: relative;
-  }
-  .dropdown-menu {
-    width: 100px;
-    float: left;
-    top: 0px;
-    position: sticky;
-    position: -webkit-sticky;
-  }
-  .vertical-menu a, .initial {
-    background-color: green;
-    color: white;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-  }
-  .buttons {
-    color: white;
-    text-decoration: none;
-    font-size: 10px;
-    margin: 15px;
-    font-family: "Roboto", sans-serif;
-    background-color: green;
-    width: 10px;
-    padding: 10px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
+  .nav-link {
+    display: none;
   }
 }
 /*  Medium devices ? min-width: 768px and up*/
+@media screen and (min-width: 768px) {
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-pages {
+    background-color: #1ca152;
+    display: block;
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 200px;
+  }
+  .name {
+    background-color: transparent;
+    border-color: white;
+    padding: 30px;
+    width: 200px;
+    cursor: pointer;
+  }
+  .initial {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", "sans serif";
+    font-size: 95px;
+    font-weight: 700;
+    border-color: white;
+    padding: 30px;
+    line-height: 95px;
+    cursor: pointer;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", "sans serif";
+    font-size: 25px;
+    line-height: 50px;
+    position: fixed;
+  }
+  .hamburger {
+    display: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+}
 /*Large devices ? min-width 992px and up*/
 /*Extra-large devices ? min-width: 1200px and up*//*# sourceMappingURL=style.css.map */

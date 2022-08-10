@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap');
  
 
-
-.main-pages
-{
-display: none;
-}
-.dropdown, .dropdown-toggle 
-{display:none}
-
 body
 {
     background-color: $background-color;
@@ -72,24 +64,24 @@ body
 
 }
  
+
+
     
 
 
 //Navbar for bigger viewports
 
-.vertical-menu a, .initial
+.nav-link
 {
-  background-color:$matrix-green;
-  color: white;
-  display: block;
-  padding:10px;
-  text-decoration: none;
-  position: sticky;
-  position: -webkit-sticky;
-  top:0px;
-  display:none;
-  
+  display:none
 }
+
+.main-pages
+{
+  display: none;
+}
+
+
 .main-image-2{
   display:none
 }
