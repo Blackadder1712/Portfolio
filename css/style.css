@@ -216,4 +216,24 @@ body {
   }
 }
 /*Large devices ? min-width 992px and up*/
-/*Extra-large devices ? min-width: 1200px and up*//*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 992px) {
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*Extra-large devices ? min-width: 1200px and up*/
+@media screen and (min-width: 1200px) {
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
