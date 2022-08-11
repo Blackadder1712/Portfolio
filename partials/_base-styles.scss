@@ -71,9 +71,15 @@ body
 
 //Navbar for bigger viewports
 
-.nav-link
+.pages
 {
-  display:none
+  text-decoration: none;
+  color:white;
+  font-family: $main-font;
+  font-size: 25px;
+  line-height: 50px;
+  position: absolute;
+
 }
 
 .main-pages

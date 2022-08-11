@@ -56,8 +56,13 @@ body {
   padding-bottom: 50px;
 }
 
-.nav-link {
-  display: none;
+.pages {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", "sans serif";
+  font-size: 25px;
+  line-height: 50px;
+  position: absolute;
 }
 
 .main-pages {
@@ -273,12 +278,16 @@ body {
     cursor: pointer;
   }
   .nav-link {
+    display: block;
     text-decoration: none;
     color: white;
     font-family: "Roboto", "sans serif";
-    font-size: 25px;
-    line-height: 50px;
-    position: fixed;
+    font-size: 95px;
+    font-weight: 700;
+    border-color: white;
+    padding: 30px;
+    line-height: 95px;
+    cursor: pointer;
   }
   .hamburger {
     display: none;
@@ -306,7 +315,7 @@ body {
   }
   .main-pages {
     background-color: #1ca152;
-    display: block;
+    display: flex;
     position: fixed;
     position: absolute;
     top: 0px;
@@ -335,9 +344,13 @@ body {
     text-decoration: none;
     color: white;
     font-family: "Roboto", "sans serif";
-    font-size: 25px;
-    line-height: 50px;
-    position: fixed;
+    font-size: 95px;
+    font-weight: 700;
+    border-color: white;
+    padding: 30px;
+    line-height: 95px;
+    cursor: pointer;
+    display: block;
   }
   .hamburger {
     display: none;

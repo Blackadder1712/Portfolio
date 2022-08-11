@@ -106,12 +106,16 @@
 
      .nav-link
   {
+    display:block;
     text-decoration: none;
-    color:white;
-    font-family: $main-font;
-    font-size: 25px;
-    line-height: 50px;
-    position: fixed;
+     color:white;
+     font-family: $main-font;
+     font-size: 95px;
+     font-weight: 700;
+     border-color: white;
+     padding:30px;
+     line-height:95px;
+     cursor: pointer
   
   }
     
@@ -170,7 +174,7 @@ display:none
      {
       background-color:$matrix-green;
     
-      display: block;
+      display: flex;
     
       position: fixed;
       position:absolute;
@@ -206,11 +210,15 @@ display:none
      .nav-link
   {
     text-decoration: none;
-    color:white;
-    font-family: $main-font;
-    font-size: 25px;
-    line-height: 50px;
-    position: fixed;
+     color:white;
+     font-family: $main-font;
+     font-size: 95px;
+     font-weight: 700;
+     border-color: white;
+     padding:30px;
+     line-height:95px;
+     cursor: pointer;
+     display:block
   
   }
     
