@@ -23,7 +23,7 @@ body
   left:0;
   top: 0;
   cursor: pointer;
-  
+  @include section-padding;
 
   
   
@@ -101,6 +101,7 @@ body
   
   background-size: cover;
   background-repeat: no-repeat;
+  @include section-padding;
   
 }
 
@@ -133,29 +134,17 @@ body
   letter-spacing: .4px;
 }
 
-.scroll {
-  background-color: transparent;
-  border: none;
-}
-
-.scroll-down
+.scroll-down 
 {
-  position: absolute;
-  top: 200%;
-  left: 25%;
-  font-family: $main-font;
-    color:white;
-    display: block;
-  text-align: center;
-  line-height: 1.4;
-  font-size: 25px;
-  font-weight:$text-font-weight;
-  letter-spacing: .4px;
-  background-color: transparent;
-  cursor: pointer;
+  display:none
+}
+.scroll {
   
 
+  display:none
 }
+
+
 
 //Email form
 
@@ -167,7 +156,55 @@ body
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
+  display: grid;
   @include section-padding;
+  
+
+ 
+
+ 
+  grid-template-rows: auto auto auto ;
+
+  
+ 
+}
+
+.contact-form h1
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+
+  letter-spacing: .4px;
+
+}
+
+.contact-form h3
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size:$text-font-size;
+  font-weight:$text-font-weight;
+  letter-spacing: .4px;
+}
+
+.contact-form h2
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size:20px;
+  font-weight:$text-font-weight;
+  letter-spacing: .4px;
 }
 
 .mb-3
@@ -175,6 +212,7 @@ body
   display: grid;
   font-family: $main-font; 
   background-color:$background-color;
+  
 
   
 
@@ -184,6 +222,8 @@ body
 {
   color: white;
   font-family: $main-font;
+  
+  
 }
 
 #FirstName 
@@ -202,5 +242,28 @@ body
 border-color:white;
 
 }
+
+.submit
+{
+  
+  top: 200%;
+  left: 23%;
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight:$text-font-weight;
+  letter-spacing: .5px;
+  background-color: $matrix-green;
+  padding:5px;
+  border-radius: 8%;
+  margin:50px;
+
+
+
+}
+
 
 

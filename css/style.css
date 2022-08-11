@@ -20,6 +20,10 @@ body {
   left: 0;
   top: 0;
   cursor: pointer;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
 }
 
 .hamburger {
@@ -75,6 +79,10 @@ body {
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
 }
 
 .img-title {
@@ -99,25 +107,12 @@ body {
   letter-spacing: 0.4px;
 }
 
-.scroll {
-  background-color: transparent;
-  border: none;
+.scroll-down {
+  display: none;
 }
 
-.scroll-down {
-  position: absolute;
-  top: 200%;
-  left: 25%;
-  font-family: "Roboto", "sans serif";
-  color: white;
-  display: block;
-  text-align: center;
-  line-height: 1.4;
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 0.4px;
-  background-color: transparent;
-  cursor: pointer;
+.scroll {
+  display: none;
 }
 
 .contact {
@@ -127,10 +122,45 @@ body {
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
+  display: grid;
   padding-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 50px;
+  grid-template-rows: auto auto auto;
+}
+
+.contact-form h1 {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.contact-form h3 {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.contact-form h2 {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
 }
 
 .mb-3 {
@@ -155,6 +185,23 @@ body {
   border-color: white;
 }
 
+.submit {
+  top: 200%;
+  left: 23%;
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: #1ca152;
+  padding: 5px;
+  border-radius: 8%;
+  margin: 50px;
+}
+
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
   .main-pages {
@@ -166,6 +213,23 @@ body {
 }
 /*  Medium devices ? min-width: 768px and up*/
 @media screen and (min-width: 768px) {
+  .scroll-down {
+    position: absolute;
+    top: 200%;
+    left: 20%;
+    font-family: "Roboto", "sans serif";
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: #1ca152;
+    padding: 5px;
+    border-radius: 8%;
+    cursor: pointer;
+  }
   .outer-container {
     max-width: auto;
     display: grid;
@@ -185,9 +249,10 @@ body {
     background-color: #1ca152;
     display: block;
     position: fixed;
+    position: absolute;
     top: 0px;
     height: 100%;
-    width: 200px;
+    width: 150px;
   }
   .name {
     background-color: transparent;
@@ -243,9 +308,10 @@ body {
     background-color: #1ca152;
     display: block;
     position: fixed;
+    position: absolute;
     top: 0px;
     height: 100%;
-    width: 200px;
+    width: 150px;
   }
   .name {
     background-color: transparent;
@@ -293,6 +359,7 @@ body {
   .inner-container {
     max-width: auto;
     display: grid;
+    padding: 20px 20px;
     grid-template-columns: auto auto;
     margin: 0;
   }
