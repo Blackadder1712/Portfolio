@@ -23,7 +23,7 @@ body
   left:0;
   top: 0;
   cursor: pointer;
-  @include section-padding;
+  
 
   
   
@@ -71,15 +71,9 @@ body
 
 //Navbar for bigger viewports
 
-.pages
+.nav-link
 {
-  text-decoration: none;
-  color:white;
-  font-family: $main-font;
-  font-size: 25px;
-  line-height: 50px;
-  position: absolute;
-
+  display:none
 }
 
 .main-pages
@@ -107,7 +101,6 @@ body
   
   background-size: cover;
   background-repeat: no-repeat;
-  @include section-padding;
   
 }
 
@@ -163,7 +156,7 @@ body
   grid-row-gap: 20px;
   font-weight: lighter;
   display: grid;
-  @include section-padding;
+ 
   
 
  
@@ -251,7 +244,7 @@ border-color:white;
 
 .submit
 {
-  
+  position: absolute;
   top: 200%;
   left: 23%;
   font-family: $main-font;
@@ -266,7 +259,6 @@ border-color:white;
   padding:5px;
   border-radius: 8%;
   margin:50px;
-
 
 
 }
