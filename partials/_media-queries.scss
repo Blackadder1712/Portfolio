@@ -3,9 +3,9 @@
 @media screen and (min-width: 576px) {
   
 
-  body
+ .flex-container
   {   
-      display:flex;
+      display:inline-flex;
       flex-direction: column;
       background-color: $background-color;
       overflow-x: hidden;
@@ -17,12 +17,7 @@
      
   }
 
-  main 
-  {
-    display: flex;
-    
-  }
-
+ 
   
   .pages
   {
@@ -48,6 +43,7 @@
      
     
      cursor: pointer
+     
   
   }
  
@@ -220,17 +216,7 @@
     
     
 
-.hamburger 
-{
-display:none
-}
- 
 
-.fa-bars  {
-  display:none
-  }
-  
-   
 
 
 
@@ -328,16 +314,6 @@ display:none
     
     
 
-.hamburger 
-{
-display:none
-}
- 
-
-.fa-bars  {
-  display:none
-  }
-  
    
 
 
@@ -378,15 +354,7 @@ display:none
       
       
   
-  .hamburger 
-  {
-  display:none
-  }
-   
-  
-  .fa-bars  {
-    display:none
-    }
+ 
     
      
   

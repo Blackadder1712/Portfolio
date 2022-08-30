@@ -17,25 +17,15 @@ body {
 }
 
 .hamburger {
-  position: absolute;
-  width: 33px;
-  display: block;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.fa-bars {
-  position: absolute;
-  overflow: hidden;
-  font-size: 30px;
-  background-color: black;
-  padding: 15px;
+  font-family: "Roboto", "sans serif";
   color: white;
-  border-radius: 3px;
+  background-color: transparent;
   display: block;
-  z-index: 2;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
 }
 
 .page-image {
@@ -182,8 +172,8 @@ body {
 
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
-  body {
-    display: flex;
+  .flex-container {
+    display: inline-flex;
     flex-direction: column;
     background-color: black;
     overflow-x: hidden;
@@ -191,9 +181,6 @@ body {
     height: 100%;
     position: relative;
     place-items: center;
-  }
-  main {
-    display: flex;
   }
   .pages {
     padding: 10px;
@@ -313,14 +300,6 @@ body {
   cursor: pointer;
 }
 
-.hamburger {
-  display: none;
-}
-
-.fa-bars {
-  display: none;
-}
-
 /*Large devices ? min-width 992px and up*/
 @media screen and (min-width: 992px) {
   .main {
@@ -371,12 +350,6 @@ body {
     cursor: pointer;
     display: block;
   }
-  .hamburger {
-    display: none;
-  }
-  .fa-bars {
-    display: none;
-  }
 }
 /*Extra-large devices ? min-width: 1200px and up*/
 .main-pages {
@@ -386,12 +359,4 @@ body {
   top: 0px;
   height: 100%;
   width: 200px;
-}
-
-.hamburger {
-  display: none;
-}
-
-.fa-bars {
-  display: none;
 }/*# sourceMappingURL=style.css.map */

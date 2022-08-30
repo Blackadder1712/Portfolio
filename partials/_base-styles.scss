@@ -27,27 +27,19 @@ body
 //hamburger
 
 
-.hamburger {
-  position:absolute;
-  width:33px;
-  display:block;
-   border: none;
-   background-color: transparent;
-   cursor: pointer;
-   z-index: 2;
- }
 
-.fa-bars {
-  position:absolute;
-  overflow: hidden;
-   font-size: 30px;
- background-color: $background-color;
-   padding: 15px;
-   color: white;
-  
-   border-radius: 3px;
-   display:block;
-   z-index: 2;
+
+.hamburger {
+  font-family: $main-font;
+  color:white;
+  background-color: transparent;
+  display: block;
+text-align: center;
+line-height: 1.4;
+font-size: $text-font-size;
+font-weight: $title-font-weight;
+
+letter-spacing: .4px;
 }
 
 //Main image and caption 
