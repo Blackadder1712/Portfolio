@@ -3,31 +3,91 @@
 @media screen and (min-width: 576px) {
   
 
-  .flex-container
-  {
-    flex-direction: column;
-    display: flex;
+  body
+  {   
+      display:flex;
+      flex-direction: column;
+      background-color: $background-color;
+      overflow-x: hidden;
+      width:100%;
+      height:100%;
+      position: relative;
+      place-items: center;
+      
+     
   }
 
-  .scroll-page
+  main 
   {
-    flex-direction: column;
     display: flex;
-    width:100%
-
     
+  }
+
+  
+  .pages
+  {
+    
+    padding:10px;
    
 
-   
   }
+  
+  .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6
+  {
+
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+     color:white;
+     font-family: $main-font;
+     font-size: $text-font-size;
+     font-weight: 700;
+     border-color: white;
+     justify-content: space-between;
+     padding:10px;
+     
+    
+     cursor: pointer
+  
+  }
+ 
+
+  
+
+
+
+
+
+  
+  .sidebar
+  {
+    
+      background-color:$matrix-green;
+    
+      display: inline-block;
+      flex-direction: column;
+     
+      position: fixed;
+      position: left;
+
+  
+      top:0px;
+    
+     
+  }
+
+
+
   
   .page-image {
     
     height: 700px;
+    width: 100%;
     object-fit: cover;
     position: relative;
     filter: brightness(0.5);
     @include image-padding;
+   
 
 }
   
@@ -38,34 +98,20 @@
 @media screen and (min-width: 768px)
 {
 
-  .flex-container
-  {
-    flex-direction: column;
-    display: flex;
-  }
-
-  .scroll-page
-  {
-    flex-direction: column;
-    display: flex;
-    width:100%
-  }
-  .sidebar
-  {
-    
-      background-color:$matrix-green;
-    
-      display: flex;
-    
-      position: fixed;
-      position:absolute;
+ body 
+ {
+  display: flex;
+  flex-direction: row;
   
-      top:0px;
-      height: 100%;
-      width: 100%;
-     
-  }
-  body {
+
+ }
+
+ 
+
+
+
+
+  
 
   }
 
@@ -158,7 +204,8 @@
 
      .nav-link
   {
-    display:block;
+    display:flex;
+    flex-direction: row;
     text-decoration: none;
      color:white;
      font-family: $main-font;
@@ -187,7 +234,7 @@ display:none
 
 
 
-}
+
 
 
 
@@ -195,11 +242,16 @@ display:none
 @media screen and (min-width:992px)
 {
 
-  .flex-container
-  {
-    flex-direction: column;
-    display: flex;
-  }
+   
+ 
+  .main
+{
+  display:flex;
+  flex-direction: column;
+  
+  float:right;
+}
+  
    
   .sidebar
   {
@@ -209,7 +261,7 @@ display:none
       display: flex;
     
       position: fixed;
-      position:absolute;
+    
   
       top:0px;
       height: 100%;
@@ -221,7 +273,7 @@ display:none
   {
     flex-direction: column;
     display: flex;
-    width:100%
+    width: calc(100% - 200px);
   }
 
  
@@ -322,39 +374,7 @@ display:none
         width: 200px;
        }
   
-       .name
-       {
-        background-color: transparent;
-        border-color: white;
-        padding:30px;
-        
-        width:200px;
-        cursor: pointer;
-       }
-      .initial 
-      {
-       text-decoration: none;
-       color:white;
-       font-family: $main-font;
-       font-size: 95px;
-       font-weight: 700;
-       border-color: white;
-       padding:30px;
-       line-height:95px;
-       cursor: pointer
-      }
-  
-  
-       .nav-link
-    {
-      text-decoration: none;
-      color:white;
-      font-family: $main-font;
-      font-size: 25px;
-      line-height: 50px;
-      position: fixed;
-    
-    }
+     
       
       
   

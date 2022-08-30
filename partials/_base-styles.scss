@@ -1,52 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap');
- 
+
 .sidebar
 {
   display:none
 }
 
+
+
+
 body
-{
+{   
+    display:inline-block;
+    flex-direction: column;
     background-color: $background-color;
     overflow-x: hidden;
+    width:100%;
+    height:100%
+
    
 }
 
-#canvas
-{ background-color:$background-color; display:block; margin:auto;}
-
-#logo{ display:none;}
-
-
+.caption-text
+{
+  position:relative;
+}
 //hamburger
 
-.caption-text a {
- 
-  position:fixed;
-  top: 0;
-  left:0;
-  top: 0;
-  cursor: pointer;
-  
 
-  
-  
-}
 .hamburger {
-  position:fixed;
-  top: 0;
-  left:0;
-  top: 0;
+  position:absolute;
   width:33px;
   display:block;
    border: none;
    background-color: transparent;
    cursor: pointer;
-   
+   z-index: 2;
  }
 
 .fa-bars {
-
+  position:absolute;
   overflow: hidden;
    font-size: 30px;
  background-color: $background-color;
@@ -54,6 +46,8 @@ body
    color: white;
   
    border-radius: 3px;
+   display:block;
+   z-index: 2;
 }
 
 //Main image and caption 
@@ -64,7 +58,7 @@ body
     object-fit: cover;
     position: relative;
     filter: brightness(0.5);
-    @include image-padding;
+ 
 
 }
  
@@ -132,7 +126,7 @@ body
     display: block;
   text-align: center;
   line-height: 1.4;
-  font-size:$text-font-size;
+  font-size:c;
   font-weight:$text-font-weight;
   letter-spacing: .4px;
 }
@@ -159,17 +153,7 @@ body
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
-  display: grid;
- 
-  
-
- 
-
- 
-  grid-template-rows: auto auto auto ;
-
-  
- 
+  margin: 20px;
 }
 
 .contact-form h1
@@ -248,12 +232,10 @@ border-color:white;
 
 .submit
 {
-  position: absolute;
-  top: 200%;
-  left: 23%;
+
   font-family: $main-font;
     color:white;
-    display: block;
+ 
   text-align: center;
   line-height: 1.4;
   font-size: 25px;
@@ -262,7 +244,8 @@ border-color:white;
   background-color: $matrix-green;
   padding:5px;
   border-radius: 8%;
-  margin:50px;
+ margin-top: 20px;
+  
 
 
 }

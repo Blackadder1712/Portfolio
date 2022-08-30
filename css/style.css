@@ -4,47 +4,38 @@
 }
 
 body {
+  display: inline-block;
+  flex-direction: column;
   background-color: black;
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-#canvas {
-  background-color: black;
-  display: block;
-  margin: auto;
-}
-
-#logo {
-  display: none;
-}
-
-.caption-text a {
-  position: fixed;
-  top: 0;
-  left: 0;
-  top: 0;
-  cursor: pointer;
+.caption-text {
+  position: relative;
 }
 
 .hamburger {
-  position: fixed;
-  top: 0;
-  left: 0;
-  top: 0;
+  position: absolute;
   width: 33px;
   display: block;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 2;
 }
 
 .fa-bars {
+  position: absolute;
   overflow: hidden;
   font-size: 30px;
   background-color: black;
   padding: 15px;
   color: white;
   border-radius: 3px;
+  display: block;
+  z-index: 2;
 }
 
 .page-image {
@@ -53,7 +44,6 @@ body {
      object-fit: cover;
   position: relative;
   filter: brightness(0.5);
-  padding-bottom: 50px;
 }
 
 .nav-link {
@@ -98,7 +88,7 @@ body {
   display: block;
   text-align: center;
   line-height: 1.4;
-  font-size: 30px;
+  font-size: c;
   font-weight: 400;
   letter-spacing: 0.4px;
 }
@@ -118,8 +108,7 @@ body {
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
-  display: grid;
-  grid-template-rows: auto auto auto;
+  margin: 20px;
 }
 
 .contact-form h1 {
@@ -178,12 +167,8 @@ body {
 }
 
 .submit {
-  position: absolute;
-  top: 200%;
-  left: 23%;
   font-family: "Roboto", "sans serif";
   color: white;
-  display: block;
   text-align: center;
   line-height: 1.4;
   font-size: 25px;
@@ -192,22 +177,51 @@ body {
   background-color: #1ca152;
   padding: 5px;
   border-radius: 8%;
-  margin: 50px;
+  margin-top: 20px;
 }
 
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
-  .flex-container {
+  body {
+    display: flex;
     flex-direction: column;
+    background-color: black;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    place-items: center;
+  }
+  main {
     display: flex;
   }
-  .scroll-page {
-    flex-direction: column;
+  .pages {
+    padding: 10px;
+  }
+  .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6 {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", "sans serif";
+    font-size: 30px;
+    font-weight: 700;
+    border-color: white;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .sidebar {
+    background-color: #1ca152;
+    display: inline-block;
+    flex-direction: column;
+    position: fixed;
+    position: left;
+    top: 0px;
   }
   .page-image {
     height: 700px;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     position: relative;
@@ -217,111 +231,107 @@ body {
 }
 /*  Medium devices ? min-width: 768px and up*/
 @media screen and (min-width: 768px) {
-  .flex-container {
-    flex-direction: column;
+  body {
     display: flex;
-  }
-  .scroll-page {
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-  }
-  .sidebar {
-    background-color: #1ca152;
-    display: flex;
-    position: fixed;
-    position: absolute;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-  }
-  .page-image {
-    display: flex;
-    height: 700px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    position: relative;
-    filter: brightness(0.5);
-    padding-bottom: 50px;
-  }
-  .scroll-down {
-    position: absolute;
-    top: 200%;
-    left: 20%;
-    font-family: "Roboto", "sans serif";
-    color: white;
-    display: block;
-    text-align: center;
-    line-height: 1.4;
-    font-size: 25px;
-    background-color: #1ca152;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    padding: 5px;
-    border-radius: 8%;
-    cursor: pointer;
-  }
-  .main-pages {
-    background-color: #1ca152;
-    display: block;
-    position: fixed;
-    position: absolute;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-  }
-  .main-image {
-    width: 100%;
-    padding-bottom: 50px;
-  }
-  .name {
-    background-color: transparent;
-    border-color: white;
-    padding: 30px;
-    width: 200px;
-    cursor: pointer;
-  }
-  .initial {
-    text-decoration: none;
-    color: white;
-    font-family: "Roboto", "sans serif";
-    font-size: 95px;
-    font-weight: 700;
-    border-color: white;
-    padding: 30px;
-    line-height: 95px;
-    cursor: pointer;
-  }
-  .nav-link {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-family: "Roboto", "sans serif";
-    font-size: 95px;
-    font-weight: 700;
-    border-color: white;
-    padding: 30px;
-    line-height: 95px;
-    cursor: pointer;
-  }
-  .hamburger {
-    display: none;
-  }
-  .fa-bars {
-    display: none;
+    flex-direction: row;
   }
 }
+.page-image {
+  display: flex;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  filter: brightness(0.5);
+  padding-bottom: 50px;
+}
+
+.scroll-down {
+  position: absolute;
+  top: 200%;
+  left: 20%;
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  background-color: #1ca152;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 5px;
+  border-radius: 8%;
+  cursor: pointer;
+}
+
+.main-pages {
+  background-color: #1ca152;
+  display: block;
+  position: fixed;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.main-image {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.name {
+  background-color: transparent;
+  border-color: white;
+  padding: 30px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.initial {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", "sans serif";
+  font-size: 95px;
+  font-weight: 700;
+  border-color: white;
+  padding: 30px;
+  line-height: 95px;
+  cursor: pointer;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", "sans serif";
+  font-size: 95px;
+  font-weight: 700;
+  border-color: white;
+  padding: 30px;
+  line-height: 95px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
 /*Large devices ? min-width 992px and up*/
 @media screen and (min-width: 992px) {
-  .flex-container {
-    flex-direction: column;
+  .main {
     display: flex;
+    flex-direction: column;
+    float: right;
   }
   .sidebar {
     background-color: #1ca152;
     display: flex;
     position: fixed;
-    position: absolute;
     top: 0px;
     height: 100%;
     width: 150px;
@@ -329,7 +339,7 @@ body {
   .scroll-page {
     flex-direction: column;
     display: flex;
-    width: 100%;
+    width: calc(100% - 200px);
   }
   .name {
     background-color: transparent;
@@ -376,35 +386,6 @@ body {
   top: 0px;
   height: 100%;
   width: 200px;
-}
-
-.name {
-  background-color: transparent;
-  border-color: white;
-  padding: 30px;
-  width: 200px;
-  cursor: pointer;
-}
-
-.initial {
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto", "sans serif";
-  font-size: 95px;
-  font-weight: 700;
-  border-color: white;
-  padding: 30px;
-  line-height: 95px;
-  cursor: pointer;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto", "sans serif";
-  font-size: 25px;
-  line-height: 50px;
-  position: fixed;
 }
 
 .hamburger {
