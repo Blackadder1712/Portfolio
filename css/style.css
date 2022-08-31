@@ -175,8 +175,9 @@ body {
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
   .flex-container {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    align-content: flex-start;
     background-color: black;
     overflow-x: hidden;
     width: 100%;
@@ -191,6 +192,7 @@ body {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    justify-content: flex-start;
     color: white;
     font-family: "Roboto", "sans serif";
     font-size: 30px;
@@ -202,9 +204,9 @@ body {
   }
   .sidebar {
     background-color: #1ca152;
-    display: inline-block;
+    display: flex;
     flex-direction: column;
-    position: fixed;
+    justify-content: flex-start;
     position: left;
     top: 0px;
   }
@@ -316,7 +318,6 @@ body {
   .sidebar {
     background-color: #1ca152;
     display: flex;
-    position: fixed;
     top: 0px;
     height: 100%;
     width: 150px;
@@ -770,6 +771,10 @@ h2 {
 .coming-soon {
   width: 700px;
   height: auto;
+}
+
+.caption-text {
+  padding-top: 170px;
 }
 
 .img-title-scs {

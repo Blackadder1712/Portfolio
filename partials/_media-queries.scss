@@ -5,8 +5,9 @@
 
  .flex-container
   {   
-      display:inline-flex;
+      display:flex;
       flex-direction: column;
+      align-content: flex-start;
       background-color: $background-color;
       overflow-x: hidden;
       width:100%;
@@ -36,6 +37,7 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    justify-content:flex-start;
      color:white;
      font-family: $main-font;
      font-size: $text-font-size;
@@ -63,10 +65,10 @@
     
       background-color:$matrix-green;
     
-      display: inline-block;
+      display: flex;
       flex-direction: column;
+      justify-content: flex-start;
      
-      position: fixed;
       position: left;
 
   
@@ -255,7 +257,6 @@
     
       display: flex;
     
-      position: fixed;
     
   
       top:0px;
