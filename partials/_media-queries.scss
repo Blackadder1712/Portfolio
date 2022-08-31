@@ -17,6 +17,9 @@
      
   }
 
+
+
+
  
   
   .pages
@@ -94,6 +97,12 @@
 @media screen and (min-width: 768px)
 {
 
+  .caption-text-scs
+{
+    display:flex;
+    flex-direction: column;
+    
+}
  body 
  {
   display: flex;
@@ -322,7 +331,7 @@
 
 
 /*Extra-large devices ? min-width: 1200px and up*/
-@media screen and (min-width:1200px){}
+@media screen and (min-width:1200px){
 
   
 
@@ -349,7 +358,17 @@
         height: 100%;
         width: 200px;
        }
-  
+
+       .fa-bars
+       {
+        display: none;
+       }
+
+ 
+
+      
+      }
+    
      
       
       

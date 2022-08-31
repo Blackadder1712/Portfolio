@@ -53,7 +53,32 @@ letter-spacing: .4px;
  
 
 }
+
+h1{
+  font-family: $main-font;
+  color:white;
+  display: block;
+text-align: center;
+line-height: 1.4;
+font-size: 30px;
+font-weight: $title-font-weight;
+
+letter-spacing: .4px;
+}
  
+h2
+{
+  position: relative;
+  font-family: $main-font;
+  color:white;
+  display: block;
+text-align: center;
+line-height: 1.4;
+font-size: 20px;
+font-weight: $title-font-weight;
+
+letter-spacing: .4px;
+}
 
 
     
@@ -111,15 +136,15 @@ letter-spacing: .4px;
 
 }
 
-.img-text 
+.img-text-me
 {
   font-family: $main-font;
     color:white;
     display: block;
   text-align: center;
   line-height: 1.4;
-  font-size:c;
-  font-weight:$text-font-weight;
+  font-size:40px;
+  font-weight:100px;
   letter-spacing: .4px;
 }
 
