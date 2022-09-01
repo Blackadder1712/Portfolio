@@ -249,5 +249,319 @@ border-color:white;
 
 }
 
+.sidebar
+{
+  display:none
+}
+
+
+
+
+body
+{   
+    display:inline-block;
+    flex-direction: column;
+    background-color: $background-color;
+    overflow-x: hidden;
+    width:100%;
+    height:100%
+
+   
+}
+
+.caption-text
+{
+  position:relative;
+}
+//hamburger
+
+
+
+
+.hamburger {
+  font-family: $main-font;
+  color:white;
+  background-color: transparent;
+  display: block;
+text-align: center;
+line-height: 1.4;
+font-size: $text-font-size;
+font-weight: $title-font-weight;
+
+letter-spacing: .4px;
+}
+
+//Main image and caption 
+
+.page-image {
+    
+    height: 700px;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(0.5);
+ 
+
+}
+
+h1{
+  font-family: $main-font;
+  color:white;
+  display: block;
+text-align: center;
+line-height: 1.4;
+font-size: 30px;
+font-weight: $title-font-weight;
+
+letter-spacing: .4px;
+}
+ 
+h2
+{
+  position: relative;
+  font-family: $main-font;
+  color:white;
+  display: block;
+text-align: center;
+line-height: 1.4;
+font-size: 20px;
+font-weight: $title-font-weight;
+
+letter-spacing: .4px;
+}
+
+
+    
+
+
+//Navbar for bigger viewports
+
+.nav-link
+{
+  display:none
+}
+
+.main-pages
+{
+  display: none;
+}
+
+
+.main-image-2{
+  display:none
+}
+
+.page-image-2
+{
+ display: none;
+}
+
+.main-image {
+  top: 0%;
+   width:100%;
+   
+   
+  align-items:center;
+  justify-content: center;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+.img-title 
+{
+    
+   font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+
+  letter-spacing: .4px;
+
+}
+
+.img-text-me
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size:40px;
+  font-weight:100px;
+  letter-spacing: .4px;
+}
+
+.scroll-down 
+{
+  display:none
+}
+.scroll {
+  
+
+  display:none
+}
+
+
+
+//Email form
+
+.contact
+{
+  display: grid;
+  font-family: $main-font; 
+  background-color:$background-color;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  font-weight: lighter;
+  margin: 20px;
+}
+
+.contact-form h1
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+
+  letter-spacing: .4px;
+
+}
+
+.contact-form h3
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size:$text-font-size;
+  font-weight:$text-font-weight;
+  letter-spacing: .4px;
+}
+
+.contact-form h2
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size:20px;
+  font-weight:$text-font-weight;
+  letter-spacing: .4px;
+}
+
+.mb-3
+{
+  display: grid;
+  font-family: $main-font; 
+  background-color:$background-color;
+  
+
+  
+
+}
+
+.form-label
+{
+  color: white;
+  font-family: $main-font;
+  
+  
+}
+
+#FirstName 
+
+{
+ color: white;
+ font-family: $main-font;
+
+}
+
+.form-control
+
+{
+  background-color:$matrix-green;
+  color: white;
+border-color:white;
+
+}
+
+.submit
+{
+
+  font-family: $main-font;
+    color:white;
+ 
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight:$text-font-weight;
+  letter-spacing: .5px;
+  background-color: $matrix-green;
+  padding:5px;
+  border-radius: 8%;
+ margin-top: 20px;
+  
+
+
+}
+
+.code-img-title
+ {
+font-family: $main-font;
+color:white;
+display: block;
+text-align: center;
+line-height: 1.4;
+font-size: 50px;
+font-weight: $title-font-weight;
+
+letter-spacing: .4px;
+}
+
+.coming-soon
+{
+    width: 700px;
+    height: auto;
+}
+
+.img-title-scs
+{
+    
+   font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+
+  letter-spacing: .4px;
+
+}
+
+.img-text-scs
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size:c;
+  font-weight:$text-font-weight;
+  letter-spacing: .4px;
+}
+
+
 
 
