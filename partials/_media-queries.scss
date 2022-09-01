@@ -7,17 +7,39 @@
   {   
       display:flex;
       flex-direction: column;
-      align-content: flex-start;
       background-color: $background-color;
       overflow-x: hidden;
       width:100%;
       height:100%;
       position: relative;
       place-items: center;
+      align-content: space-between;
       
      
   }
 
+  .sidebar
+  {
+    
+      background-color:$matrix-green;
+      position: fixed;
+      height:100%;
+
+      width:200px;
+
+  
+      top:0px;
+    
+     
+  }
+
+   .Main-page
+   {display: block;
+  width: calc(100% - 200px);
+  position: right;
+}
+
+ 
 
 
 
@@ -60,22 +82,6 @@
 
 
   
-  .sidebar
-  {
-    
-      background-color:$matrix-green;
-    
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-     
-      position: left;
-
-  
-      top:0px;
-    
-     
-  }
 
 
 
@@ -169,10 +175,9 @@
      {
       background-color:$matrix-green;
     
-      display: block;
+      display: flex;
     
       position: fixed;
-      position : absolute;
   
       top:0px;
       height: 100%;
@@ -240,30 +245,7 @@
 {
 
    
- 
-  .main
-{
-  display:flex;
-  flex-direction: column;
-  
-  float:right;
-}
-  
-   
-  .sidebar
-  {
-    
-      background-color:$matrix-green;
-    
-      display: flex;
-    
-    
-  
-      top:0px;
-      height: 100%;
-      width: 150px;
-     
-  }
+
 
   .scroll-page
   {
@@ -351,7 +333,7 @@
        {
         background-color:$matrix-green;
       
-        display: block;
+        display: flex;
       
         position: fixed;
     

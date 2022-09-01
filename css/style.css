@@ -37,6 +37,14 @@ body {
   filter: brightness(0.5);
 }
 
+.scroll-down {
+  display: none;
+}
+
+.scroll-down {
+  display: none;
+}
+
 .nav-link {
   display: none;
 }
@@ -82,14 +90,6 @@ body {
   font-size: c;
   font-weight: 400;
   letter-spacing: 0.4px;
-}
-
-.scroll-down {
-  display: none;
-}
-
-.scroll {
-  display: none;
 }
 
 .contact {
@@ -177,13 +177,25 @@ body {
   .flex-container {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
     background-color: black;
     overflow-x: hidden;
     width: 100%;
     height: 100%;
     position: relative;
     place-items: center;
+    align-content: space-between;
+  }
+  .sidebar {
+    background-color: #1ca152;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    top: 0px;
+  }
+  .Main-page {
+    display: block;
+    width: calc(100% - 200px);
+    position: right;
   }
   .pages {
     padding: 10px;
@@ -201,14 +213,6 @@ body {
     justify-content: space-between;
     padding: 10px;
     cursor: pointer;
-  }
-  .sidebar {
-    background-color: #1ca152;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: left;
-    top: 0px;
   }
   .page-image {
     height: 700px;
@@ -261,9 +265,8 @@ body {
 
 .main-pages {
   background-color: #1ca152;
-  display: block;
+  display: flex;
   position: fixed;
-  position: absolute;
   top: 0px;
   height: 100%;
   width: 100%;
@@ -310,18 +313,6 @@ body {
 
 /*Large devices ? min-width 992px and up*/
 @media screen and (min-width: 992px) {
-  .main {
-    display: flex;
-    flex-direction: column;
-    float: right;
-  }
-  .sidebar {
-    background-color: #1ca152;
-    display: flex;
-    top: 0px;
-    height: 100%;
-    width: 150px;
-  }
   .scroll-page {
     flex-direction: column;
     display: flex;
@@ -362,7 +353,7 @@ body {
 @media screen and (min-width: 1200px) {
   .main-pages {
     background-color: #1ca152;
-    display: block;
+    display: flex;
     position: fixed;
     top: 0px;
     height: 100%;

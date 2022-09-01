@@ -25,6 +25,7 @@ body
 .caption-text
 {
   position:relative;
+  
 }
 //hamburger
 
@@ -54,6 +55,18 @@ letter-spacing: .4px;
     filter: brightness(0.5);
  
 
+}
+
+// scroll
+
+ .scroll-down
+{
+ display:none
+}
+
+.scroll-down
+{
+  display: none
 }
  
 
@@ -125,15 +138,6 @@ letter-spacing: .4px;
   letter-spacing: .4px;
 }
 
-.scroll-down 
-{
-  display:none
-}
-.scroll {
-  
-
-  display:none
-}
 
 
 
