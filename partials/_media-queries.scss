@@ -1,6 +1,148 @@
 
 /* Small devices ? min-width: 576px and up*/
 @media screen and (min-width: 576px) {
+
+
+
+  .caption-text-scs
+{
+    display:flex;
+    flex-direction: column;
+    
+}
+ body 
+ {
+  display: flex;
+  flex-direction: row;
+  
+
+ }
+
+ 
+
+
+
+
+  
+
+  }
+
+
+ 
+  .scroll-down
+{
+  position: absolute;
+  top: 200%;
+  left: 20%;
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  background-color: $matrix-green;
+  font-weight:$text-font-weight;
+  letter-spacing: .5px;
+ 
+  padding:5px;
+  border-radius: 8%;
+
+  cursor: pointer;
+  
+
+}
+
+
+
+
+
+
+ 
+
+
+
+  
+     .main-pages
+     {
+      background-color:$matrix-green;
+    
+      display: flex;
+    
+      position: fixed;
+  
+      top:0px;
+      height: 100%;
+      width: 100%;
+     }
+     .main-image 
+ {
+  width:100%;
+  
+  @include image-padding;
+
+ }
+
+
+    .initial 
+    {
+     text-decoration: none;
+     color:white;
+     font-family: $main-font;
+     font-size: 95px;
+     font-weight: 700;
+     border-color: white;
+     padding:30px;
+     line-height:95px;
+     cursor: pointer
+    }
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+  .scroll-page
+  {
+    flex-direction: column;
+    display: flex;
+    width: calc(100% - 200px);
+  }
+
+ 
+
+  
+
+
+   
+  
+
+  
+  
+    
+
+     .name
+     {
+      background-color: transparent;
+      border-color: white;
+      padding:30px;
+      
+      width:200px;
+      cursor: pointer;
+     }
+
   
 
  .flex-container
@@ -9,7 +151,7 @@
       flex-direction: column;
       background-color: $background-color;
       overflow-x: hidden;
-      width:100%;
+      width:10%;
       height:100%;
       position: relative;
       place-items: center;
@@ -20,13 +162,14 @@
 
   .sidebar
   {
-    
+    display: flex;
+    flex-direction: row;
       background-color:$matrix-green;
       position: fixed;
       height:100%;
-
-      width:200px;
-
+      position: left;
+      width:10px;
+   
   
       top:0px;
     
@@ -98,12 +241,12 @@
 
 }
   
-}
+
 
 /*  Medium devices ? min-width: 768px and up*/
 
-@media screen and (min-width: 768px)
-{
+
+
 
   .caption-text-scs
 {
@@ -126,17 +269,9 @@
 
   
 
-  }
+  
 
-  .page-image {
-    display:flex;
-    height: 700px;
-    object-fit: cover;
-    position: relative;
-    filter: brightness(0.5);
-    @include image-padding;
 
-}
  
   .scroll-down
 {
@@ -191,15 +326,7 @@
 
  }
 
-     .name
-     {
-      background-color: transparent;
-      border-color: white;
-      padding:30px;
-      
-      width:200px;
-      cursor: pointer;
-     }
+
     .initial 
     {
      text-decoration: none;
@@ -214,21 +341,6 @@
     }
 
 
-     .nav-link
-  {
-    display:flex;
-    flex-direction: row;
-    text-decoration: none;
-     color:white;
-     font-family: $main-font;
-     font-size: 95px;
-     font-weight: 700;
-     border-color: white;
-     padding:30px;
-     line-height:95px;
-     cursor: pointer
-  
-  }
     
     
 
@@ -240,9 +352,7 @@
 
 
 
-/*Large devices ? min-width 992px and up*/
-@media screen and (min-width:992px)
-{
+
 
    
 
@@ -275,34 +385,7 @@
       width:200px;
       cursor: pointer;
      }
-    .initial 
-    {
-     text-decoration: none;
-     color:white;
-     font-family: $main-font;
-     font-size: 95px;
-     font-weight: 700;
-     border-color: white;
-     padding:30px;
-     line-height:95px;
-     cursor: pointer
-    }
 
-
-     .nav-link
-  {
-    text-decoration: none;
-     color:white;
-     font-family: $main-font;
-     font-size: 95px;
-     font-weight: 700;
-     border-color: white;
-     padding:30px;
-     line-height:95px;
-     cursor: pointer;
-     display:block
-  
-  }
     
     
 
@@ -310,11 +393,7 @@
 
 
 
-}
 
-
-/*Extra-large devices ? min-width: 1200px and up*/
-@media screen and (min-width:1200px){
 
   
 
@@ -329,28 +408,7 @@
   
     
     
-       .main-pages
-       {
-        background-color:$matrix-green;
-      
-        display: flex;
-      
-        position: fixed;
-    
-        top:0px;
-        height: 100%;
-        width: 200px;
-       }
 
-       .fa-bars
-       {
-        display: none;
-       }
-
- 
-
-      
-      }
     
      
       
@@ -365,5 +423,4 @@
   
   
 
-  
   
