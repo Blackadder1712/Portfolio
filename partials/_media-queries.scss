@@ -1,7 +1,85 @@
 
 /* Small devices ? min-width: 576px and up*/
-@media screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) {
 
+     
+
+ 
+
+ .hamburger {
+  display:none}
+
+
+  .sidebar
+  {
+    position:fixed;
+    width: 200px;
+    height: 100%;
+    background-color: $matrix-green;
+    z-index:2
+     
+  }
+
+   
+  .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6
+  {
+
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content:flex-start;
+     color:white;
+     font-family: $main-font;
+     font-size: $text-font-size;
+     font-weight: 700;
+     border-color: white;
+     justify-content: space-between;
+     padding:10px;
+     
+    
+     cursor: pointer
+     
+  
+  }
+
+  
+  .initial 
+  {
+   text-decoration: none;
+   color:white;
+   font-family: $main-font;
+   font-size: 95px;
+   font-weight: 700;
+   border-color: white;
+   padding:30px;
+   line-height:95px;
+   cursor: pointer
+  }
+
+  .name
+  {
+   background-color: transparent;
+   border-color: white;
+   padding:30px;
+   
+   width:200px;
+   cursor: pointer;
+  }
+
+  .Main-page
+  {
+    display:block;
+    padding-left:200px;
+    z-index: 1;
+
+  }
+
+  .contact
+
+  {padding-left:200px}
+
+
+ 
 
 
   .caption-text-scs
@@ -10,13 +88,6 @@
     flex-direction: column;
     
 }
- body 
- {
-  display: flex;
-  flex-direction: row;
-  
-
- }
 
  
 
@@ -62,18 +133,7 @@
 
 
   
-     .main-pages
-     {
-      background-color:$matrix-green;
-    
-      display: flex;
-    
-      position: fixed;
-  
-      top:0px;
-      height: 100%;
-      width: 100%;
-     }
+     
      .main-image 
  {
   width:100%;
@@ -83,18 +143,7 @@
  }
 
 
-    .initial 
-    {
-     text-decoration: none;
-     color:white;
-     font-family: $main-font;
-     font-size: 95px;
-     font-weight: 700;
-     border-color: white;
-     padding:30px;
-     line-height:95px;
-     cursor: pointer
-    }
+
 
 
     
@@ -114,13 +163,7 @@
    
 
 
-  .scroll-page
-  {
-    flex-direction: column;
-    display: flex;
-    width: calc(100% - 200px);
-  }
-
+ 
  
 
   
@@ -133,54 +176,12 @@
   
     
 
-     .name
-     {
-      background-color: transparent;
-      border-color: white;
-      padding:30px;
-      
-      width:200px;
-      cursor: pointer;
-     }
-
-  
-
- .flex-container
-  {   
-      display:flex;
-      flex-direction: column;
-      background-color: $background-color;
-      overflow-x: hidden;
-      width:10%;
-      height:100%;
-      position: relative;
-      place-items: center;
-      align-content: space-between;
-      
-     
-  }
-
-  .sidebar
-  {
-    display: flex;
-    flex-direction: row;
-      background-color:$matrix-green;
-      position: fixed;
-      height:100%;
-      position: left;
-      width:10px;
-   
-  
-      top:0px;
     
-     
-  }
+
+
 
    .Main-page
-   {display: block;
-  width: calc(100% - 200px);
-  position: right;
-}
+   {}
 
  
 
@@ -194,27 +195,6 @@
     padding:10px;
    
 
-  }
-  
-  .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6
-  {
-
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    justify-content:flex-start;
-     color:white;
-     font-family: $main-font;
-     font-size: $text-font-size;
-     font-weight: 700;
-     border-color: white;
-     justify-content: space-between;
-     padding:10px;
-     
-    
-     cursor: pointer
-     
-  
   }
  
 
@@ -245,7 +225,8 @@
 
 /*  Medium devices ? min-width: 768px and up*/
 
-
+@media only screen and (min-width: 768px) 
+{
 
 
   .caption-text-scs
@@ -254,13 +235,6 @@
     flex-direction: column;
     
 }
- body 
- {
-  display: flex;
-  flex-direction: row;
-  
-
- }
 
  
 
@@ -306,18 +280,7 @@
 
 
   
-     .main-pages
-     {
-      background-color:$matrix-green;
     
-      display: flex;
-    
-      position: fixed;
-  
-      top:0px;
-      height: 100%;
-      width: 100%;
-     }
      .main-image 
  {
   width:100%;
@@ -386,7 +349,7 @@
       cursor: pointer;
      }
 
-    
+}
     
 
    

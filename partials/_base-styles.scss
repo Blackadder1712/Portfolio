@@ -1,21 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap');
 
+.sidebar
+{
+  display:none;
+}
 
+.Main-page
+{
+  display:block;
 
+}
 
 
 
 body
 {   
-    display:inline-block;
-    flex-direction: column;
+    
     background-color: $background-color;
-    overflow-x: hidden;
-    width:100%;
-    height:100%
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
 
    
 }
+
+.flex-container
+  {   
+      display:flex;
+      flex-direction: column;
+      background-color: $background-color;
+      overflow-x: hidden;
+
+     
+  }
+
 
 .caption-text
 {
@@ -24,10 +42,7 @@ body
 }
 //hamburger
 
-.sidebar
-{
- display:none;  
-}
+
 
 
 
@@ -71,25 +86,15 @@ letter-spacing: .4px;
 
 //Navbar for bigger viewports
 
-.nav-link
-{
-  display:none
-}
-
-.main-pages
-{
-  display: none;
-}
 
 
 
 
 
 .main-image {
-  top: 0%;
-   width:100%;
-   
-   
+
+  display: flex; 
+  width:100%;
   align-items:center;
   justify-content: center;
   
