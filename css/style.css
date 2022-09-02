@@ -3,6 +3,10 @@
   display: block;
 }
 
+.sidebar {
+  display: none;
+}
+
 body {
   background-color: black;
   display: flex;
@@ -234,16 +238,16 @@ h2 {
 }
 
 /* Small devices ? min-width: 576px and up*/
-@media only screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .hamburger {
     display: none;
   }
   .sidebar {
+    display: flex;
     position: fixed;
     width: 200px;
     height: 100%;
     background-color: #1ca152;
-    z-index: 2;
   }
   .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6 {
     display: flex;
