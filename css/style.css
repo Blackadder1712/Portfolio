@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap");
-.sidebar {
-  display: none;
-}
-
 .Main-page {
   display: block;
 }
@@ -283,8 +279,11 @@ h2 {
   }
   .Main-page {
     display: block;
-    padding-left: 200px;
+    margin-left: 200px;
     z-index: 1;
+  }
+  .contact-form {
+    padding-left: 200px;
   }
   .contact {
     padding-left: 200px;
