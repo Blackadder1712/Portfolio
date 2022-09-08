@@ -1,7 +1,14 @@
 
-/* Small devices ? min-width: 576px and up*/
-@media screen and (min-width: 576px) {
+/* Medium devices ? min-width: 768px and up*/
+@media screen and (min-width: 768px) {
 
+   
+.Main-page
+{
+padding: 40px;
+
+
+}
   .caption-text
   { 
     
@@ -9,6 +16,7 @@
     width: 100%;
     height: 100%;
     padding-left:10px;
+    margin:10px
     
   }
 
@@ -17,10 +25,15 @@
   padding-top:380px;
   position:relative;
   width: 100%;
-  height: 100%
+  height: 100%;
+  margin: 10px;
   
 }
-  
+  .caption-text-about
+  {
+    margin:10px;
+    padding:10px
+  }
 
  
 
@@ -39,6 +52,13 @@
      
   }
 
+ .main-pages
+ {
+  width: 200px;
+  align-items: center;
+ 
+
+ }
    
   .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6
   {
@@ -53,7 +73,8 @@
      font-weight: 700;
      border-color: white;
      justify-content: space-between;
-     padding:10px;
+     padding:15px;
+    margin-left: -20px;
      
     
      cursor: pointer
