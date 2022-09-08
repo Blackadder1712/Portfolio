@@ -252,9 +252,6 @@ h2 {
 
 /* Medium devices ? min-width: 768px and up*/
 @media screen and (min-width: 768px) {
-  .Main-page {
-    padding: 40px;
-  }
   .caption-text {
     position: relative;
     width: 100%;
@@ -324,6 +321,7 @@ h2 {
     display: block;
     margin-left: 200px;
     z-index: 1;
+    padding: 40px;
   }
   .contact-form {
     padding-left: 200px;
