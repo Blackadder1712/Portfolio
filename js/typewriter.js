@@ -1,13 +1,15 @@
 let i = 0;
-let txt = "My Name is Amy Vincent"; //text in typewriter effect
-let speed = 50; //speed of effect in milliseconds
+let txt = "My Name is Amy Vincent";
+let speed =50;
 
 function typeWriter() 
 {
     if(i < txt.length)
       {
-        document.getElementById("typewriter").innerHTML += txt.charAt(i);
+        document.getElementByClass("img-title").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
       }
 }
+
+console.log("hello");
