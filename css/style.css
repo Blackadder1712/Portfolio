@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap");
+span {
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 .Main-page {
   display: block;
 }
@@ -421,7 +437,4 @@ h2 {
     width: 200px;
     cursor: pointer;
   }
-}
-#typewriter {
-  color: white;
 }/*# sourceMappingURL=style.css.map */

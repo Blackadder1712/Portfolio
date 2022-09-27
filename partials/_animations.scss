@@ -1,4 +1,13 @@
-#typewriter
+span
 {
-    color: white;
+    animation: blinker 1s linear infinite; //animation time and speed 
+
+}
+
+@keyframes blinker
+{
+ 50%
+ {
+    opacity: 0;
+ }
 }

@@ -1,15 +1,18 @@
-let i = 0;
-let txt = "My Name is Amy Vincent";
-let speed =50;
+//variables
+let titleArray = ["My Name is Amy Vincent"];
+let textPosition = 0;
+let speed = 100;
 
-function typeWriter() 
+//function
+typewriter = () =>
 {
-    if(i < txt.length)
-      {
-        document.getElementByClass("img-title").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
+    document.querySelector(".img-title").
+    innerHTML = titleArray[0].substring(0, textPosition)
+    + "<span>\u25ae</span>";// text block
+   //as long as text position isnt += array length it will keep incrementing
+    if(textPosition++ != titleArray[0].length) 
+      setTimeout(typewriter, speed); 
 }
 
-console.log("hello");
+//start function on page load
+window.addEventListener("load", typewriter);
