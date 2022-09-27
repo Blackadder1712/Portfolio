@@ -51,7 +51,26 @@
                                         <!--Burger menu-->
       
                                         <!--Captions-->
-                                          <h1 class="img-title" id="typewriter">My Name is <br> Amy Vincent</h1>
+
+                                         
+                                          <div class="img-title">
+                                              <script onload>
+                                                let i = 0;
+                                                let txt = "My Name is Amy Vincent"; //text in typewriter effect
+                                                let speed = 50; //speed of effect in milliseconds
+
+                                                function typeWriter() 
+                                                {
+                                                    if(i < txt.length)
+                                                      {
+                                                        document.getElementByClass("img-title").innerHTML += txt.charAt(i);
+                                                        i++;
+                                                        setTimeout(typeWriter, speed);
+                                                      }
+                                                }
+
+                                              </script>
+                                           </div>
 
                                             
                                           <div class="img-text">I'm a Web Developer</div> 
@@ -179,8 +198,8 @@
           
       
     //Banner TypeWriter effect
-<script src="js/typewriter/core.js"></script>
-<script src="js/typewriter/react.js"></script>
+    <script src="js/typewriter.js"></script>
+
   </body>
    
     </html>
