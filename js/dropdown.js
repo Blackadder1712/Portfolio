@@ -1,0 +1,1 @@
+$(".dropdown-animsition").animsition();
