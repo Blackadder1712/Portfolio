@@ -9,6 +9,66 @@
 
 }
 
+//Dropdown menu button 
+.dropbtn
+{
+  background-color:$matrix-green ;
+  color:black;
+  padding: 16px;
+  border:none;
+  text-align: center;
+  width:100%;
+  margin-top: 0px;
+ 
+  
+}
+
+//position the dropdown content
+.dropdown
+{
+  position:relative;
+  display:inline-block;
+  width:100%;
+  text-align: center;
+  z-index: 1;
+}
+
+//Dropdown content
+.dropdown-content
+{
+  display:none;
+ 
+  background-color: $matrix-green;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+//Dropdown links
+
+.dropdown-content a
+{
+  color:black;
+  padding:12px 16px;
+  text-decoration: none;
+  display:block;
+  text-align: center;
+}
+
+//Change color of dropdown items on hover
+.dropdown-content a :hover
+{
+  color:white;
+  text-align: center;
+}
+
+//Show dropdown menu on hover
+.dropdown:hover .dropdown-content
+{
+  display:block;
+  text-align: center;
+}
 .sidebar 
 {
   display:none;
@@ -60,24 +120,12 @@ body
   
 }
 
-//hamburger
 
 
 
 
 
-.hamburger {
-  font-family: $main-font;
-  color:white;
-  background-color: transparent;
-  display: block;
-text-align: center;
-line-height: 1.4;
-font-size: $text-font-size;
-font-weight: $title-font-weight;
 
-letter-spacing: .4px;
-}
 
 //Main image and caption 
 
