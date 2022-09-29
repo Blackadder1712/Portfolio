@@ -68,10 +68,7 @@
 }
 
 //show dropdown menu when use clicks
-.show
-{
-  display:block;
-}
+
 //Change color of dropdown items on hover
 .dropdown-content a:hover
 {
@@ -82,7 +79,7 @@
 //Show dropdown menu on hover
 .dropdown:hover .dropdown-content
 {
-  display:block;
+  
   text-align: center;
 }
 .sidebar 

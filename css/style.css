@@ -64,17 +64,12 @@ span {
   font-family: "Roboto", "sans serif";
 }
 
-.show {
-  display: block;
-}
-
 .dropdown-content a:hover {
   color: white;
   text-align: center;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
   text-align: center;
 }
 
