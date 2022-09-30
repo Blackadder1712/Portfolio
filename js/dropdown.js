@@ -1,14 +1,23 @@
 
+$(document).ready(function(){
+    $(".dropbtn").click(function(){
+            $(".dropdown-content").slideToggle();
+            $(".dropdown-content ")
+        });
 
+        // $("ul li").click(function(){
+        //     $("ul ul").slideUp();
+        //     $(this).find('ul').slideToggle();
+        // });
+        $('.dropdown-content a').click(function () {
+            $(this).siblings().find('.dropdown-content').slideUp();
+            $(this).find('.dropdown-content').slideToggle();
+        });
 
-$(".dropbtn").click(function()
-{
-    $(".dropdown-content").slideDown();
-    callback()
-});
-
-$(.document).ready(function(){
-    $(".dropdown").scroll(function(){
-       $(".dropdown").css('display','inline').fadeOut(1000);
-    });
+        $(window).resize(function(){
+            if($(window).width() > 768){
+                $(".dropdown-content").removeAttr('style');
+            }
+        });
  });
+

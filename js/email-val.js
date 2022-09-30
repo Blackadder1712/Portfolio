@@ -5,27 +5,29 @@ let nameRegex = /[^0-9]/;
 let lastNameInput = document.getElementById('LastName');
 let LastnameRegex = /[^0-9]/;
 let messageInput = document.getElementById('Subject');
-let messageRegex = /(?:[A-Za-z].*?\d|\d.*?[A-Za-z])/;
+let messageRegex = /^[a-zA-Z0-9-]+$/;
 
 
 $(".submit").click(function()
 {
-  if (!emailInput.value.match(emailRegex) ) 
+   if (!nameInput.value.match(nameRegex))
+  {
+    $("#Name").css({"border": "3px solid red"})
+  }
+  else if (!lastNameInput.value.match(LastnameRegex))
+  {
+    $("#LastName").css({"border": "3px solid red"})
+  }
+  else if (!emailInput.value.match(emailRegex) ) 
     {
-    alert('Invalid email address.');
+       $("#email").css({"border": "3px solid red"})
   
     }
-  else if (!nameInput.value.match(nameRegex))
+ 
+ 
+  else if(!messageInput.value.match(messageRegex))
     {
-      alert('Invalid First name.')
-    }
-    else if (!lastNameInput.value.match(LastnameRegex))
-    {
-      alert('Invalid Last name.')
-    }
-  else (!messageInput.value.match(messageRegex))
-    {
-      alert('Please enter message')
+      $("#Subject").css({"border": "3px solid red"})
     }
 
 });
