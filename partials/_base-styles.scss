@@ -34,7 +34,8 @@
 //position the dropdown content
 .dropdown
 {
-  position:static;
+  position:sticky;
+  top:0;
   display:inline-block;
   width:100%;
   text-align: center;
