@@ -9,6 +9,7 @@
           
           <link href="css/normalize.css" rel="stylesheet">
           <link rel="stylesheet" href= "js/animsition/animsition.min.css">
+          <link rel="stylesheet" href="sticky.css">
           <link href="css/style.css" rel="stylesheet">
           <link rel="preconnect" href="https://fonts.googleapis.com">
           
@@ -21,25 +22,34 @@
 
   <body> 
     
+      <div class="Main-page">
 
-         <div class="Main-page">
+                    //Dropdown Menu for smaller screens
+              <nav>
+                <div class="dropdown">
+                  <button class="dropbtn">Navigation Menu</button>
+                  <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="Portfolio-me.html">Portfolio</a>
+                    <a href="coding.html">Coding Examples</a>
+                    <a href="scs.html">SCS Scheme</a>
+                    <a href="index.html#contact-form">Contact Me</a>
+                </div>
 
-            //Dropdown Menu for smaller screens
-            <div class="dropdown">
-              <button class="dropbtn">Navigation Menu</button>
-              <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="Portfolio-me.html">Portfolio</a>
-                <a href="coding.html">Coding Examples</a>
-                <a href="scs.html">SCS Scheme</a>
-                <a href="index.html#contact-form">Contact Me</a>
-              </div>
-            </div>
+
+
+
+               </nav>
+              
+            
+        
+
+          
                 
 
 
             </div>                    
-    <header class="flex-container">
+            <header class="flex-container">
               
        
             
@@ -202,7 +212,9 @@
 
     
           
-      
+    //sticky nav
+    <script src="sticky.js"></script>
+
     //Banner TypeWriter effect
     <script src="js/typewriter.js"></script>
     //dropdown effect
