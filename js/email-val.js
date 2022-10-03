@@ -11,26 +11,42 @@ let messageRegex = /^[a-zA-Z0-9-]+$/;
 $(".submit").click(function()
 {
    if (!nameInput.value.match(nameRegex))
-  {
-    $("#Name").css({"border": "3px solid red"})
-  }
-  else if (!lastNameInput.value.match(LastnameRegex))
-  {
-    $("#LastName").css({"border": "3px solid red"})
-  }
-  else if (!emailInput.value.match(emailRegex) ) 
-    {
-       $("#email").css({"border": "3px solid red"})
-  
-    }
- 
- 
-  else if(!messageInput.value.match(messageRegex))
-    {
-      $("#Subject").css({"border": "3px solid red"})
-    }
+    
+   
+              {
+                $("#Name").css({"border": "3px solid red"})
+              }
+              else 
+              {
+                $("#Name").css({"border": "3px solid #7FFF94"})
+              };
+            
+          if(!lastNameInput.value.match(LastnameRegex))
+              {
+                $("#LastName").css({"border": "3px solid red"})
+              }
+              else
+              {
+                $("#LastName").css({"border": "3px solid #7FFF94"})
+              };
+          if (!emailInput.value.match(emailRegex) ) 
+              {
+                $("#email").css({"border": "3px solid red"})
+              }
+              else
+              {
+                $("#email").css({"border": "3px solid #7FFF94"})
+              };
+          if(!messageInput.value.match(messageRegex))
+              {
+                $("#Subject").css({"border": "3px solid red"})
+              }
+              else
+              {
+                $("#Subject").css({"border": "3px solid #7FFF94"})
+              };
 
-});
+    });
 
 
         
