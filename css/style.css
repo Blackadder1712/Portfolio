@@ -169,6 +169,10 @@ fieldset {
   border: none;
 }
 
+#Subject {
+  height: 150px;
+}
+
 .contact {
   display: grid;
   font-family: "Roboto", "sans serif";
@@ -367,6 +371,11 @@ h2 {
     width: 200px;
     align-items: center;
   }
+  fieldset {
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6 {
     display: flex;
     flex-direction: column;
@@ -404,7 +413,7 @@ h2 {
     display: block;
     margin-left: 200px;
     z-index: 1;
-    padding: 40px;
+    margin-top: 0;
   }
   .contact-form {
     padding-left: 200px;
@@ -415,6 +424,7 @@ h2 {
   .caption-text-scs {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 .scroll-down {
@@ -437,7 +447,6 @@ h2 {
 
 .main-image {
   width: 100%;
-  padding-bottom: 50px;
 }
 
 .pages {
@@ -451,7 +460,6 @@ h2 {
      object-fit: cover;
   position: relative;
   filter: brightness(0.5);
-  padding-bottom: 50px;
 }
 
 /*  Medium devices ? min-width: 768px and up*/
