@@ -244,7 +244,6 @@ fieldset {
 .submit {
   font-family: "Roboto", "sans serif";
   color: white;
-  text-align: center;
   line-height: 1.4;
   font-size: 25px;
   font-weight: 400;
@@ -253,8 +252,88 @@ fieldset {
   padding: 5px;
   border-radius: 8%;
   margin-top: 20px;
+  width: 150px;
+  align-items: center;
 }
 
+.submit {
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-left: 25%;
+}
+
+.submit:before {
+  content: "";
+  background: #1ca152;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  -webkit-animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.submit:active {
+  color: #000;
+}
+
+.submit:active:after {
+  background: transparent;
+}
+
+.submit:hover:before {
+  opacity: 1;
+}
+
+.submit:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 h1 {
   font-family: "Roboto", "sans serif";
   color: white;
@@ -339,6 +418,9 @@ h2 {
 
 /* Medium devices ? min-width: 768px and up*/
 @media screen and (min-width: 768px) {
+  .submit {
+    margin-left: 35%;
+  }
   .dropbtn {
     display: none;
   }
