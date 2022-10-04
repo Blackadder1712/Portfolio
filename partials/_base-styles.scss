@@ -151,8 +151,10 @@ body
 
 #contact-form
 {
-  margin-top:40px;
+  margin-top:80px;
+  visibility: hidden;
 }
+
 
 
 
@@ -242,12 +244,19 @@ body
 fieldset
 {
   border:none;
+  
 }
 
 #Subject
 {
   height: 150px;
+ 
 }
+
+#subject
+{
+color: white;
+};
 .contact
 {
   display: grid;

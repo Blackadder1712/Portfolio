@@ -120,7 +120,8 @@ body {
 }
 
 #contact-form {
-  margin-top: 40px;
+  margin-top: 80px;
+  visibility: hidden;
 }
 
 .page-image {
@@ -172,6 +173,10 @@ fieldset {
 
 #Subject {
   height: 150px;
+}
+
+#subject {
+  color: white;
 }
 
 .contact {
