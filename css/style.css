@@ -85,6 +85,10 @@ span {
   display: none;
 }
 
+.nav-link-3 {
+  padding-right: 150px;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -357,6 +361,27 @@ h2 {
   letter-spacing: 0.4px;
 }
 
+.pages ul {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 1px white;
+  background: #1ca152;
+  text-align: center;
+  margin-bottom: 5%;
+  transition: all 0.1s;
+  box-shadow: 0px 6px 0px darkgreen;
+}
+
+.pages ul:active {
+  box-shadow: 0px 2px 0px green;
+  position: relative;
+  top: 4px;
+}
+
 .img-text-me {
   font-family: "Roboto", "sans serif";
   color: white;
@@ -453,6 +478,12 @@ h2 {
     position: fixed;
     width: 200px;
     height: 100%;
+    background-color: #1ca152;
+  }
+  .pages .nav-link-3 {
+    padding-right: 29px;
+  }
+  .main-pages .name {
     background-color: #1ca152;
   }
   .main-pages {

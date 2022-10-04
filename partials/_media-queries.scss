@@ -60,9 +60,20 @@ display:none
     position:fixed;
     width: 200px;
     height: 100%;
-    background-color: $matrix-green;
+    background-color:$matrix-green
 
      
+  }
+
+  .pages .nav-link-3
+{
+  padding-right:29px
+}
+
+
+  .main-pages .name
+  {
+    background-color: $matrix-green;
   }
 
  .main-pages

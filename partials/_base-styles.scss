@@ -98,6 +98,10 @@
   display:none;
 }
 
+.nav-link-3
+{
+  padding-right:150px
+}
 
 
 
@@ -474,6 +478,37 @@ letter-spacing: .4px;
 
 
 
+.pages ul
+{
+  position:relative;
+  width: auto;
+  display:inline-block;
+  color:#ecf0f1;
+  text-decoration:none;
+  border-radius:5px;
+  border:solid 1px white;
+  background:$matrix-green;
+  text-align:center;
+  margin-bottom: 5%;
+  
+ 
+  
+  -webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+  -webkit-box-shadow: 0px 6px 0px darkgreen;
+  -moz-box-shadow: 0px 6px 0px  darkgreen;
+  box-shadow: 0px 6px 0px darkgreen;
+}
+
+.pages ul:active{
+    -webkit-box-shadow: 0px 2px 0px green;
+    -moz-box-shadow: 0px 2px 0px green;
+    box-shadow: 0px 2px 0px green;
+    position:relative;
+    top:4px;
+}
 
 
 
