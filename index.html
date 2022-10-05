@@ -1,324 +1,328 @@
 <!DOCTYPE html>
-     <html>
-        <head>
-        
-
-          <script src="https://kit.fontawesome.com/271f4647db.js" crossorigin="anonymous"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width,initial-scale=1.0" >
-          <title>Amy Vincent</title>
-          
-          <link href="css/normalize.css" rel="stylesheet">
-          <link rel="stylesheet" href= "js/animsition/animsition.min.css">
-          <link rel="stylesheet" href="sticky.css">
-          <link href="css/style.css" rel="stylesheet">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          
-          
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet">
-         
-
-    <!--Drop down menu for smaller VP-->
-      <div class="Main-page">
-
-              <nav>
-                <div class="dropdown">
-                  <button class="dropbtn">Navigation Menu</button>
-                  <div class="dropdown-content">
-                    <a href="index.html">Home</a>
-                    <a href="Portfolio-me.html">Portfolio</a>
-                    <a href="coding.html">Coding Examples</a>
-                    <a href="scs.html">SCS Scheme</a>
-                    <a href="index.html#contact-form">Contact Me</a>
-                </div>
-
-
-
-
-               </nav>
-              
-            
-        
-
-          
-                
-
-
-            </div>                    
-            <header class="flex-container">
-              
-       
-            
-              <header class="Main-page">
-                
-          
-               <!--Matrix background animation-->
-                 
-      
-                <!--Main image and caption-->
-
-                <div class="main-image" style="
-                          
-                          display:flex;
-                          place-items: center;
-                          ">
-                          <div class="page-image">
-
-                           <!--Background Animation-->                           
-                            <title>Matrix Text Effect </title>
-                            <script>
-                            var tileSize = 20;
-                            // Speed of characters fading
-                            var fadeFactor = 0.05;
-                            
-                            var canvas;
-                            var ctx;
-                            
-                            var columns = [];
-                            var maxStackHeight;
-                            
-                            function init()
-                            { //Call needed elements
-                                canvas = document.getElementById( 'canvas' );
-                                ctx = canvas.getContext( '2d' );
-                                
-                                initMatrix();
-                            
-                                // start the main loop
-                                tick();
-                            }
-                            
-                            function initMatrix()
-                            {
-                                maxStackHeight = Math.ceil(canvas.height/tileSize);
-                            
-                                // Create columns for characters to go down
-                                for ( let i = 0 ; i < canvas.width/tileSize ; ++i )
-                                {
-                                    var column = {};
-                                    // save the x position of the column
-                                    column.x = i*tileSize;
-                                    // create a random stack height for the column
-                                    column.stackHeight = 10+Math.random()*maxStackHeight;
-                                    // add a counter to count the stack height
-                                    column.stackCounter = 0;
-                                    // add the column to the list
-                                    columns.push( column );
-                                }
-                            }
-                            
-                            function draw()
-                            {
-                                // Fade effect with transparent black sqauare
-                                ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
-                                ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
-                            
-                                //fonts
-                                ctx.font = (tileSize-2)+"px monospace";
-                                ctx.fillStyle = "rgb( 0 , 255 , 0 )";
-                                for ( let i = 0 ; i < columns.length ; ++i )
-                                {
-                                    // Random character picker
-                                    var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
-                                    ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
-                            
-                                    // Random column lengths
-                                    if ( ++columns[i].stackCounter >= columns[i].stackHeight )
-                                    {
-                                        columns[i].stackHeight = 10+Math.random()*maxStackHeight;
-                                        columns[i].stackCounter = 0;
-                                    }
-                                }
-                            }
-                            
-                            // MAIN LOOP
-                            function tick() 
-                            {    
-                                draw();
-                                setTimeout( tick , 50 );
-                            }
-                            </script>
-                            </head>
-                            <body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">
-                            <canvas id="canvas" width="1280" height="720" style="display:block; margin:0 auto;"></canvas>
-                             
-                          </div>
-                          <div style="
-                                      position:absolute;
-                                    
-                                      ">
-                                   <!--for page fade in-->
-                     
-                                    
-                                          
-                                            
-
-                                      
-                            
-
-                  <div class="caption-text">
+   <html>
+                  <head>
                   
-                                             
-                                        <!--Burger menu-->
-      
-                                        <!--Captions-->
 
-                                         
-                                          <div class="img-title" id="img-title"></div>
-
-                                            
-                                        
-
-                                        <!--Scroll Down Button-->
-                                  
-                                      
-                                      
-                      </header>
-                
-                      
+                    <script src="https://kit.fontawesome.com/271f4647db.js" crossorigin="anonymous"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+                    <title>Amy Vincent</title>
+                    
+                    <link href="css/normalize.css" rel="stylesheet">
+                    <link rel="stylesheet" href= "js/animsition/animsition.min.css">
+                    <link rel="stylesheet" href="sticky.css">
+                    <link href="css/style.css" rel="stylesheet">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
                     
                     
-                          <div class="contact-form" id="contact-form">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet">
+                  
 
-                            <h1>Get in Touch </h1>
+            <body>   
+              <!--Drop down menu for smaller VP-->
+                      <div class="Main-page">
 
-                            <h3>If you would like more information on the services I have to offer,<br> please dont
-                              hesitate to get in touch:
-                            </h3>
-                          
-                            <h2>Mobile: 07950518798</h2>
-                            <h2>Email: amyvincent1990@outlook.com</h2>
+                              <nav>
+                                <div class="dropdown">
+                                  <button class="dropbtn">Navigation Menu</button>
+                                  <div class="dropdown-content">
+                                    <a href="index.html">Home</a>
+                                    <a href="Portfolio-me.html">Portfolio</a>
+                                    <a href="coding.html">Coding Examples</a>
+                                    <a href="scs.html">SCS Scheme</a>
+                                    <a href="index.html#contact-form">Contact Me</a>
+                                </div>
+                                </div>
+
+
+
+
+                              </nav>
+                              
+                            
                         
 
+                          
+                                
 
 
-               </div>
-                                   
+                            </div>                    
+                            <header class="flex-container">
+                              
                       
+                            
+                              <div class="Main-page">
+                                
+                          
+                              <!--Matrix background animation-->
+                                
+                      
+                                <!--Main image and caption-->
 
-                          <!--Contact form-->
+                                <div class="main-image" style="
+                                          
+                                          display:flex;
+                                          place-items: center;
+                                          ">
+                                          <div class="page-image">
 
-
-                               <fieldset>
-                                    <div class="contact">
-                                      <div class="mb-3">
-                                        <label for="mb-label" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" placeholder="REQUIRED" id="Name" >
-                                      </div>
-                                      
-
-                                        <div class="mb-3">
-                                          <label for="mb-label" class="form-label">Last Name</label>
-                                          <input type="text" class="form-control" placeholder="REQUIRED" id="LastName" required />
-                                        </div>
-                                      
-
-                                          <div class="mb-3">
-                                            <label for="mb-label" class="form-label">Email Address</label>
-                                            <input type="email" class="form-control" placeholder="REQUIRED" id="email" required />
+                                          <!--Background Animation-->                           
+                                          
+                                            <script>
+                                            var tileSize = 20;
+                                            // Speed of characters fading
+                                            var fadeFactor = 0.05;
+                                            
+                                            var canvas;
+                                            var ctx;
+                                            
+                                            var columns = [];
+                                            var maxStackHeight;
+                                            
+                                            function init()
+                                            { //Call needed elements
+                                                canvas = document.getElementById( 'canvas' );
+                                                ctx = canvas.getContext( '2d' );
+                                                
+                                                initMatrix();
+                                            
+                                                // start the main loop
+                                                tick();
+                                            }
+                                            
+                                            function initMatrix()
+                                            {
+                                                maxStackHeight = Math.ceil(canvas.height/tileSize);
+                                            
+                                                // Create columns for characters to go down
+                                                for ( let i = 0 ; i < canvas.width/tileSize ; ++i )
+                                                {
+                                                    var column = {};
+                                                    // save the x position of the column
+                                                    column.x = i*tileSize;
+                                                    // create a random stack height for the column
+                                                    column.stackHeight = 10+Math.random()*maxStackHeight;
+                                                    // add a counter to count the stack height
+                                                    column.stackCounter = 0;
+                                                    // add the column to the list
+                                                    columns.push( column );
+                                                }
+                                            }
+                                            
+                                            function draw()
+                                            {
+                                                // Fade effect with transparent black sqauare
+                                                ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
+                                                ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
+                                            
+                                                //fonts
+                                                ctx.font = (tileSize-2)+"px monospace";
+                                                ctx.fillStyle = "rgb( 0 , 255 , 0 )";
+                                                for ( let i = 0 ; i < columns.length ; ++i )
+                                                {
+                                                    // Random character picker
+                                                    var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
+                                                    ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
+                                            
+                                                    // Random column lengths
+                                                    if ( ++columns[i].stackCounter >= columns[i].stackHeight )
+                                                    {
+                                                        columns[i].stackHeight = 10+Math.random()*maxStackHeight;
+                                                        columns[i].stackCounter = 0;
+                                                    }
+                                                }
+                                            }
+                                            
+                                            // MAIN LOOP
+                                            function tick() 
+                                            {    
+                                                draw();
+                                                setTimeout( tick , 50 );
+                                            }
+                                            </script>
+                                            
+                                          <body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">
+                                            <canvas id="canvas" width="1280" height="720" style="display:block; margin:0 auto;"></canvas>
+                                            
                                           </div>
-                                        
+                                          <div style="
+                                                      position:absolute;
+                                                    
+                                                      ">
+                                                  <!--for page fade in-->
+                                    
+                                                    
+                                                          
+                                                            
 
-                                            <div class="mb-3">
-                                              <label for="mb-label" class="form-label">Message</label>
-                                              <textarea class="form-control" placeholder="REQUIRED" id="Subject" cols="20"  rows="10"></textarea>
-                                            </div>
+                                                      
+                                            
 
-                                        
-                                             
-                                            
-                                            <button class="submit">Submit</button>
-                                            
-                                         
-                               </fieldset>
-                                 
-                                                                               
+                                  <div class="caption-text">
+                                  
+                                                            
+                                                        <!--Burger menu-->
+                      
+                                                        <!--Captions-->
+
+                                                        
+                                                          <div class="img-title" id="img-title"></div>
+
+                                                            
+                                                        
+
+                                                        <!--Scroll Down Button-->
                                                   
-                                                
-                                  
-                              
-
-
-                            
-                        
-                            
-         <!--Sidebar for larger VP-->                         
-                                   
-        <div class="sidebar">
-
-
-            <nav id="myPages" class="main-pages">
-              <button class="name"><a href="index.html" class="initial">A</a></button>
-              <ul class="pages">
-               
-               
-                <ul><a href="About-me.html" class="nav-link-2">About Me</a></ul>
-                
-                <ul><a href="Portfolio-me.html" class="nav-link-3">Portfolio</a></ul>
-                
-                <ul><a href="coding.html" class="nav-link-4">Coding Examples</a></ul>
-               
-                <ul><a href= "scs.html" class="nav-link-5">SCS Scheme</a></ul>
-                
-                <ul><a href= "index.html#contact-form" class="nav-link-6">Contact Me</a></ul>
-                
-              </ul>
-            </nav> 
-
-
-        </div>
-            
-        </div> 
-      </div>    
-
-
-
-          </div>                              
-                                           
-                                  
-             
-                          
-                          
-                              
-                                            
-                                                
-                      </div> 
-                    
+                                                      
+                                                      
+                                      </header>
                                 
                                       
-              </div>
-            </div>
-    
-        
-      
+                                    
+                                    
+                                          <div class="contact-form" id="contact-form">
+
+                                            <h1>Get in Touch </h1>
+
+                                            <h3>If you would like more information on the services I have to offer,<br> please dont
+                                              hesitate to get in touch:
+                                            </h3>
+                                          
+                                            <h2>Mobile: 07950518798</h2>
+                                            <h2>Email: amyvincent1990@outlook.com</h2>
+                                        
 
 
-    </header>
-         
 
-    
-          
-    <!--sticky nav-->
-    <script src="sticky.js"></script>
+                              </div>
+                                                  
+                                      
 
-    <!--Banner TypeWriter effect-->
-    <script src="js/typewriter.js"></script>
-    <!--dropdown effect-->
-    <script src="js/dropdown.js"></script>
-    <!--email validation-->
-    <script src="js/email-val.js"></script>
-    <!--name validation-->
+                                          <!--Contact form-->
 
-    <!--page animations-->
-    <script src="js/animations.js"></script>
-    <!--jQuery-->
 
-    <script src="js/jquery-1.11.2.min.js"></script>
-   
+                                              <fieldset>
+                                                    <div class="contact">
+                                                      <div class="mb-3">
+                                                        <label for="mb-label" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" placeholder="REQUIRED" id="Name" >
+                                                      </div>
+                                                      
 
-  </body>
+                                                        <div class="mb-3">
+                                                          <label for="mb-label" class="form-label">Last Name</label>
+                                                          <input type="text" class="form-control" placeholder="REQUIRED" id="LastName" required />
+                                                        </div>
+                                                      
+
+                                                          <div class="mb-3">
+                                                            <label for="mb-label" class="form-label">Email Address</label>
+                                                            <input type="email" class="form-control" placeholder="REQUIRED" id="email" required />
+                                                          </div>
+                                                        
+
+                                                            <div class="mb-3">
+                                                              <label for="mb-label" class="form-label">Message</label>
+                                                              <textarea class="form-control" placeholder="REQUIRED" id="Subject" cols="20"  rows="10"></textarea>
+                                                            </div>
+
+                                                        
+                                                            
+                                                            
+                                                            <button class="submit">Submit</button>
+                                                            
+                                                        
+                                              </fieldset>
+
+                              </div>
+                                                
+                                                                                              
+                                                                  
+                                                                
+                                                  
+                                              
+
+
+                                            
+                                        
+                                            
+                        <!--Sidebar for larger VP-->                         
+                                                  
+                        <div class="sidebar">
+
+
+                            <nav id="myPages" class="main-pages">
+                              <button class="name"><a href="index.html" class="initial">A</a></button>
+                              <ul class="pages">
+                              
+                              
+                                <ul><a href="About-me.html" class="nav-link-2">About Me</a></ul>
+                                
+                                <ul><a href="Portfolio-me.html" class="nav-link-3">Portfolio</a></ul>
+                                
+                                <ul><a href="coding.html" class="nav-link-4">Coding Examples</a></ul>
+                              
+                                <ul><a href= "scs.html" class="nav-link-5">SCS Scheme</a></ul>
+                                
+                                <ul><a href= "index.html#contact-form" class="nav-link-6">Contact Me</a></ul>
+                                
+                              </ul>
+                            </nav> 
+
+
+                        </div>
+                            
+                        </div> 
+                      </div>    
+
+
+
+                          </div>                              
+                                                          
+                                                  
+                            
+                                          
+                                          
+                                              
+                                                            
+                                                                
+                                      </div> 
+                                    
+                                                
+                                                      
+                              </div>
+                            </div>
+                    
+                        
+                      
+
+
+                    </header>
+                        
+
+                    
+                          
+                    <!--sticky nav-->
+                    <script src="sticky.js"></script>
+
+                    <!--Banner TypeWriter effect-->
+                    <script src="js/typewriter.js"></script>
+                    <!--dropdown effect-->
+                    <script src="js/dropdown.js"></script>
+                    <!--email validation-->
+                    <script src="js/email-val.js"></script>
+                    <!--name validation-->
+
+                    <!--page animations-->
+                    <script src="js/animations.js"></script>
+                    <!--jQuery-->
+
+                    <script src="js/jquery-1.11.2.min.js"></script>
+                  
+
+            </body>
    
     </html>
            
