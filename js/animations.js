@@ -1,4 +1,4 @@
-//Page fade ins 
+//Page fade ins for each internal
 $(document).ready(function()
     {
      $(".caption-text-scs").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);

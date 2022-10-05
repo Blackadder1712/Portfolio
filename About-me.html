@@ -24,6 +24,8 @@
                </div>              
        <header class="flex-container">
 
+        <!--Drop down menu for smaller VP  -->
+
         <div class="dropdown">
           <button class="dropbtn">Navigation Menu</button>
           <div class="dropdown-content">
@@ -104,7 +106,7 @@
                       
                       function draw()
                       {
-                          // draw a semi transparent black rectangle on top of the scene to slowly fade older characters
+                          // Fade in using a transparent black square
                           ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
                           ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
                       
@@ -117,7 +119,7 @@
                               var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
                               ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
                       
-                              // if the stack is at its height limit, pick a new random height and reset the counter
+                              // Random column length
                               if ( ++columns[i].stackCounter >= columns[i].stackHeight )
                               {
                                   columns[i].stackHeight = 10+Math.random()*maxStackHeight;
@@ -155,7 +157,7 @@
 
                                                                         <!--Burger menu-->
                                   
-                                                                    <!--Captions-->
+                                                                    <!--Captions/Main page text-->
                                                                       <div class="img-title">Amy Vincent</div>
                             
                                                                         
@@ -206,7 +208,7 @@
                            
                                
                                      
-                                      
+         <!--sidebar for larger VP-->                             
         <div class="sidebar">
 
           <nav id="myPages" class="main-pages">
@@ -251,8 +253,9 @@
                  </div>
                </div>
        
-           
+         <!--JS for page fadeIns-->  
         <script src="js/animations.js"></script> 
+        <!--JS for Dropdown menu-->
         <script src="js/dropdown.js"></script>
      </body>
       

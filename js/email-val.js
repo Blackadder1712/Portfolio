@@ -1,3 +1,5 @@
+
+// variables to set regex
 let emailInput = document.getElementById('email');
 let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 let nameInput = document.getElementById('Name');
@@ -7,7 +9,7 @@ let LastnameRegex = /[^0-9]/;
 let messageInput = document.getElementById('Subject');
 let messageRegex = /^[a-zA-Z0-9-]+$/;
 
-
+ //Check if first name field contains only alphabetical characters 
 $(".submit").click(function()
 {
    if (!nameInput.value.match(nameRegex))
@@ -29,6 +31,8 @@ $(".submit").click(function()
               {
                 $("#LastName").css({"border": "3px solid #7FFF94"})
               };
+
+              //check if email field contains @ character
           if (!emailInput.value.match(emailRegex) ) 
               {
                 $("#email").css({"border": "3px solid red"})
@@ -37,6 +41,8 @@ $(".submit").click(function()
               {
                 $("#email").css({"border": "3px solid #7FFF94"})
               };
+
+              //Check if message field contains characters
           if(!messageInput.value.match(messageRegex))
               {
                 $("#Subject").css({"border": "3px solid red"})

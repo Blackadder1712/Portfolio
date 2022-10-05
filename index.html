@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet">
          
 
-    
+    <!--Drop down menu for smaller VP-->
       <div class="Main-page">
 
               <nav>
@@ -54,7 +54,7 @@
               <header class="Main-page">
                 
           
-      
+               <!--Matrix background animation-->
                  
       
                 <!--Main image and caption-->
@@ -111,7 +111,7 @@
                             
                             function draw()
                             {
-                                // draw a semi transparent black rectangle on top of the scene to slowly fade older characters
+                                // Fade effect with transparent black sqauare
                                 ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
                                 ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
                             
@@ -124,7 +124,7 @@
                                     var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
                                     ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
                             
-                                    // if the stack is at its height limit, pick a new random height and reset the counter
+                                    // Random column lengths
                                     if ( ++columns[i].stackCounter >= columns[i].stackHeight )
                                     {
                                         columns[i].stackHeight = 10+Math.random()*maxStackHeight;
@@ -198,7 +198,7 @@
                                    
                       
 
-                          
+                          <!--Contact form-->
 
 
                                <fieldset>
@@ -244,7 +244,7 @@
                             
                         
                             
-                                  
+         <!--Sidebar for larger VP-->                         
                                    
         <div class="sidebar">
 
