@@ -23,6 +23,8 @@
 
        </div>              
 <header class="flex-container">
+
+  <!--Drop down menu for smaller VP-->
   
   <div class="dropdown">
     <button onclick="myNavbar()" class="dropbtn">Navigation Menu</button>
@@ -44,7 +46,7 @@
       
                  
       
-    <!--Main image and caption-->
+    <!--Matrix animated Background-->
 
     <div class="main-image" style="
               
@@ -98,7 +100,7 @@
                 
                 function draw()
                 {
-                    // draw a semi transparent black rectangle on top of the scene to slowly fade older characters
+                    // Make fade effect with transparent black square
                     ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
                     ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
                 
@@ -111,7 +113,7 @@
                         var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
                         ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
                 
-                        // if the stack is at its height limit, pick a new random height and reset the counter
+                        // Make columns random lengths each time
                         if ( ++columns[i].stackCounter >= columns[i].stackHeight )
                         {
                             columns[i].stackHeight = 10+Math.random()*maxStackHeight;
@@ -149,7 +151,7 @@
 
                                                                 
                                     
-                                                                  <!--Captions-->
+                                                                  <!--Captions/ Page text-->
                                         
 
                                                                       
@@ -203,7 +205,7 @@
       
                    
                        
-                             
+    <!--Sidebar for larger VP-->              
     <div class="sidebar">
       <nav id="myPages" class="main-pages">
         <button class="name"><a href="index.html" class="initial">A</a></button>
