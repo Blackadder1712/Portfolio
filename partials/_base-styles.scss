@@ -294,6 +294,7 @@ body
      
   }
 
+  
 
 .caption-text-about
 { 
@@ -381,7 +382,6 @@ body
 }
 
 
-
 .img-title 
 {
     
@@ -397,6 +397,37 @@ body
   
 
 }
+
+.coding-title
+{
+  font-family: $main-font;
+  color:white;
+  display: block;
+text-align: center;
+line-height: 1.4;
+font-size: 25px;
+font-weight: 20px;
+visibility: hidden;
+letter-spacing: .4px;
+margin-left:20px;
+margin-right:30px;
+margin-top:200%
+}
+
+.code-img
+{
+  
+  
+    display:inline-block;
+    width:100%;
+    text-align: center;
+    z-index: 1;
+    align-items: center;
+
+    
+
+}
+
 
 .img-text 
 {

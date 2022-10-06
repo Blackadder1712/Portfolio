@@ -9,6 +9,12 @@ $(document).ready(function()
     $(".img-title").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);
     });
 
+    $(document).ready(function()
+    {
+    $(".coding-title").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);
+    });
+
+
 $(document).ready(function()
     {
     $(".caption-text-about").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);
@@ -44,6 +50,11 @@ $(".java").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900)
 $(document).ready(function()
 {
 $(".java-caption").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);
+});
+
+$(document).ready(function()
+{
+$(".code-img").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);
 });
 
 
