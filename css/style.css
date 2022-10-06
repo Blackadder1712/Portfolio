@@ -37,6 +37,140 @@ span {
   left: 0;
 }
 
+.netbtn {
+  background-color: #1ca152;
+  color: black;
+  padding: 16px;
+  border: none;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", "sans serif";
+  max-width: 90%;
+  align-self: center;
+}
+
+.netbtn:hover {
+  background-color: white;
+}
+
+.netmatters {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  align-items: center;
+}
+
+.javabtn {
+  background-color: black;
+  color: black;
+  padding: 16px;
+  border: none;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", "sans serif";
+  max-width: 90%;
+  align-self: center;
+}
+
+#java {
+  color: white;
+}
+
+.java {
+  margin-top: 50px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  align-items: center;
+}
+
+.java-caption {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 45px;
+  font-weight: 400;
+  visibility: hidden;
+  letter-spacing: 0.4px;
+  z-index: 4;
+}
+
+.java-content {
+  display: none;
+  background-color: #1ca152;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  color: black;
+  padding: 16px;
+  border: none;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", "sans serif";
+  margin-left: 1.75%;
+  margin-top: 0%;
+  max-width: 90%;
+  align-self: center;
+}
+
+.java-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Roboto", "sans serif";
+}
+
+.netmatters-content {
+  display: none;
+  background-color: #1ca152;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  color: black;
+  padding: 16px;
+  border: none;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", "sans serif";
+  margin-left: 1.75%;
+  margin-top: 0%;
+  max-width: 90%;
+  align-self: center;
+}
+
+.netmatters-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Roboto", "sans serif";
+}
+
+.netmatters-content a:hover {
+  color: white;
+}
+
+.Main-page {
+  align-items: center;
+}
+
 .dropbtn:hover {
   color: white;
 }
@@ -135,8 +269,13 @@ body {
   display: none;
 }
 
+#portfolio {
+  padding-bottom: 10%;
+}
+
 .main-image {
   display: flex;
+  place-items: center;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -164,6 +303,18 @@ body {
   line-height: 1.4;
   font-size: c;
   font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.netmatters-caption {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 45px;
+  font-weight: 400;
+  visibility: hidden;
   letter-spacing: 0.4px;
 }
 
@@ -230,6 +381,10 @@ fieldset {
   background-color: black;
 }
 
+.mb-label {
+  visibility: inherit;
+}
+
 .form-label {
   color: white;
   font-family: "Roboto", "sans serif";
@@ -239,6 +394,10 @@ fieldset {
   background-color: #1ca152;
   color: white;
   border-color: white;
+}
+
+.form-control {
+  color: white;
 }
 
 .submit {
@@ -357,7 +516,7 @@ h2 {
   letter-spacing: 0.4px;
 }
 
-.pages ul {
+.pages li {
   position: relative;
   width: auto;
   display: inline-block;
@@ -372,7 +531,7 @@ h2 {
   box-shadow: 0px 6px 0px darkgreen;
 }
 
-.pages ul:active {
+.pages li:active {
   box-shadow: 0px 2px 0px green;
   position: relative;
   top: 4px;
@@ -439,6 +598,10 @@ h2 {
 
 /* Medium devices ? min-width: 768px and up*/
 @media screen and (min-width: 768px) {
+  .netmatters {
+    width: 50%;
+    margin-left: 14%;
+  }
   .submit {
     margin-left: 35%;
   }
@@ -479,8 +642,9 @@ h2 {
   .pages .nav-link-3 {
     padding-right: 29px;
   }
-  .main-pages .name {
+  .main-pages button {
     background-color: #1ca152;
+    border: none;
   }
   .main-pages {
     width: 200px;
@@ -491,7 +655,7 @@ h2 {
     padding-left: 20%;
     padding-right: 20%;
   }
-  .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6 {
+  .pages li {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -503,10 +667,10 @@ h2 {
     border-color: white;
     justify-content: space-between;
     padding: 15px;
-    margin-left: -20px;
+    margin-left: -15px;
     cursor: pointer;
   }
-  .initial {
+  .main-pages button {
     text-decoration: none;
     color: white;
     font-family: "Roboto", "sans serif";
@@ -516,11 +680,13 @@ h2 {
     padding: 30px;
     line-height: 95px;
     cursor: pointer;
+    padding-left: 68px;
   }
   .name {
     background-color: transparent;
     border-color: white;
     padding: 30px;
+    text-decoration: none;
     width: 200px;
     cursor: pointer;
   }
@@ -529,6 +695,12 @@ h2 {
     margin-left: 200px;
     z-index: 1;
     margin-top: 0;
+    align-items: center;
+  }
+  .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6 {
+    text-decoration: none;
+    color: white;
+    padding-left: 15%;
   }
   .contact-form {
     padding-left: 200px;
@@ -577,54 +749,58 @@ h2 {
   filter: brightness(0.5);
 }
 
-/*  Medium devices ? min-width: 768px and up*/
-@media only screen and (min-width: 768px) {
-  .caption-text-scs {
-    display: flex;
-    flex-direction: column;
-  }
-  .scroll-down {
-    position: absolute;
-    top: 200%;
-    left: 20%;
-    font-family: "Roboto", "sans serif";
-    color: white;
-    display: block;
-    text-align: center;
-    line-height: 1.4;
-    font-size: 25px;
-    background-color: #1ca152;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    padding: 5px;
-    border-radius: 8%;
-    cursor: pointer;
-  }
-  .main-image {
-    width: 100%;
-    padding-bottom: 50px;
-  }
-  .initial {
-    text-decoration: none;
-    color: white;
-    font-family: "Roboto", "sans serif";
-    font-size: 95px;
-    font-weight: 700;
-    border-color: white;
-    padding: 30px;
-    line-height: 95px;
-    cursor: pointer;
-  }
-  .scroll-page {
-    flex-direction: column;
-    display: flex;
-    width: calc(100% - 200px);
-  }
-  .name {
-    background-color: transparent;
-    border-color: white;
-    padding: 30px;
-    width: 200px;
-    cursor: pointer;
-  }
-}/*# sourceMappingURL=style.css.map */
+.caption-text-scs {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-down {
+  position: absolute;
+  top: 200%;
+  left: 20%;
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  background-color: #1ca152;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 5px;
+  border-radius: 8%;
+  cursor: pointer;
+}
+
+.main-image {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.initial {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", "sans serif";
+  font-size: 95px;
+  font-weight: 700;
+  border-color: white;
+  padding: 30px;
+  line-height: 95px;
+  cursor: pointer;
+}
+
+.scroll-page {
+  flex-direction: column;
+  display: flex;
+  width: calc(100% - 200px);
+}
+
+.name {
+  background-color: transparent;
+  border-color: white;
+  padding: 30px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/* Large devices ? min-width: 889px and up*//*# sourceMappingURL=style.css.map */

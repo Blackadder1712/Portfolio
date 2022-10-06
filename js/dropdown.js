@@ -16,6 +16,21 @@
                 }
             });
 
+
+        $(".netbtn").click(function()
+        {
+            $(".netmatters-content").slideToggle();
+            $(".netmatters-content")
+        });
+
+        $('.netmatters-content a').click(function () {
+            $(this).siblings().find('.netmatters-content').slideUp();
+            $(this).find('.netmatters-content').slideToggle();
+        });
+
+
+ 
+
             
     
 

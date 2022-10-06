@@ -7,7 +7,8 @@ let nameRegex = /[^0-9]/;
 let lastNameInput = document.getElementById('LastName');
 let LastnameRegex = /[^0-9]/;
 let messageInput = document.getElementById('Subject');
-let messageRegex = /^[a-zA-Z0-9-]+$/;
+let messageRegex = /"(?:^.*\\s([^:,\\s]+):\\s+([^:\\n]+)|\\G(?!\\A))\\s*at\\s+(\\S+)\\((\\w+\\.\\w+):(\\d+)\\)$/;
+let errorMessage = "Please input First Name" 
 
  //Check if first name field contains only alphabetical characters 
 $(".submit").click(function()
@@ -17,15 +18,24 @@ $(".submit").click(function()
    
               {
                 $("#Name").css({"border": "3px solid red"})
+                {
+                  alert("Please enter first name")
+                };
+
+                
               }
               else 
               {
                 $("#Name").css({"border": "3px solid #7FFF94"})
+             
               };
             
           if(!lastNameInput.value.match(LastnameRegex))
               {
                 $("#LastName").css({"border": "3px solid red"})
+                {
+                  alert("Please enter last name")
+                }
               }
               else
               {
@@ -36,6 +46,9 @@ $(".submit").click(function()
           if (!emailInput.value.match(emailRegex) ) 
               {
                 $("#email").css({"border": "3px solid red"})
+                {
+                  alert("Please enter valid email address")
+                }
               }
               else
               {
@@ -46,6 +59,9 @@ $(".submit").click(function()
           if(!messageInput.value.match(messageRegex))
               {
                 $("#Subject").css({"border": "3px solid red"})
+                {
+                  alert("Please enter valid message")
+                }
               }
               else
               {

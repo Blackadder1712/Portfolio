@@ -2,6 +2,15 @@
 /* Medium devices ? min-width: 768px and up*/
 @media screen and (min-width: 768px) {
 
+  .netmatters
+  {
+   width:50%;
+   margin-left: 14%;
+   
+  
+    
+  }
+
   .submit
   {
     margin-left: 35% ;
@@ -71,9 +80,12 @@ display:none
 }
 
 
-  .main-pages .name
+.main-pages button
   {
     background-color: $matrix-green;
+    border: none;
+  
+   
   }
 
  .main-pages
@@ -93,7 +105,7 @@ display:none
  }
 
    
-  .nav-link, .nav-link-1, .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6
+ .pages li
   {
 
     display: flex;
@@ -107,7 +119,7 @@ display:none
      border-color: white;
      justify-content: space-between;
      padding:15px;
-    margin-left: -20px;
+    margin-left: -15px;
      
     
      cursor: pointer
@@ -116,7 +128,7 @@ display:none
   }
 
   
-  .initial 
+  .main-pages button
   {
    text-decoration: none;
    color:white;
@@ -126,7 +138,8 @@ display:none
    border-color: white;
    padding:30px;
    line-height:95px;
-   cursor: pointer
+   cursor: pointer;
+   padding-left:68px
   }
 
   .name
@@ -134,7 +147,7 @@ display:none
    background-color: transparent;
    border-color: white;
    padding:30px;
-   
+   text-decoration: none;
    width:200px;
    cursor: pointer;
   }
@@ -145,8 +158,15 @@ display:none
     margin-left:200px;
     z-index: 1;
     margin-top:0;
+    align-items: center;
  
 
+  }
+  .nav-link-2, .nav-link-3, .nav-link-4, .nav-link-5, .nav-link-6
+  {
+    text-decoration: none;
+    color: white;
+    padding-left:15%;
   }
  
  
@@ -223,6 +243,7 @@ display:none
   
 
  }
+
 
 
 
@@ -305,10 +326,8 @@ display:none
   
 
 
-/*  Medium devices ? min-width: 768px and up*/
 
-@media only screen and (min-width: 768px) 
-{
+
 
 
   .caption-text-scs
@@ -431,6 +450,11 @@ display:none
       cursor: pointer;
      }
 
+
+/* Large devices ? min-width: 889px and up*/
+@media screen and (min-width: 889px) 
+{
+  
 }
     
 
