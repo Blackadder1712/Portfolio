@@ -65,17 +65,19 @@ span {
 }
 
 .javabtn {
-  background-color: black;
-  color: black;
-  padding: 16px;
   border: none;
-  text-align: center;
-  margin-top: 0px;
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Roboto", "sans serif";
-  max-width: 90%;
-  align-self: center;
+  margin-right: 10.5%;
+  margin-left: 10%;
+  margin-top: 20px;
+  max-width: 70%;
+}
+
+.htmlbtn {
+  border: none;
+  margin-right: 10.5%;
+  margin-left: 10%;
+  margin-top: 20px;
+  max-width: 70%;
 }
 
 #java {
@@ -622,6 +624,20 @@ h2 {
 
 /* Medium devices ? min-width: 768px and up*/
 @media screen and (min-width: 768px) {
+  .javabtn {
+    border: none;
+    margin-right: 10.5%;
+    margin-left: 10%;
+    margin-top: 20px;
+    max-width: 40%;
+  }
+  .htmlbtn {
+    border: none;
+    margin-right: 10.5%;
+    margin-left: 10%;
+    margin-top: 20px;
+    max-width: 40%;
+  }
   .coding-title {
     font-family: "Roboto", "sans serif";
     color: white;
