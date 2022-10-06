@@ -54,6 +54,20 @@ $(".java-caption").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.
 
 $(document).ready(function()
 {
+$(".html-caption").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);
+});
+
+$(document).ready(function()
+{
+$(".html").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);
+});
+
+
+
+
+
+$(document).ready(function()
+{
 $(".code-img").css({opacity:0.0, visibility:"visible"}).animate({opacity: 1.0},1900);
 });
 

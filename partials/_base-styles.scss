@@ -31,6 +31,26 @@
   left:0;
 }
 
+.htmlbtn
+  {
+    background-color:$matrix-green ;
+    color:black;
+    padding: 16px;
+    border:none;
+    text-align: center;
+   
+    margin-top: 0px;
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+   
+    max-width: 90%;
+    align-self: center;
+  
+ 
+  
+}
+
   .netbtn
   {
     background-color:$matrix-green ;
@@ -77,14 +97,14 @@
   margin-left: 10%;
   margin-top: 20px;
   max-width: 70%;
- 
- 
-  
- 
-
-
-
 }
+ 
+
+ 
+
+
+
+
 
 .htmlbtn
 {
@@ -169,6 +189,36 @@ z-index: 4;
   font-weight: $text-font-weight;
   font-family: $main-font;
 }
+.html-content
+{
+  display:none;
+ 
+  background-color: $matrix-green;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+  color:black;
+  padding: 16px;
+  border:none;
+  margin-top: 0px;
+  font-size: $text-font-size;
+  font-weight: $title-font-weight;
+  font-family: $main-font;
+  margin-left:1.75%;
+  margin-top:0%;
+  max-width: 90%;
+  align-self: center;
+ 
+}
+
+.html-img
+{
+  margin:15%;
+  max-width:300%;
+}
+
+
 
 .netmatters-content
 {
@@ -474,6 +524,33 @@ font-weight: $text-font-weight;
 visibility: hidden;
 letter-spacing: .4px;
 }
+
+.html-caption
+{
+font-family: $main-font;
+color:white;
+display: block;
+text-align: center;
+line-height: 1.4;
+font-size: $title-font-size;
+font-weight: $text-font-weight;
+visibility: hidden;
+letter-spacing: .4px;
+}
+
+.java-caption
+{
+font-family: $main-font;
+color:white;
+display: block;
+text-align: center;
+line-height: 1.4;
+font-size: $title-font-size;
+font-weight: $text-font-weight;
+visibility: hidden;
+letter-spacing: .4px;
+}
+
 
 
 

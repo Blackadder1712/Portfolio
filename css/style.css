@@ -37,6 +37,20 @@ span {
   left: 0;
 }
 
+.htmlbtn {
+  background-color: #1ca152;
+  color: black;
+  padding: 16px;
+  border: none;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", "sans serif";
+  max-width: 90%;
+  align-self: center;
+}
+
 .netbtn {
   background-color: #1ca152;
   color: black;
@@ -134,6 +148,30 @@ span {
   font-size: 30px;
   font-weight: 400;
   font-family: "Roboto", "sans serif";
+}
+
+.html-content {
+  display: none;
+  background-color: #1ca152;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  color: black;
+  padding: 16px;
+  border: none;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", "sans serif";
+  margin-left: 1.75%;
+  margin-top: 0%;
+  max-width: 90%;
+  align-self: center;
+}
+
+.html-img {
+  margin: 15%;
+  max-width: 300%;
 }
 
 .netmatters-content {
@@ -333,6 +371,30 @@ body {
 }
 
 .netmatters-caption {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 45px;
+  font-weight: 400;
+  visibility: hidden;
+  letter-spacing: 0.4px;
+}
+
+.html-caption {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 45px;
+  font-weight: 400;
+  visibility: hidden;
+  letter-spacing: 0.4px;
+}
+
+.java-caption {
   font-family: "Roboto", "sans serif";
   color: white;
   display: block;
