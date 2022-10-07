@@ -7,7 +7,7 @@ let nameRegex = /[^0-9]/;
 let lastNameInput = document.getElementById('LastName');
 let LastnameRegex = /[^0-9]/;
 let messageInput = document.getElementById('Subject');
-let messageRegex = /"(?:^.*\\s([^:,\\s]+):\\s+([^:\\n]+)|\\G(?!\\A))\\s*at\\s+(\\S+)\\((\\w+\\.\\w+):(\\d+)\\)$/;
+let messageRegex = /[^.]/;
 let errorMessage = "Please input First Name" 
 
  //Check if first name field contains only alphabetical characters 
