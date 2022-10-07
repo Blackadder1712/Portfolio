@@ -6,6 +6,7 @@
 {
  
   display:block;
+  overflow: hidden;
 
 
 }
@@ -191,6 +192,47 @@ z-index: 4;
   font-weight: $text-font-weight;
   font-family: $main-font;
 }
+
+.socials
+{
+  display: flex;
+  flex-direction: row;
+}
+.linkbtn
+{
+  margin-top:-26px;
+ max-width:40%;
+ margin-right:10%;
+ margin-left:2%;
+ background-color: transparent;
+ 
+ 
+}
+
+.gitbtn
+{
+  margin-top:-26px;
+ max-width:33%;
+ max-height:18%;
+ color:black;
+ border-style: solid;
+ border-color:white ;
+ border-radius: 100%;
+ border-width:5px;
+
+}
+.gitbtn:hover
+{
+  border-color: white;
+  border-radius: 100%;
+  background-color: lightgreen;
+}
+.linkbtn:hover
+{
+  background-color:white;
+  border-radius: 100%;
+  background-color: lightgreen;
+}
 .html-content
 {
   display:none;
@@ -336,6 +378,7 @@ z-index: 4;
 .sidebar 
 {
   display:none;
+  z-index: 100;
 }
 
 

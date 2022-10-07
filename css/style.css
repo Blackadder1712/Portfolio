@@ -17,6 +17,7 @@ span {
 }
 .Main-page {
   display: block;
+  overflow: hidden;
 }
 
 .dropbtn {
@@ -150,6 +151,42 @@ span {
   font-family: "Roboto", "sans serif";
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.linkbtn {
+  margin-top: -26px;
+  max-width: 40%;
+  margin-right: 10%;
+  margin-left: 2%;
+  background-color: transparent;
+}
+
+.gitbtn {
+  margin-top: -26px;
+  max-width: 33%;
+  max-height: 18%;
+  color: black;
+  border-style: solid;
+  border-color: white;
+  border-radius: 100%;
+  border-width: 5px;
+}
+
+.gitbtn:hover {
+  border-color: white;
+  border-radius: 100%;
+  background-color: lightgreen;
+}
+
+.linkbtn:hover {
+  background-color: white;
+  border-radius: 100%;
+  background-color: lightgreen;
+}
+
 .html-content {
   display: none;
   background-color: #1ca152;
@@ -258,6 +295,7 @@ span {
 
 .sidebar {
   display: none;
+  z-index: 100;
 }
 
 body {
