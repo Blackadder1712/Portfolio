@@ -1,6 +1,28 @@
 
+/* Small devices ? min-width: 576px and up (small screen/laptops)*/
+@media screen and (min-width: 576px) 
+{
+    
+  .caption-text-code
+  {
+  display:flex;
+  padding-top: 1300px ;
+  position:relative;
+  width: 100%;
+  height: 100%;
+ margin-right: 10px;
+  margin-left:10px;
+  
+}
+
+}
 /* Medium devices ? min-width: 768px and up (small screen/laptops)*/
 @media screen and (min-width: 768px) {
+
+  .caption-text-code
+  {
+    padding-top: 1800px;
+  }
 
 
   
@@ -143,16 +165,9 @@ margin-right:30px;
 margin-top:800px
 }
   
-  .caption-text-code
-  { 
+  
+   
     
-    position:relative;
-    width: 100%;
-    height: 100%;
-    padding-left:10px;
-    margin:10px;
-    
-  }
 
   .caption-text-scs
 { 
@@ -613,10 +628,43 @@ margin-top:800px
       cursor: pointer;
      }
 
+     
+
+/* Large devices ? min-width: 992px and up(small Desktop)*/
+@media screen and (min-width: 992px) {
+
+.caption-text-code
+{
+  padding-top:1400px;
+}
+
+.netmatters
+{
+  padding-top: 80px;
+}
+
+.caption-text-scs
+{
+  padding-top:300px
+}
+}
 
 /* Large devices ? min-width: 1025px and up(small Desktop)*/
 @media screen and (min-width: 1025px) 
 {
+
+  .caption-text-code
+{ 
+ 
+  display:flex;
+  padding-top: 1300px ;
+  position:relative;
+  width: 100%;
+  height: 100%;
+ margin-right: 10px;
+  margin-left:10px;
+  
+}
   .netmatters
   {
     display:inline-block;

@@ -52,6 +52,48 @@
   
 }
 
+.Characterbtn
+  {
+    background-color:$matrix-green ;
+    color:black;
+    padding: 16px;
+    border:none;
+    text-align: center;
+   
+    margin-top: 0px;
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+   
+    max-width: 90%;
+    align-self: center;
+  
+ 
+  
+}
+
+.enemybtn
+  {
+    background-color:$matrix-green ;
+    color:black;
+    padding: 16px;
+    border:none;
+    text-align: center;
+   
+    margin-top: 10px;
+    margin-left:6%;
+   
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+   
+    width: 60%;
+    align-self: center;
+  
+ 
+  
+}
+
   .netbtn
   {
     background-color:$matrix-green ;
@@ -944,8 +986,24 @@ letter-spacing: .4px;
   letter-spacing: .4px;
 }
 
+.caption-text-code
+{ 
+  display:flex;
+  padding-top: 2200px ;
+  position:relative;
+  width: 100%;
+  height: 100%;
+ margin-right: 10px;
+  margin-left:10px;
+  
+}
 
-
+.flex-container-html-css
+{
+  display: flex;
+  flex-direction: column;
+  padding:15%
+}
 //Email form
 
 .contact
@@ -959,11 +1017,23 @@ letter-spacing: .4px;
   margin: 20px;
 }
 
+.code-caption
+{
+   font-size: 40px;
+}
 
+.code-caption-c
+{
+  padding-top:40px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
 
-
-
-
+.game
+{
+  padding:20px;
+  margin-top:20px;
+}
 
 
 
