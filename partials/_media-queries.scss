@@ -24,27 +24,11 @@
     padding-top: 1800px;
   }
 
-
-  
-
-  .javabtn
+.javabtn:hover
 {
-
-
- 
-  border:none;
-  margin-right:10.5%;
-  margin-left: 10%;
-  margin-top: 20px;
-  max-width: 40%;
- 
- 
-  
- 
-
-
-
+  border-color: white;
 }
+  
 
 .htmlbtn
 {
@@ -116,6 +100,8 @@ margin-top:800px
   
   
 }
+
+
 
   .submit
   {
@@ -643,6 +629,11 @@ margin-top:800px
   padding-top: 80px;
 }
 
+.netbtn
+{
+  margin-left: 10%;
+  margin-right:10%;
+}
 .caption-text-scs
 {
   padding-top:300px

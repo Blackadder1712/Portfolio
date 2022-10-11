@@ -52,6 +52,7 @@
   
 }
 
+
 .Characterbtn
   {
     background-color:$matrix-green ;
@@ -107,7 +108,7 @@
     font-weight: $title-font-weight;
     font-family: $main-font;
    
-    max-width: 90%;
+    max-width: 80%;
     align-self: center;
   
  
@@ -130,42 +131,53 @@
   
 }
 
+
+ 
+
+ 
+
+
+
+
+
 .javabtn
-{
-
-
- 
-  border:none;
-  margin-right:10.5%;
-  margin-left: 10%;
-  margin-top: 20px;
-  max-width: 70%;
-}
- 
-
- 
-
-
-
-
-
-.htmlbtn
-{
-
-
- 
-  border:none;
-  margin-right:10.5%;
-  margin-left: 10%;
-  margin-top: 20px;
-  max-width: 70%;
- 
- 
+  {
+    background-color:$matrix-green ;
+    color:black;
+    padding: 16px;
+    border:none;
+    text-align: center;
+   
+    margin-top: 0px;
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+   
+    max-width: 90%;
+    align-self: center;
   
  
+  
+}
 
+.javabtn:hover
+{
+  background-color: white;
+}
 
+.htmlbtn:hover
+{
+  background-color:white;
+}
 
+.Characterbtn:hover
+{
+  background-color: white;
+}
+
+.enemybtn:hover
+{
+  background-color: white;
 }
 
 #java
@@ -239,34 +251,44 @@ z-index: 4;
 {
   display: flex;
   flex-direction: row;
-  margin-left:30px
+  margin-left:25%;
+  padding-bottom: 2%;
+
 }
 
 .socials-small
 {
   display: flex;
   flex-direction: row;
-  margin-left:30%;
+  
   padding-bottom: 2%;
+  padding-left:30%;
+
 }
-.linkbtn
+.socials .linkbtn
 {
-  margin-top:-26px;
- max-width:40%;
- margin-right:10%;
- margin-left:2%;
- background-color: transparent;
+ 
+ 
+  height:45px;
+  width:55px;
+  margin-left:-30px;
+  margin-right:10px;
+
+  background-color: transparent;
+  
  
  
  
 }
 
+
+
 .linkbtn-small
 {
-height:20%;
- width:20%;
+height:50px;
+ width:50px;
  margin-right:10%;
- margin-left:2%;
+ margin-left:-100%;
  background-color: transparent;
  
  
@@ -280,16 +302,16 @@ height:20%;
  
 }
 
-.gitbtn
+.socials .gitbtn
 {
-  margin-top:-26px;
- max-width:33%;
- max-height:18%;
+  height:40px;
+ width:45px;
  color:black;
  border-style: solid;
  border-color:white ;
  border-radius: 100%;
  border-width:5px;
+margin-left:25px;
 
 }
 
@@ -297,8 +319,8 @@ height:20%;
 .gitbtn-small
 {
   
- height:17%;
- width:17%;
+ height:43px;
+ width:43px;
  color:black;
  border-style: solid;
  border-color:white ;
@@ -722,7 +744,36 @@ color: white;
   border-color: black;
 }
 
+.contact-2
+{
+  display: grid;
+  font-family: $main-font; 
+  background-color:$background-color;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  font-weight: lighter;
+  margin: 100px;
+  position: left;
+  border-color: black;
+}
+
+
+
 .contact-form h1
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+
+  letter-spacing: .4px;
+
+}
+
+.contact-form-2 h1
 {
   font-family: $main-font;
     color:white;
@@ -748,6 +799,19 @@ color: white;
   letter-spacing: .4px;
 }
 
+
+.contact-form-2 h3
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size:$text-font-size;
+  font-weight:$text-font-weight;
+  letter-spacing: .4px;
+}
+
 .contact-form h2
 {
   font-family: $main-font;
@@ -760,6 +824,17 @@ color: white;
   letter-spacing: .4px;
 }
 
+.contact-form-2 h2
+{
+  font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size:20px;
+  font-weight:$text-font-weight;
+  letter-spacing: .4px;
+}
 .mb-3
 {
   display: grid;

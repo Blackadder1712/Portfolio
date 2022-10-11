@@ -91,7 +91,7 @@ span {
   font-size: 30px;
   font-weight: 700;
   font-family: "Roboto", "sans serif";
-  max-width: 90%;
+  max-width: 80%;
   align-self: center;
 }
 
@@ -109,19 +109,33 @@ span {
 }
 
 .javabtn {
+  background-color: #1ca152;
+  color: black;
+  padding: 16px;
   border: none;
-  margin-right: 10.5%;
-  margin-left: 10%;
-  margin-top: 20px;
-  max-width: 70%;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", "sans serif";
+  max-width: 90%;
+  align-self: center;
 }
 
-.htmlbtn {
-  border: none;
-  margin-right: 10.5%;
-  margin-left: 10%;
-  margin-top: 20px;
-  max-width: 70%;
+.javabtn:hover {
+  background-color: white;
+}
+
+.htmlbtn:hover {
+  background-color: white;
+}
+
+.Characterbtn:hover {
+  background-color: white;
+}
+
+.enemybtn:hover {
+  background-color: white;
 }
 
 #java {
@@ -183,29 +197,30 @@ span {
 .socials {
   display: flex;
   flex-direction: row;
-  margin-left: 30px;
+  margin-left: 25%;
+  padding-bottom: 2%;
 }
 
 .socials-small {
   display: flex;
   flex-direction: row;
-  margin-left: 30%;
   padding-bottom: 2%;
+  padding-left: 30%;
 }
 
-.linkbtn {
-  margin-top: -26px;
-  max-width: 40%;
-  margin-right: 10%;
-  margin-left: 2%;
+.socials .linkbtn {
+  height: 45px;
+  width: 55px;
+  margin-left: -30px;
+  margin-right: 10px;
   background-color: transparent;
 }
 
 .linkbtn-small {
-  height: 20%;
-  width: 20%;
+  height: 50px;
+  width: 50px;
   margin-right: 10%;
-  margin-left: 2%;
+  margin-left: -100%;
   background-color: transparent;
 }
 
@@ -214,20 +229,20 @@ span {
   background-color: lightgreen;
 }
 
-.gitbtn {
-  margin-top: -26px;
-  max-width: 33%;
-  max-height: 18%;
+.socials .gitbtn {
+  height: 40px;
+  width: 45px;
   color: black;
   border-style: solid;
   border-color: white;
   border-radius: 100%;
   border-width: 5px;
+  margin-left: 25px;
 }
 
 .gitbtn-small {
-  height: 17%;
-  width: 17%;
+  height: 43px;
+  width: 43px;
   color: black;
   border-style: solid;
   border-color: white;
@@ -535,7 +550,30 @@ fieldset {
   border-color: black;
 }
 
+.contact-2 {
+  display: grid;
+  font-family: "Roboto", "sans serif";
+  background-color: black;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  font-weight: lighter;
+  margin: 100px;
+  position: left;
+  border-color: black;
+}
+
 .contact-form h1 {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.contact-form-2 h1 {
   font-family: "Roboto", "sans serif";
   color: white;
   display: block;
@@ -557,7 +595,29 @@ fieldset {
   letter-spacing: 0.4px;
 }
 
+.contact-form-2 h3 {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
 .contact-form h2 {
+  font-family: "Roboto", "sans serif";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.contact-form-2 h2 {
   font-family: "Roboto", "sans serif";
   color: white;
   display: block;
@@ -837,12 +897,8 @@ h2 {
   .caption-text-code {
     padding-top: 1800px;
   }
-  .javabtn {
-    border: none;
-    margin-right: 10.5%;
-    margin-left: 10%;
-    margin-top: 20px;
-    max-width: 40%;
+  .javabtn:hover {
+    border-color: white;
   }
   .htmlbtn {
     border: none;
@@ -1140,6 +1196,10 @@ h2 {
   }
   .netmatters {
     padding-top: 80px;
+  }
+  .netbtn {
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .caption-text-scs {
     padding-top: 300px;
