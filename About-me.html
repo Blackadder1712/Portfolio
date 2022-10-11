@@ -25,193 +25,230 @@
        
    
                             
-       <header class="flex-container">
+      <header class="flex-container">
 
         <!--Drop down menu for smaller VP  -->
 
-        <nav>
-          <div class="dropdown">
-            <button class="dropbtn">Navigation Menu</button>
-            <div class="dropdown-content">
-              <a href="index.html">Home</a>
-              <a href="About-me.html">About Me</a>
-             
-              <a href="Portfolio-me.html">Portfolio</a>
-              <a href="coding.html">Coding Examples</a>
-              <a href="scs.html">SCS Scheme</a>
-              <a href="contact.html">Contact Me</a>
-              <div class="socials-small">
-                <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-                  <img src="img/linkdn.png"  alt="LinkedIn logo" class="linkbtn-small">
-                </a>
-                <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-                  <img src="img/git.png" alt="Github logo" class="gitbtn-small">
-                </a>
-        
-               
+                                                <nav>
+                                                          <div class="dropdown">
+                                                                  <button class="dropbtn">Navigation Menu</button>
+                                                                  <div class="dropdown-content">
+                                                                    <a href="index.html">Home</a>
+                                                                    <a href="About-me.html">About Me</a>
+                                                                  
+                                                                    <a href="Portfolio-me.html">Portfolio</a>
+                                                                    <a href="coding.html">Coding Examples</a>
+                                                                    <a href="scs.html">SCS Scheme</a>
+                                                                    <a href="contact.html">Contact Me</a>
+                                                                    <div class="socials-small">
+                                                                      <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+                                                                        <img src="img/linkdn.png"  alt="LinkedIn logo" class="linkbtn-small">
+                                                                      </a>
+                                                                      <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+                                                                        <img src="img/git.png" alt="Github logo" class="gitbtn-small">
+                                                                      </a>
+                                                                    </div>
+                                                              
+                                                                    
 
-              </div>
-          </div>
-          </div>
-
-
-
-
-        </nav>
-        
-            
+                                                                  </div>
+                                                          </div>
+                                                        
 
 
-        
-            
-   
-       
-             
-         
-    
-        <div class="Main-page">
-                
-          
-      
-                 
-      
-          <!--Main image and caption-->
 
-          <div class="main-image" style="
-                    
-                    display:flex;
-                    place-items: center;
-                    ">
-                    <div class="page-image">
 
-                     <!--Background Animation-->                           
-                     
-                      <script>
-                      var tileSize = 20;
-                      // Speed of characters fading
-                      var fadeFactor = 0.05;
-                      
-                      var canvas;
-                      var ctx;
-                      
-                      var columns = [];
-                      var maxStackHeight;
-                      
-                      function init()
-                      { //Call needed elements
-                          canvas = document.getElementById( 'canvas' );
-                          ctx = canvas.getContext( '2d' );
-                          
-                          initMatrix();
-                      
-                          // start the main loop
-                          tick();
-                      }
-                      
-                      function initMatrix()
-                      {
-                          maxStackHeight = Math.ceil(canvas.height/tileSize);
-                      
-                          // Create columns for characters to go down
-                          for ( let i = 0 ; i < canvas.width/tileSize ; ++i )
-                          {
-                              var column = {};
-                              // save the x position of the column
-                              column.x = i*tileSize;
-                              // create a random stack height for the column
-                              column.stackHeight = 10+Math.random()*maxStackHeight;
-                              // add a counter to count the stack height
-                              column.stackCounter = 0;
-                              // add the column to the list
-                              columns.push( column );
-                          }
-                      }
-                      
-                      function draw()
-                      {
-                          // Fade in using a transparent black square
-                          ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
-                          ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
-                      
-                          //fonts
-                          ctx.font = (tileSize-2)+"px monospace";
-                          ctx.fillStyle = "rgb( 0 , 255 , 0 )";
-                          for ( let i = 0 ; i < columns.length ; ++i )
-                          {
-                              // Random character picker
-                              var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
-                              ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
-                      
-                              // Random column length
-                              if ( ++columns[i].stackCounter >= columns[i].stackHeight )
-                              {
-                                  columns[i].stackHeight = 10+Math.random()*maxStackHeight;
-                                  columns[i].stackCounter = 0;
-                              }
-                          }
-                      }
-                      
-                      // MAIN LOOP
-                      function tick() 
-                      {    
-                          draw();
-                          setTimeout( tick , 50 );
-                      }
-                      </script>
-                 
-                     
-                      <canvas id="canvas" width="1280" height="720" style="display:block; margin:0 auto;"></canvas>
-                             
-                    </div>
-                    <div style="
-                                position:absolute;
-                              
-                                ">
+                                                </nav>
+                                                  
+                                                      
 
-   
-                                   
-                                             
-                                               
-   
-                                         
-                               
-   
-                                        <div class="caption-text-about">
 
-                                                                        <!--Burger menu-->
-                                  
-                                                                    <!--Captions/Main page text-->
-                                                                      <div class="img-title">Amy Vincent</div>
-                            
-                                                                        
-                                                                      <div class="img-text-me">Ipswich, Suffolk <br>
-                                                                      United Kingdom </div> <br>
-
-                                                                      
-                                                                      
-                                                    <h1> Professional Biography</h1>
-                                                    <h2> My interest and love of Digital Technology lead to me attending University Campus <br> Suffolk to study BA Computer Games Design, where i learnt to use 
-                                                    Unity, Unreal Engine and Flash.<br> Though life circumstances pushed me down a different path ,<br> I still have a strong passion for a job in the digital industry </h2>
-                                                    <h1>Personal Biography</h1><br>
-                                                    <h2>Digital technology is the future and for the last 10 years<br> ive been fascinated with coding and digital technology,<br>
-                                                    how the possibilities are endless, whether Ive been using it to build a webpage,<br> code a game or even using it in my graphic animations.<br>
-                                                    I see it as an amazing and vital medium in art and business.  
-                                                    </h2>
-                                               
+                                                  
+                                                      
                                             
-                            
-                                         
-   
+                                                
+                                                      
+                                                  
+                                              
+                                                  <div class="Main-page">
+                                                          
+                                                    
+                                                
+                                                          
+                                                
+                                                    <!--Main image and caption-->
+
+                                                    <div class="main-image" style="
+                                                              
+                                                              display:flex;
+                                                              place-items: center;
+                                                              ">
+                                                              <div class="page-image">
+
+                                                                        <!--Background Animation-->                           
+                                                                        
+                                                                          <script>
+                                                                          var tileSize = 20;
+                                                                          // Speed of characters fading
+                                                                          var fadeFactor = 0.05;
+                                                                          
+                                                                          var canvas;
+                                                                          var ctx;
+                                                                          
+                                                                          var columns = [];
+                                                                          var maxStackHeight;
+                                                                          
+                                                                          function init()
+                                                                          { //Call needed elements
+                                                                              canvas = document.getElementById( 'canvas' );
+                                                                              ctx = canvas.getContext( '2d' );
+                                                                              
+                                                                              initMatrix();
+                                                                          
+                                                                              // start the main loop
+                                                                              tick();
+                                                                          }
+                                                                          
+                                                                          function initMatrix()
+                                                                          {
+                                                                              maxStackHeight = Math.ceil(canvas.height/tileSize);
+                                                                          
+                                                                              // Create columns for characters to go down
+                                                                              for ( let i = 0 ; i < canvas.width/tileSize ; ++i )
+                                                                              {
+                                                                                  var column = {};
+                                                                                  // save the x position of the column
+                                                                                  column.x = i*tileSize;
+                                                                                  // create a random stack height for the column
+                                                                                  column.stackHeight = 10+Math.random()*maxStackHeight;
+                                                                                  // add a counter to count the stack height
+                                                                                  column.stackCounter = 0;
+                                                                                  // add the column to the list
+                                                                                  columns.push( column );
+                                                                              }
+                                                                          }
+                                                                          
+                                                                          function draw()
+                                                                          {
+                                                                              // Fade in using a transparent black square
+                                                                              ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
+                                                                              ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
+                                                                          
+                                                                              //fonts
+                                                                              ctx.font = (tileSize-2)+"px monospace";
+                                                                              ctx.fillStyle = "rgb( 0 , 255 , 0 )";
+                                                                              for ( let i = 0 ; i < columns.length ; ++i )
+                                                                              {
+                                                                                  // Random character picker
+                                                                                  var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
+                                                                                  ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
+                                                                          
+                                                                                  // Random column length
+                                                                                  if ( ++columns[i].stackCounter >= columns[i].stackHeight )
+                                                                                  {
+                                                                                      columns[i].stackHeight = 10+Math.random()*maxStackHeight;
+                                                                                      columns[i].stackCounter = 0;
+                                                                                  }
+                                                                              }
+                                                                          }
+                                                                          
+                                                                          // MAIN LOOP
+                                                                          function tick() 
+                                                                          {    
+                                                                              draw();
+                                                                              setTimeout( tick , 50 );
+                                                                          }
+                                                                          </script>
+                                                                    
+                                                                        
+                                                                          <canvas id="canvas" width="1280" height="720" style="display:block; margin:0 auto;"></canvas>
+                                                                                
+                                                              </div>
+                                                                <div style="
+                                                                          position:absolute;
+                                                                        
+                                                                          ">
+                                                                                                                                                      <div class="caption-text-about">
+
+                                                                                                                                                                <!--Burger menu-->
+                                                                                                                          
+                                                                                                                                                            <!--Captions/Main page text-->
+                                                                                                                                                              <div class="img-title">Amy Vincent</div>
+                      
+                                                                                                                                                                
+                                                                                                                                                              <div class="img-text-me">Ipswich, Suffolk <br>
+                                                                                                                                                              United Kingdom </div> <br>
+                                                                                                                                                              
+                      
+                                                                                                                                                              
+                                                                                                                                                              
+                                                                                                                                                            <h1> Professional Biography</h1>
+                                                                                                                                                            <h2> My interest and love of Digital Technology lead to me attending University Campus <br> Suffolk to study BA Computer Games Design, where i learnt to use 
+                                                                                                                                                            Unity, Unreal Engine and Flash.<br> Though life circumstances pushed me down a different path ,<br> I still have a strong passion for a job in the digital industry </h2>
+                                                                                                                                                            <h1>Personal Biography</h1><br>
+                                                                                                                                                            <h2>Digital technology is the future and for the last 10 years<br> ive been fascinated with coding and digital technology,<br>
+                                                                                                                                                            how the possibilities are endless, whether Ive been using it to build a webpage,<br> code a game or even using it in my graphic animations.<br>
+                                                                                                                                                            I see it as an amazing and vital medium in art and business.</h2> 
+                                                                          </div>                                                                      </div>                                                                                                                       
+                                                                                                                        
+                                                                          
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        </div>
+                                                        
+                                                                                                  
+                                                                                              
+
+                                                  </div>
+
+                                              
 
 
-                                         </div>
-                                           
-   
-                                           
-                                         </div> </div>   
+
+                        
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                                  
+                                            
+                                                                            
+                                                                                      
+                                                                                        
+                                            
+                                                                                  
+                                                                        
+                                            
+                                                                      
+                                            
+                                                                            
+                                                                                      
+                                                                                        
+                                            
+                                                                                  
+                                                                        
+                                            
+                                                                                
+
+                                                                                        
+                                                                                      
+                                                                      
+                                                                                  
+                                            
+
+
+                                                                            
+                                                                                    
+                                            
+                                                                                    
+                                                  
+                                                                                  
                                          
-                                         
-                         </header>
+      </header>
 
                    
                          
@@ -227,12 +264,11 @@
                                  
    
    
-             </header>
                            
                                
                                      
          <!--sidebar for larger VP-->                             
-         <div class="sidebar">
+        <div class="sidebar">
           <nav id="myPages" class="main-pages">
             <button onclick="window.location.href = 'index.html';">A</button>
             <ul class="pages">
@@ -261,15 +297,15 @@
         
                
     
-              </div>
+              
     
-             </div>
+            </div>
           </nav> 
     
     
     
     
-        </div>
+        
        
     
     
@@ -282,12 +318,12 @@
                                          
                  
                
-       
+        </div>
          <!--JS for page fadeIns-->  
         <script src="js/animations.js"></script> 
         <!--JS for Dropdown menu-->
         <script src="js/dropdown.js"></script>
-     </body>
+  </body>
       
        </html>
               

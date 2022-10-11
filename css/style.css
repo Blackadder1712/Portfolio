@@ -634,10 +634,6 @@ fieldset {
   background-color: black;
 }
 
-.mb-label {
-  visibility: inherit;
-}
-
 .form-label {
   color: white;
   font-family: "Roboto", "sans serif";
