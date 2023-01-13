@@ -1,392 +1,420 @@
 <!DOCTYPE html>
-<html lang= "en">
-  <head>
-    <script src="https://kit.fontawesome.com/271f4647db.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<html lang="en">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
-    <title>Amy Vincent-Web Developer</title>
-    <link rel="icon" type="img/x-icon" href="/img/favicon.png">
-    
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet">
-   
+<head>
+  <script src="https://kit.fontawesome.com/271f4647db.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Amy Vincent-Web Developer</title>
+  <link rel="icon" type="img/x-icon" href="/img/favicon.png">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
 
 
-  <body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">  
+</head>
 
-       
-   
-                             
-          <header class="flex-container">
 
-                //Dropdown Menu for smaller screens
-              <nav>
-                     <div class="dropdown">
-                              <button class="dropbtn">Navigation Menu</button>
-                                  <div class="dropdown-content">
-                                    <a href="index.html">Home</a>
-                                    <a href="About-me.html">About Me</a>
-                                  
-                                    <a href="Portfolio-me.html">Portfolio</a>
-                                    <a href="coding.html">Coding Examples</a>
-                                    <a href="scs.html">SCS Scheme</a>
-                                    <a href="contact.html">Contact Me</a>
-                                    <div class="socials-small">
-                                      <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-                                        <img src="img/linkdn.png"  alt="LinkedIn logo" class="linkbtn-small">
-                                      </a>
-                                      <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-                                        <img src="img/git.png" alt="Github logo" class="gitbtn-small">
-                                      </a>
-                                    </div>
-                              
-                                    
-
-                                  </div>
-                            
-                    </div>
+<body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">
 
 
 
 
-              </nav>
-                
-                    
-    
-    
-                
-      
- 
-                <div class="Main-page">
-                
-          
-      
-                 
-      
-                  <!--Main image and caption-->
+  <header class="flex-container">
 
-                  <div class="main-image" style="
+    //Dropdown Menu for smaller screens
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">Navigation Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="About-me.html">About Me</a>
+
+          <a href="Portfolio-me.html">Portfolio</a>
+          <a href="coding.html">Coding Examples</a>
+          <a href="scs.html">SCS Scheme</a>
+          <a href="contact.html">Contact Me</a>
+          <div class="socials-small">
+            <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+              <img src="img/linkdn.png" alt="LinkedIn logo" class="linkbtn-small">
+            </a>
+            <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+              <img src="img/git.png" alt="Github logo" class="gitbtn-small">
+            </a>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+    </nav>
+
+
+
+
+
+
+
+    <div class="Main-page">
+
+
+
+
+
+      <!--Main image and caption-->
+
+      <div class="main-image" style="
                             
                             display:flex;
                             place-items: center;
                             ">
-                            <div class="page-image">
+        <div class="page-image">
 
-                             <!--Background Animation-->                           
-                             
-                              <script>
-                              var tileSize = 20;
-                              // Speed of characters fading
-                              var fadeFactor = 0.05;
-                              
-                              var canvas;
-                              var ctx;
-                              
-                              var columns = [];
-                              var maxStackHeight;
-                              
-                              function init()
-                              { //Call needed elements
-                                  canvas = document.getElementById( 'canvas' );
-                                  ctx = canvas.getContext( '2d' );
-                                  
-                                  initMatrix();
-                              
-                                  // start the main loop
-                                  tick();
-                              }
-                              
-                              function initMatrix()
-                              {
-                                  maxStackHeight = Math.ceil(canvas.height/tileSize);
-                              
-                                  // Create columns for characters to go down
-                                  for ( let i = 0 ; i < canvas.width/tileSize ; ++i )
-                                  {
-                                      var column = {};
-                                      // save the x position of the column
-                                      column.x = i*tileSize;
-                                      // create a random stack height for the column
-                                      column.stackHeight = 10+Math.random()*maxStackHeight;
-                                      // add a counter to count the stack height
-                                      column.stackCounter = 0;
-                                      // add the column to the list
-                                      columns.push( column );
-                                  }
-                              }
-                              
-                              function draw()
-                              {
-                                  // draw a semi transparent black rectangle on top of the scene to slowly fade older characters
-                                  ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
-                                  ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
-                              
-                                  //fonts
-                                  ctx.font = (tileSize-2)+"px monospace";
-                                  ctx.fillStyle = "rgb( 0 , 255 , 0 )";
-                                  for ( let i = 0 ; i < columns.length ; ++i )
-                                  {
-                                      // Random character picker
-                                      var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
-                                      ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
-                              
-                                      // if the stack is at its height limit, pick a new random height and reset the counter
-                                      if ( ++columns[i].stackCounter >= columns[i].stackHeight )
-                                      {
-                                          columns[i].stackHeight = 10+Math.random()*maxStackHeight;
-                                          columns[i].stackCounter = 0;
-                                      }
-                                  }
-                              }
-                              
-                              // MAIN LOOP
-                              function tick() 
-                              {    
-                                  draw();
-                                  setTimeout( tick , 50 );
-                              }
-                              </script>
-                              
-                      
-                              <canvas id="canvas" width="1280" height="720" style="display:block; margin:0 auto;"></canvas>
-                                     
-                            </div>
-                            <div style="
+          <!--Background Animation-->
+
+          <script>
+            var tileSize = 20;
+            // Speed of characters fading
+            var fadeFactor = 0.05;
+
+            var canvas;
+            var ctx;
+
+            var columns = [];
+            var maxStackHeight;
+
+            function init() { //Call needed elements
+              canvas = document.getElementById('canvas');
+              ctx = canvas.getContext('2d');
+
+              initMatrix();
+
+              // start the main loop
+              tick();
+            }
+
+            function initMatrix() {
+              maxStackHeight = Math.ceil(canvas.height / tileSize);
+
+              // Create columns for characters to go down
+              for (let i = 0; i < canvas.width / tileSize; ++i) {
+                var column = {};
+                // save the x position of the column
+                column.x = i * tileSize;
+                // create a random stack height for the column
+                column.stackHeight = 10 + Math.random() * maxStackHeight;
+                // add a counter to count the stack height
+                column.stackCounter = 0;
+                // add the column to the list
+                columns.push(column);
+              }
+            }
+
+            function draw() {
+              // draw a semi transparent black rectangle on top of the scene to slowly fade older characters
+              ctx.fillStyle = "rgba( 0 , 0 , 0 , " + fadeFactor + " )";
+              ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+              //fonts
+              ctx.font = (tileSize - 2) + "px monospace";
+              ctx.fillStyle = "rgb( 0 , 255 , 0 )";
+              for (let i = 0; i < columns.length; ++i) {
+                // Random character picker
+                var randomCharacter = String.fromCharCode(33 + Math.floor(Math.random() * 94));
+                ctx.fillText(randomCharacter, columns[i].x, columns[i].stackCounter * tileSize + tileSize);
+
+                // if the stack is at its height limit, pick a new random height and reset the counter
+                if (++columns[i].stackCounter >= columns[i].stackHeight) {
+                  columns[i].stackHeight = 10 + Math.random() * maxStackHeight;
+                  columns[i].stackCounter = 0;
+                }
+              }
+            }
+
+            // MAIN LOOP
+            function tick() {
+              draw();
+              setTimeout(tick, 50);
+            }
+          </script>
+
+
+          <canvas id="canvas" width="3000" height="720" style="display:block; margin:0 auto;"></canvas>
+
+        </div>
+        <div style="
                                         position:absolute;
                                       
                                         ">
-                                                               
-                                            
-                                  
-      
-                                            <div class="caption-text-code">
-
-                                         
-            
-                                              <!--Captions-->
-                                                <div class="coding-title">
-                                                  
-                                                      <div class="code-caption"  >JavaScript</div>
-                                                    
-
-                                                        
-                                                        
-                                                        This snippet of code was taken from the Javascript coding I used for the animated background of this webpage.
-                                                        As you can see the animation is initiated by a function, which first of all sets the height of each character column by dividing the height of the canvas by the tilesize. It then goes into an infinite “for loop” that adds a column of random height with each iteration, each column increasing the width of the canvas.  What makes this “for loop” infinite is it will continue to increase the canvas width with each iteration, thus meaning that the counter value (i) will never be more than the canvas.width value, which is the argument.
-                                                    
-                                                        
-                                                        <a href="java-img.html" target="_blank">
-                                                          <img src="img/JAVASCRIPT-demo.png" class="javabtn" alt="java snippet">
-                                                        </a> 
-
-                                                      
-                                                          
-
-                                                            
-                                                          
-
-                                                  
-
-                                                      
-
-
-                                                        
-                                                        <div class="code-caption" id="code" >HTML</div>
-
-                                                        
-                                                        This snippet of code is the html to my contact page from this website,
-                                                        As you can see each input field is child element (.mb-3) with its own unique ID,
-                                                          within a parent element(“.contact”). Tho the input fields look similar on screen,
-                                                          this differential is  required when different attributes and properties need to be attached
-                                                            to each child element. This was very important in the scenario when it came to applying Regex 
-                                                            as each field had its own specific Regex variable. Not only this , each field differed in label name ,
-                                                            field size etc.  It was vital to gain access to each field as an individual. 
-
-
-                                                      
-                                                
-                                                          
-
-                                                            <a href="html-img.html" target="_blank">
-                                                              <img src="img/HTML-demo.png" class="htmlbtn" alt="html coding">
-                                                            
-                                                            </a>
-                                                            
-                                                                    
 
 
 
 
-                                                          <div class="code-caption-c"  >C++</div>
-                                                        
-          
-                                                            
-                                                            
-                                                            This snippet of code has been taken from the C++ coding I am using for my game . This code is a snippet of basic enemy AI,
-                                                            it tells the enemy character where the player is and updates that coordinate with every loop iteration, this allows the enemy to react accordingly. This is made possible by first obtaining and returning the location of the main character
-                                                            and storing it inside a variable (similar to javascript). In this case the variable being "ScreenPos"(main characters position on the screen). 
-                                                            We then need to work out the distance between the enemy and the main character. This arithmatic is worked out by the Raymath library I have installed and is updated with every loop iteration (:tick),
-                                                            The basic math is taking the distance between the player and the starting coordinate (0,0) and subtracting the distance of the enemy from the starting location. This gives the programme the distance between the enemy and the player, which is then stored in the toTarget variable. 
-                                                                
-                                                              <div class="game">
-
-                                                                Not only are C++ and raylib/raymath brilliant for game design, thier arithmatic properties lends them well to any website that requires frequent updating with certian  mathematical values.
-                                                    
-
-
-                                                              </div>
-                                                          
-                                                              
-                                                        
-                                                            
-                                                            <a href="cplus.html" target="_blank">
-                                                              <img src="img/Character.png" class="Characterbtn" alt="cplus coding">
-                                                            
-                                                            </a>
-
-                                                            <a href="cplus.html" target="_blank">
-                                                              <img src="img/enemy.png" class="enemybtn" alt="cplus coding">
-                                                            
-                                                            </a>
-                                                       </div>      
-
-                                                 </div>
-                                            </div>
-
-                                                    
-
-                                                      
-                                                   
-                                                      
-                                                      
-                                           
-
-                                                            
-                
-        
-                                                             
-                 
-                                                                  
-                 
+          <div class="caption-text-code">
 
 
 
-                                              
-                                                          
-                                                                
-                                                 
-    
-                                                      
-                                                      
-      
-                                                  
-      
-                                            
-      
-      
-                                              
-                                            </div>   
-                                            
-                                            
-                                      
-                                      
-                                      
-                                      </div>
+            <!--Captions-->
+            <div class="coding-title">
 
-                                                
-                                                  
-      
-                  
+              <div class="code-caption">JavaScript</div>
 
-                        
-                                       
-                                         
-                 
-                       
-                             
-   
-   
-                             
-   
-   
-                                   
-                                 
-   
-   
-          </header>
-                           
-                               
-                                     
-                                      
-             <div class="sidebar">
-              <nav id="myPages" class="main-pages">
-                <button onclick="window.location.href = 'index.html';">A</button>
-                <ul class="pages">
-                 
-                 
-                  <li><a href="About-me.html" class="nav-link-2">About Me</a></li>
-                  
-                  <li><a href="Portfolio-me.html" class="nav-link-3">Portfolio</a></li>
-                  
-                  <li><a href="coding.html" class="nav-link-4">Coding Examples</a></li>
-                 
-                  <li><a href= "scs.html" class="nav-link-5">SCS Scheme</a></li>
-                  
-                  <li><a href= "contact.html" class="nav-link-6">Contact Me</a></li>
-              
-                </ul>
 
-                <div class="socials">
-       
-                  <a href="https://github.com/Blackadder1712/Portfolio"   target="_blank">
-                    <img src="img/linkdn.png" class="linkbtn" alt="LinkedIn logo">
-                  </a>
-                  <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-                    <img src="img/git.png" alt="Github logo" class="gitbtn">
-                  </a>
-          
-                 
-      
-                </div>
-      
-                
-              </nav> 
-        
-  
-    
+
+
+              This snippet of code was taken from the Javascript coding I used for the animated background of this
+              webpage.
+              As you can see the animation is initiated by a function, which first of all sets the height of each
+              character column by dividing the height of the canvas by the tilesize. It then goes into an infinite “for
+              loop” that adds a column of random height with each iteration, each column increasing the width of the
+              canvas. What makes this “for loop” infinite is it will continue to increase the canvas width with each
+              iteration, thus meaning that the counter value (i) will never be more than the canvas.width value, which
+              is the argument.
+
+
+              <a href="java-img.html" target="_blank">
+                <img src="img/JAVASCRIPT-demo.png" class="javabtn" alt="java snippet">
+              </a>
+
+              <div class="code-caption">SQL</div>
+
+
+
+               Below is a link displaying a movie database, I have created a reprosentational query to display my knowledge 
+               of the SQL programme and how it is used in data clottectytion, maintenance etc. 
+
+
+              <a href="SQL.html" target="_blank">
+
+                <img src="img/SQL.png" class="sqlbtn" alt="SQL snippet">
+
+
+
+              </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="code-caption" id="code">HTML</div>
+
+
+              This snippet of code is the html to my contact page from this website,
+              As you can see each input field is child element (.mb-3) with its own unique ID,
+              within a parent element(“.contact”). Tho the input fields look similar on screen,
+              this differential is required when different attributes and properties need to be attached
+              to each child element. This was very important in the scenario when it came to applying Regex
+              as each field had its own specific Regex variable. Not only this , each field differed in label name ,
+              field size etc. It was vital to gain access to each field as an individual.
+
+
+
+
+
+
+              <a href="html-img.html" target="_blank">
+                <img src="img/HTML-demo.png" class="htmlbtn" alt="html coding">
+
+              </a>
+
+
+
+
+
+
+              <div class="code-caption-c">C++</div>
+
+
+
+
+              This snippet of code has been taken from the C++ coding I am using for my game . This code is a snippet of
+              basic enemy AI,
+              it tells the enemy character where the player is and updates that coordinate with every loop iteration,
+              this allows the enemy to react accordingly. This is made possible by first obtaining and returning the
+              location of the main character
+              and storing it inside a variable (similar to javascript). In this case the variable being "ScreenPos"(main
+              characters position on the screen).
+              We then need to work out the distance between the enemy and the main character. This arithmatic is worked
+              out by the Raymath library I have installed and is updated with every loop iteration (:tick),
+              The basic math is taking the distance between the player and the starting coordinate (0,0) and subtracting
+              the distance of the enemy from the starting location. This gives the programme the distance between the
+              enemy and the player, which is then stored in the toTarget variable.
+
+              <div class="game">
+
+                Not only are C++ and raylib/raymath brilliant for game design, thier arithmatic properties lends them
+                well to any website that requires frequent updating with certian mathematical values.
+
+
+
+              </div>
+
+
+
+
+              <a href="cplus.html" target="_blank">
+                <img src="img/Character.png" class="Characterbtn" alt="cplus coding">
+
+              </a>
+
+              <a href="cplus.html" target="_blank">
+                <img src="img/enemy.png" class="enemybtn" alt="cplus coding">
+
+              </a>
             </div>
-        
-   
-   
-   
-                                       
-                                              
-                                     
-                
-                             
-                             
-                                 
-                                               
-                                                   
-                         
-                       
-                                   
-                 
-              
-       
-           <!--JS for page fadeIns-->
-          <script src="js/animations.js"></script>
-          <!--JS for dropdown menu-->
-          <script src="js/dropdown.js"></script>
-     </body>
-      
-       </html>
-              
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </header>
+
+
+
+
+  <div class="sidebar">
+    <nav id="myPages" class="main-pages">
+      <button onclick="window.location.href = 'index.html';">A</button>
+      <ul class="pages">
+
+
+        <li><a href="About-me.html" class="nav-link-2">About Me</a></li>
+
+        <li><a href="Portfolio-me.html" class="nav-link-3">Portfolio</a></li>
+
+        <li><a href="coding.html" class="nav-link-4">Coding Examples</a></li>
+
+        <li><a href="scs.html" class="nav-link-5">SCS Scheme</a></li>
+
+        <li><a href="contact.html" class="nav-link-6">Contact Me</a></li>
+
+      </ul>
+
+      <div class="socials">
+
+        <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+          <img src="img/linkdn.png" class="linkbtn" alt="LinkedIn logo">
+        </a>
+        <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+          <img src="img/git.png" alt="Github logo" class="gitbtn">
+        </a>
+
+
+
+      </div>
+
+
+    </nav>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--JS for page fadeIns-->
+  <script src="js/animations.js"></script>
+  <!--JS for dropdown menu-->
+  <script src="js/dropdown.js"></script>
+</body>
+
+</html>

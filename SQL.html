@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/271f4647db.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Amy Vincent-Web Developer</title>
+    <link rel="icon" type="img/x-icon" href="/img/favicon.png">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+
+<body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">
+
+
+
+
+    <header class="flex-container">
+
+        <!--Drop down menu for smaller VP  -->
+        <nav>
+            <div class="dropdown">
+              <button class="dropbtn">Navigation Menu</button>
+              <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="About-me.html">About Me</a>
+               
+                <a href="Portfolio-me.html">Portfolio</a>
+                <a href="coding.html">Coding Examples</a>
+                <a href="scs.html">SCS Scheme</a>
+                <a href="contact.html">Contact Me</a>
+                <div class="socials-small">
+                  <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+                    <img src="img/linkdn.png"  alt="LinkedIn logo" class="linkbtn-small">
+                  </a>
+                  <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+                    <img src="img/git.png" alt="Github logo" class="gitbtn-small">
+                  </a>
+          
+                 
+
+                </div>
+            </div>
+            </div>
+
+
+
+
+          </nav>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="Main-page">
+
+
+
+
+
+            <!--Main image and caption-->
+
+            <div class="main-image" style="
+                                                              
+                                                              display:flex;
+                                                              place-items: center;
+                                                              ">
+                <div class="page-image">
+
+                    <!--Background Animation-->
+
+                    <script>
+                        var tileSize = 20;
+                        // Speed of characters fading
+                        var fadeFactor = 0.05;
+
+                        var canvas;
+                        var ctx;
+
+                        var columns = [];
+                        var maxStackHeight;
+
+                        function init() { //Call needed elements
+                            canvas = document.getElementById('canvas');
+                            ctx = canvas.getContext('2d');
+
+                            initMatrix();
+
+                            // start the main loop
+                            tick();
+                        }
+
+                        function initMatrix() {
+                            maxStackHeight = Math.ceil(canvas.height / tileSize);
+
+                            // Create columns for characters to go down
+                            for (let i = 0; i < canvas.width / tileSize; ++i) {
+                                var column = {};
+                                // save the x position of the column
+                                column.x = i * tileSize;
+                                // create a random stack height for the column
+                                column.stackHeight = 10 + Math.random() * maxStackHeight;
+                                // add a counter to count the stack height
+                                column.stackCounter = 0;
+                                // add the column to the list
+                                columns.push(column);
+                            }
+                        }
+
+                        function draw() {
+                            // Fade in using a transparent black square
+                            ctx.fillStyle = "rgba( 0 , 0 , 0 , " + fadeFactor + " )";
+                            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                            //fonts
+                            ctx.font = (tileSize - 2) + "px monospace";
+                            ctx.fillStyle = "rgb( 0 , 255 , 0 )";
+                            for (let i = 0; i < columns.length; ++i) {
+                                // Random character picker
+                                var randomCharacter = String.fromCharCode(33 + Math.floor(Math.random() * 94));
+                                ctx.fillText(randomCharacter, columns[i].x, columns[i].stackCounter * tileSize + tileSize);
+
+                                // Random column length
+                                if (++columns[i].stackCounter >= columns[i].stackHeight) {
+                                    columns[i].stackHeight = 10 + Math.random() * maxStackHeight;
+                                    columns[i].stackCounter = 0;
+                                }
+                            }
+                        }
+
+                        // MAIN LOOP
+                        function tick() {
+                            draw();
+                            setTimeout(tick, 50);
+                        }
+                    </script>
+
+
+                    <canvas id="canvas" width="3000" height="720" style="display:block; margin:0 auto;"></canvas>
+
+                </div>
+                <div style="
+                                                                          position:absolute;
+                                                                        
+                                                                          ">
+                    <div class="caption-text-about">
+
+                        <!--Burger menu-->
+
+                        <!--Captions/Main page text-->
+                        <div class="img-title">SQL</div>
+
+
+
+
+
+
+                        <h1>Sub Query Reprosentation</h1>
+                        <h2> To display my knowledge of SQL in a clear and coherent manner I have decide
+                            to use the below database for my representational SQL sub query. </h2>
+
+                        <img src="img/SQL.png">
+
+                        <h1>My query with explanation</h1><br>
+                        <h2>
+                            Below Is my Query I wrote to as mentioned above, break down this information into sections,
+                            depending on what I would like to be displayed.
+                        </h2>
+
+                        <img src="img/sql code.png">
+                        <h2>
+                            <h2>
+
+                                I decided I would create a query to help me pick a film I would like to see.
+                                So first of all I would need a row that contained the basic information about
+                                the actors and the film they starred in.
+                                To insure the correct information was displayed I firstly needed to use the SELECT
+                                keyword (allows you to tell the programme which columns you want) alongside the
+                                FROM keyword(telling the programme which table said row is in ).
+                                As you can see the information I would like displayed is spread out across many
+                                tables within the database. This is where the INNER JOIN keyword comes into play ,
+                                INNER JOIN allows you to join selected column from one table to another, as long a
+                                they share a common attribute and are related. In this case I wanted the actors
+                                name and the role they played in said movie , as well as the movie’s language,
+                                release date and genre. To do this I would need to join four tables , I decided
+                                to start of first with the actor’s info. I found this information all within the
+                                actor table, so I added the columns I would like from that table to my query,
+                                using its column name , spelt exactly. You will notice I am using the AS keyword
+                                a lot . this allows you to set an alias to the column name so it is more readable
+                                and easier to understand , for example you will see that act_id is now displayed as
+                                Actor
+                                ID . You will also notice that these aliases have been added to the front of some of the
+                                column
+                                names (a.act_id for example) this is required as it tells the programme which table said
+                                column has
+                                come from. I then acquired the relevant movie information from the movie cast,
+                                movie,movie genres and
+                                genres table again by using the INNER JOIN keyword. Now my table contained the
+                                information I needed
+                                to decide what movie I wanted to watch. I first needed to insure the movie was in
+                                English, to do this
+                                I used the WHERE keyword. This is a conditional statement which allows you to set not
+                                only conditions
+                                but a parameter range to the results that are shown in your table. Now that I had a list
+                                of all the
+                                movies that are in English I then decided to narrow the size of the table considerably,
+                                to only include
+                                movies which are in my favourite genres. To achieve this I needed to use the AND
+                                keyword, this allows
+                                more than one condition to be set to your results. You will notice that I have chosen to
+                                have more
+                                than one genre included in the results, I used the OR keyword to have more than one
+                                genre specified
+                                in the conditional statement. Now I had the movies from my favourite genres displayed, I
+                                decided I wanted to watch the newest one out of the three. To do this I simply used the
+                                ORDER BY keyword and set it to m.mov_dt_rel DESC;, this takes the movie date and sets
+                                the latest release to the top of the table.
+
+
+
+                            </h2>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--sidebar for larger VP-->
+    <div class="sidebar">
+        <nav id="myPages" class="main-pages">
+            <button onclick="window.location.href = 'index.html';">A</button>
+            <ul class="pages">
+
+
+                <li><a href="About-me.html" class="nav-link-2">About Me</a></li>
+
+                <li><a href="Portfolio-me.html" class="nav-link-3">Portfolio</a></li>
+
+                <li><a href="coding.html" class="nav-link-4">Coding Examples</a></li>
+
+                <li><a href="scs.html" class="nav-link-5">SCS Scheme</a></li>
+
+                <li><a href="contact.html" class="nav-link-6">Contact Me</a></li>
+
+            </ul>
+
+            <div class="socials">
+
+                <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+                    <img src="img/linkdn.png" class="linkbtn" alt="LinkedIn logo">
+                </a>
+                <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+                    <img src="img/git.png" alt="Github logo" class="gitbtn">
+                </a>
+
+
+
+
+
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--JS for page fadeIns-->
+    <script src="js/animations.js"></script>
+    <!--JS for Dropdown menu-->
+    <script src="js/dropdown.js"></script>
+</body>
+
+</html>
