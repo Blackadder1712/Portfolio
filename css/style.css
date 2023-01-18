@@ -15,26 +15,13 @@ span {
     opacity: 0;
   }
 }
-.Main-page {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  width: auto;
-  height: 100%;
-  background-repeat: no-repeat;
-}
-
-.Main-page {
-  display: block;
-  overflow: hidden;
-}
-
 .dropbtn {
   background-color: #1ca152;
   color: black;
   padding: 16px;
   border: none;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   margin-top: 0px;
   font-size: 30px;
   font-weight: 700;
@@ -44,6 +31,7 @@ span {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .htmlbtn {
@@ -334,10 +322,6 @@ span {
   color: white;
 }
 
-.Main-page {
-  align-items: center;
-}
-
 .dropbtn:hover {
   color: white;
 }
@@ -348,7 +332,7 @@ span {
   display: inline-block;
   width: 100%;
   text-align: center;
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown-content {
@@ -356,10 +340,11 @@ span {
   background-color: #1ca152;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 10;
   text-align: center;
   position: -webkit-sticky;
   position: sticky;
+  width: 100vw;
 }
 
 .dropdown-content a {
@@ -371,6 +356,7 @@ span {
   font-size: 30px;
   font-weight: 400;
   font-family: "Roboto", "sans serif";
+  z-index: 10;
 }
 
 .dropdown-content a:hover {
@@ -394,6 +380,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .flex-container {
@@ -427,9 +415,51 @@ body {
   height: 100%;
 }
 
-#contact-form {
-  padding-top: 100px;
+.canvas {
+  height: 700px;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  margin-left: 5%;
+  width: 90%;
+  height: 100%;
+  background-color: rgba(28, 161, 82, 0.3);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 4;
+}
+
+.caption-text-index {
+  z-index: 5;
+  position: absolute;
+  top: 200px;
+  margin: 15px;
+  padding: 5px;
+  z-index: 5;
+  color: var(--yellow-color);
+  border: 30px solid #1ca152;
+  border-right: 5px solid #1ca152;
+  border-left: 5px solid #1ca152;
+  border-bottom: 24px solid #1ca152;
+  background-color: #000;
+  -webkit-clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+          clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+}
+
+.contact-form {
+  position: absolute;
   visibility: hidden;
+  top: 90vh;
+  z-index: 5;
+}
+
+.page-content {
+  overflow-y: auto;
+  z-index: 11;
 }
 
 .page-image {
@@ -437,8 +467,9 @@ body {
      object-fit: cover;
   position: relative;
   filter: brightness(0.5);
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  z-index: 1;
 }
 
 .scroll-down {
@@ -469,6 +500,9 @@ body {
   font-weight: 700;
   visibility: hidden;
   letter-spacing: 0.4px;
+  z-index: 5;
+  position: relative;
+  top: 0;
 }
 
 .coding-title {
@@ -543,6 +577,12 @@ body {
 
 fieldset {
   border: none;
+  position: absolute;
+  z-index: 5;
+  top: 150vh;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
 }
 
 #Subject {
@@ -556,13 +596,12 @@ fieldset {
 .contact {
   display: grid;
   font-family: "Roboto", "sans serif";
-  background-color: black;
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
   margin: 20px;
   position: left;
-  border-color: black;
+  width: 0px;
 }
 
 .contact-2 {
@@ -831,7 +870,6 @@ h2 {
 .contact {
   display: grid;
   font-family: "Roboto", "sans serif";
-  background-color: black;
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
@@ -892,18 +930,20 @@ h2 {
 }
 
 /* Small devices ? min-width: 576px and up (small screen/laptops)*/
-@media screen and (min-width: 576px) {
-  .caption-text-code {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-}
 /* Medium devices ? min-width: 768px and up (small screen/laptops)*/
 @media screen and (min-width: 768px) {
+  #canvas {
+    margin-left: 200px;
+  }
+  fieldset {
+    width: calc(100% - 200px);
+    left: 20%;
+    padding-bottom: 40px;
+  }
+  .scroll {
+    margin-left: 190px;
+    width: calc(100vw - 200px);
+  }
   .caption-text-code {
     padding-top: 1800px;
   }
@@ -1077,13 +1117,6 @@ h2 {
     text-decoration: none;
     color: white;
     padding-left: 15%;
-  }
-  .contact-form {
-    padding-left: 200px;
-  }
-  .contact {
-    padding-left: 200px;
-    margin: 100px;
   }
   .java-content {
     display: none;
