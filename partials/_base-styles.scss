@@ -981,17 +981,17 @@ hr {
   padding-top:35px;
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 500px;
 
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin-top:0;
 
 }
 
-.flip-card-1:hover
+/*.flip-card-1:hover
 {
   z-index: 100;
-}
+}*/
 
 /* This container is needed to position the front and back side */
 .flip-card-inner-1 {
@@ -1004,10 +1004,10 @@ hr {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card-1:hover .flip-card-inner-1 {
+/*.flip-card-1:hover .flip-card-inner-1 {
   transform: rotateY(180deg);
   z-index:100;
-}
+}*/
 
 /* Position the front and back side */
 .flip-card-front-1, .flip-card-back-1 {
@@ -1040,12 +1040,12 @@ hr {
   transform: rotateY(180deg);
 }
 
-.flip-card-1:hover + .flip-card-2
+/*.flip-card-1:hover + .flip-card-2
 {
  visibility: hidden;
  flex-direction: reverse;
  
-}
+}*/
 
 
 
@@ -1055,7 +1055,7 @@ hr {
 .flip-card-2 {
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 400px;
 
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin-top:100px;
@@ -1076,11 +1076,11 @@ hr {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Do an horizontal flip when you move the mouse over the flip box container 
 .flip-card-2:hover .flip-card-inner-2 {
   transform: rotateY(180deg);
   z-index:100;
-}
+}*/
 
 /* Position the front and back side */
 .flip-card-front-2, .flip-card-back-2 {
