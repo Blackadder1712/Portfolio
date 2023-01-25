@@ -76,10 +76,13 @@
     border-left: 5px solid #1ca152;
     border-bottom: 24px solid #1ca152;
     background-color: black;
-    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 
+    100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px),
+     calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+     margin-bottom:30px ;
 }
 
-#myBtn-1
+#myBtn-2
 {
   background-color: transparent;
   height:300px;
@@ -147,10 +150,11 @@
 .netmatters
 {
   
-  display:inline-block;
+  display:flex ;
+  position: absolute;
   width:100%;
   text-align: center;
-  z-index: 1;
+  z-index: 100;
   align-items: center;
   margin-top:110%
   
@@ -405,12 +409,12 @@ margin-left:25px;
 
 .netmatters-content
 {
-  display:none;
+
  
   background-color: $matrix-green;
 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 100;
   text-align: center;
   color:black;
   padding: 16px;
@@ -1073,7 +1077,7 @@ hr {
 
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
@@ -1082,8 +1086,22 @@ hr {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
 }
 
+.modal-2 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+}
 
 .modal-content {
   background-color: black;
@@ -1092,6 +1110,16 @@ hr {
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
+
+
+.modal-content-2 {
+  background-color: black;
+  margin: 35% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
 
 
 /* The Close Button */
@@ -1103,6 +1131,13 @@ hr {
   z-index: 100;
 }
 
+.close-2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 100;
+}
 
 .close:hover,
 .close:focus {
@@ -1233,10 +1268,9 @@ hr {
 }
 
 
-
-#canvas
+.flex-container-1
 {
-  height:770px
+  height:300%;
 }
 
 .scroll
@@ -1362,7 +1396,23 @@ text set in the data-text attribute. */
 {
   color:black;
 }
+.container
+{
+  width:100%;
+  height:100%;
+  display:flex;
+  z-index: 1000;
 
+}
+
+.owl-carousel
+{
+  width:100%;
+  height:100%;
+  display: flex;
+  z-index:1000;
+  border:blue solid 3px;
+}
 .dropbtn    {
  position: relative;
  color: white;
@@ -1538,7 +1588,7 @@ margin-top:1700px
     display: block;
   text-align: center;
   line-height: 1.4;
-  font-size:c;
+  font-size:10px;
   font-weight:$text-font-weight;
   letter-spacing: .4px;
 }
@@ -1552,7 +1602,6 @@ text-align: center;
 line-height: 1.4;
 font-size: $title-font-size;
 font-weight: $text-font-weight;
-visibility: hidden;
 letter-spacing: .4px;
 }
 
