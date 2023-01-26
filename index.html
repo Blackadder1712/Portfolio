@@ -223,51 +223,36 @@
                             <div class="portfolio" id="portfolio">
                               <h1 class="cyberpunk glitched" id="port">Portfolio!</h1>
                               
-                              <div class="container owl-carousel owl-theme">
+                              <div class="slideshow-container fade">
 
-                              
-                                  <!--<div class="netmatters">
-                                    <div class="netmatters-caption" id="portfolio">Portfolio</div>
-                        
-                                            
-                                        <div class="netmatters-caption" >Netmatters<br>HTML/SCSS</div> -->    
-                                                            <div class="item-1">
-                                                              <input type="image" src="img/netmatters.jpg"  alt="Image of netmatters project" class="netbtn">
+                                <div class="Containers">
+                                  <h1 class="html">HTML/CSS</h1>
+                                  <input type="image" src="img/netmatters.jpg"  alt="Image of netmatters project" class="netbtn">
 
-                                                            </div>
-                                                            
-                                                            <!--<div class="netmatters-content">
-                                                              <a href="http://netmatters.amy-vincent.netmatters-scs.co.uk/">Project</a>
-                                                              <a href="https://github.com/Blackadder1712/Netmatters">Github Repository</a> 
-                                                        
-                                                
-                                            
-                                            </div>-->
-
-                                            <!--<div class=".java">
-    
-
+                                </div>
                                 
-                                              <div class="java-caption" id="java" >JavaScript</div> -->  
-                                              
-                                              
-                                                            <div class="item-2">
-                                                                <input type="image" src="img/coming-soon.png" class="javabtn" alt="coming soon image">
+                               
+                                  <div class="Containers">
+                                 
+                                      <input type="image" src="img/coming-soon.png" class="javabtn" alt="coming soon image">
 
-                                                            </div>
+                                  </div>
+
+                                  <!-- Back and forward buttons -->
+                                  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                                  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
 
 
-                                                            
-                                                            <!-- <div class="java-content">
-                                                              <a href="http://netmatters.amy-vincent.netmatters-scs.co.uk/">Project</a>
-                                                              <a href="https://github.com/Blackadder1712/Netmatters">Github Repository</a>
-                                                            </div>
-                                                        
-                                                  
-                                              
-                                            </div>-->
-                              
+    
                               </div>
+                              <!-- The circles/dots -->
+                                  <div style="text-align:center">
+                                    <span class="dots" onclick="currentSlide(1)"></span>
+                                    <span class="dots" onclick="currentSlide(2)"></span>
+                                
+                                  </div> 
+
+
                             </div>
 
 
@@ -487,9 +472,7 @@
 
 
 
-   <script src="js/owl.carousel.js"></script>
-   <script src="js/owl.js"></script>
-   <script src="js/autoplay.js"></script>
+  <script src="js/carousel.js"></script>
    <script src="js/hover.js"></script>
    <script src="js/hover-2.js"></script>
   <!--sticky nav-->
