@@ -1144,6 +1144,21 @@ hr {
  
 }
 
+
+.modal-4 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+}
+
 .modal-content {
   background-color: black;
   margin: 35% auto; /* 15% from the top and centered */
@@ -1162,6 +1177,17 @@ hr {
 }
 
 .modal-content-3 {
+  background-color: black;
+  
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.modal-content-4 {
   background-color: black;
   
   padding: 20px;
@@ -1199,6 +1225,14 @@ hr {
   z-index: 100;
 }
 
+.close-4 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 100;
+}
+
 
 .close:hover,
 .close:focus {
@@ -1210,6 +1244,14 @@ hr {
 
 .close-3:hover,
 .close-3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.close-4:hover,
+.close-4:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -1559,20 +1601,24 @@ text set in the data-text attribute. */
 /* The circles or bullets and indicators */
 .dots {
   cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 30px 15px;
-  background-color: $matrix-green;
-  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin: 30px 45px;
+
+ 
   display: inline-block;
-  transition: background-color 0.5s ease;
+ 
+  color:white
 }
 
-.enable, .dots:hover {
-  background-color: white;
+.dots img
+{
+  width:60px;
 }
 
-// Faint animation 
+
+
+//Faint animation 
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.4s;
