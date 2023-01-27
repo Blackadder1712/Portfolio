@@ -208,10 +208,9 @@
   
     color: white;
     font-size: 40px;
-    padding: 10px 14px;
-    position: absolute;
-    top: 20%;
-    left:17%;
+ 
+ 
+   
     z-index: 100;
  
   
@@ -1131,6 +1130,20 @@ hr {
  
 }
 
+.modal-3 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+}
+
 .modal-content {
   background-color: black;
   margin: 35% auto; /* 15% from the top and centered */
@@ -1146,6 +1159,17 @@ hr {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-3 {
+  background-color: black;
+  
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction:column;
+  align-items: center;
 }
 
 
@@ -1167,12 +1191,39 @@ hr {
   z-index: 100;
 }
 
+.close-3 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
   z-index: 100;
+}
+
+.close-3:hover,
+.close-3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#net-small
+{
+  width:250px;
+}
+
+.net-pop
+{
+  color:white;
 }
 
 
@@ -1314,7 +1365,7 @@ hr {
 
 #port
 {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 
@@ -1965,7 +2016,7 @@ border-color:white;
 
 .submit {
  
-  height: 50px;
+ 
   border: none;
   outline: none;
   color: #fff;
@@ -1974,7 +2025,14 @@ border-color:white;
   position: relative;
   z-index: 0;
   border-radius: 10px;
-  margin-left:25%
+ 
+
+}
+
+.submit a
+{
+  color:white;
+  text-decoration: none;
 }
 
 .submit:before {
