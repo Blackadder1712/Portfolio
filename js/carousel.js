@@ -7,7 +7,7 @@ function plusSlides(n) {
 }
 
 //  images controls
-function currentSlide(n) {
+function currentSlides(n) {
   SlideShow(slidePosition = n);
 }
 

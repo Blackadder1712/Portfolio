@@ -31,6 +31,7 @@
     padding: 16px;
     border:none;
     text-align: center;
+    margin-right: 80px;
    
     margin-top: 0px;
     font-size: $text-font-size;
@@ -207,6 +208,87 @@
     max-width: 80%;
     align-self: center;
   
+}
+
+.javabtn-2
+  {
+    background-color:$matrix-green ;
+  
+    padding: 16px;
+    
+    text-align: center; 
+    margin-left:130px; 
+    margin-top: 0px;
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+    color: var(--yellow-color);
+    border: 30px solid #1ca152;
+    border-right: 5px solid #1ca152;
+    border-left: 5px solid #1ca152;
+    border-bottom: 24px solid #1ca152;
+    background-color: black;
+    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+   
+    max-width: 80%;
+    align-self: center;
+  
+}
+
+
+.sqlbtn
+  {
+    background-color:$matrix-green ;
+  
+    padding: 16px;
+    
+    text-align: center; 
+    margin-left:105px;
+    margin-top: 0px;
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+    color: var(--yellow-color);
+    border: 30px solid #1ca152;
+    border-right: 5px solid #1ca152;
+    border-left: 5px solid #1ca152;
+    border-bottom: 24px solid #1ca152;
+    background-color: black;
+    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+   
+    max-width: 80%;
+    align-self: center;
+  
+}
+
+.htmlbtn
+  {
+    background-color:$matrix-green ;
+  
+    padding: 16px;
+    
+    text-align: center; 
+
+    margin-top: 0px;
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+    color: var(--yellow-color);
+    border: 30px solid #1ca152;
+    border-right: 5px solid #1ca152;
+    border-left: 5px solid #1ca152;
+    border-bottom: 24px solid #1ca152;
+    background-color: black;
+    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+   
+    max-width: 80%;
+    align-self: center;
+  
+}
+
+#j-code
+{
+ right:0px;
 }
 
 .html
@@ -614,6 +696,29 @@ margin-left:25px;
   
   text-align: center;
 }
+
+#btn-box
+{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ width:80%;
+ 
+
+}
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  
+
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+java-dot
+
 .sidebar 
 {
   display:none;
@@ -1198,34 +1303,35 @@ hr {
 
 .modal-content-3 {
   background-color: black;
-  
+  margin: 35% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
+  
 }
 
 .modal-content-4 {
   background-color: black;
-  
+  margin: 35% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+ 
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
 }
 
 .modal-content-5 {
   background-color: black;
-  
+  margin: 35% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -1272,7 +1378,10 @@ hr {
   z-index: 100;
 }
 
-
+.back
+{
+  margin:30px;
+}
 
 .close:hover,
 .close:focus {
@@ -1292,7 +1401,7 @@ hr {
 
 .close-4:hover,
 .close-4:focus {
-  color: black;
+
   text-decoration: none;
   cursor: pointer;
   z-index: 100;
@@ -1321,6 +1430,149 @@ hr {
   color:white;
   padding:10px;
 }
+
+/* Slideshow container */
+.coding-carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.coding-slides
+{
+  display:none;
+}
+
+.Backwards, .forwards {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+.forwards {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.Backwards:hover, .forwards:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Faint animation */
+.show {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+
+
+
+.j-snip,.sql-snip, .html-snip
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+
+#j-logo
+{
+  position:relative;
+  justify-content: center;
+  align-self: center;
+  z-index:300;
+  top:-200;
+  right:195px;
+}
+
+.sqllogo
+{
+  position:relative;
+  justify-content: center;
+  align-self: center;
+  z-index:300;
+  top:-200;
+  width:30%;
+  right:50%;
+  background-color: white;
+}
+
+ .htmllogo
+{
+  position:relative;
+  justify-content: center;
+  align-self: center;
+  z-index:300;
+  top:-200;
+  width:30%;
+  left:55%;
+  background-color: white;
+}
+
+
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+
+
+
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+
+
 
 
 
@@ -1597,7 +1849,6 @@ text set in the data-text attribute. */
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 100px;
 }
 
 /* Make the images invisible by default */
@@ -1605,32 +1856,7 @@ text set in the data-text attribute. */
   display: none;
 }
 
-/* forward & Back buttons */
-.Back, .forward {
-  cursor: pointer;
-  position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 17px;
-  color: white;
-  font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
-  user-select: none;
-}
 
-/* Place the "forward button" to the right */
-.forward {
-  right: 0;
-  border-radius: 4px 0 0 4px;
-}
-
-/*when the user hovers,add a black background with some little opacity */
-.Back:hover, .forward:hover {
-  background-color: black;
-}
 
 /* Caption Info */
 .Info {
@@ -1643,6 +1869,36 @@ text set in the data-text attribute. */
   text-align: center;
 }
 
+.Back, .forward {
+  cursor: pointer;
+  position: relative;
+  top: -150px;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+
+.forward {
+  right: -255px;
+  border-radius: 4px 0 0 4px;
+}
+
+
+
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Back-2:hover, .forward-2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 /* Worknumbering (1/3 etc) */
 .MessageInfo {
   color: #f2f2f3;
@@ -1653,22 +1909,13 @@ text set in the data-text attribute. */
 }
 
 /* The circles or bullets and indicators */
-.dots {
-  cursor: pointer;
-  height: 32px;
-  width: 32px;
-  margin: 30px 45px;
 
- 
-  display: inline-block;
- 
-  color:white
-}
 
 .dots img
 {
   width:60px;
 }
+
 
 
 
