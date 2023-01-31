@@ -701,8 +701,8 @@ margin-left:25px;
 {
  display: flex;
  flex-direction: row;
- justify-content: space-around;
- width:80%;
+ gap: 90px;
+ margin-left:120px
  
 
 }
@@ -768,7 +768,7 @@ body
   display:flex;
 
 
-
+  padding:10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -831,6 +831,12 @@ body
    margin-bottom:30px;
    
   
+}
+
+.main-pages
+{
+  display:none;
+
 }
 
 #myBtn:hover
@@ -1284,6 +1290,57 @@ hr {
  
 }
 
+.modal-6 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 90%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin-left:5%;
+  align-content: center;
+  justify-content: center;
+ 
+}
+
+.modal-7 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 90%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin-left:5%;
+  align-content: center;
+  justify-content: center;
+ 
+}
+
+.modal-8 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 90%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin-left:5%;
+  align-content: center;
+  justify-content: center;
+ 
+}
+
 .modal-content {
   background-color: black;
   margin: 35% auto; /* 15% from the top and centered */
@@ -1335,7 +1392,37 @@ hr {
   align-items: center;
 }
 
+.modal-content-6 {
+  background-color: black;
+  margin: 35% auto;
+  padding: 20px;
+  border: 1px solid #888;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content-7 {
+  background-color: black;
+  margin: 35% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal-content-8 {
+  background-color: black;
+  margin: 35% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  align-items: center;
+  justify-content: center;
+}
 
 /* The Close Button */
 .close {
@@ -1371,6 +1458,115 @@ hr {
 }
 
 .close-5 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+#java-test
+{
+  width:70%;
+
+  padding: 16px;
+    text-align: center;
+    
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Roboto", "sans serif";
+    color: var(--yellow-color);
+    border: 30px solid #1ca152;
+    border-right: 5px solid #1ca152;
+    border-left: 5px solid #1ca152;
+    border-bottom: 24px solid #1ca152;
+    background-color: black;
+    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+    max-width: 80%;
+    margin-left:9%
+  
+}
+
+#sql-test
+{
+  width:80%;
+
+  padding: 16px;
+    text-align: center;
+    
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Roboto", "sans serif";
+    color: var(--yellow-color);
+    border: 30px solid #1ca152;
+    border-right: 5px solid #1ca152;
+    border-left: 5px solid #1ca152;
+    border-bottom: 24px solid #1ca152;
+    background-color: black;
+    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+    max-width: 80%;
+    margin-left:9%
+  
+}
+
+#html-test
+{
+  width:80%;
+
+  padding: 16px;
+    text-align: center;
+    
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Roboto", "sans serif";
+    color: var(--yellow-color);
+    border: 30px solid #1ca152;
+    border-right: 5px solid #1ca152;
+    border-left: 5px solid #1ca152;
+    border-bottom: 24px solid #1ca152;
+    background-color: black;
+    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+    max-width: 80%;
+    margin-left:9%
+  
+}
+
+
+#sql-test:hover
+{
+  border-color: white;
+}
+
+#html-test:hover
+{
+  border-color: white;
+}
+
+#java-test:hover
+{
+  border-color: white;
+}
+
+.close-6 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.close-7 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.close-8 {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -1414,6 +1610,34 @@ hr {
   cursor: pointer;
   z-index: 100;
 }
+
+.close-6:hover,
+.close-6:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.close-7:hover,
+.close-7:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+.close-8:hover,
+.close-8:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+
 
 #net-small
 {
@@ -1496,7 +1720,7 @@ hr {
   position:relative;
   justify-content: center;
   align-self: center;
-  z-index:300;
+  z-index:3;
   top:-200;
   right:195px;
 }
@@ -1506,7 +1730,7 @@ hr {
   position:relative;
   justify-content: center;
   align-self: center;
-  z-index:300;
+  z-index:3;
   top:-200;
   width:30%;
   right:50%;
@@ -1518,7 +1742,7 @@ hr {
   position:relative;
   justify-content: center;
   align-self: center;
-  z-index:300;
+  z-index:30;
   top:-200;
   width:30%;
   left:55%;
@@ -1788,6 +2012,7 @@ hr {
 {
 
    overflow-y: auto;
+   overflow-x: hidden;
    z-index: 11;
    display: flex;
    flex-direction: column;
@@ -1886,7 +2111,7 @@ text set in the data-text attribute. */
 
 
 .forward {
-  right: -255px;
+  right: -235px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -2074,6 +2299,11 @@ skew to change the 'thickness' of the glitch.*/
   top:0;
   
 
+}
+
+.coding
+{
+  padding:10px;
 }
 
 .coding-title
