@@ -724,6 +724,7 @@ margin-left:25px;
   text-align: center;
   position: -webkit-sticky;
   position: sticky;
+  width:100vw;
 
 }
 
@@ -915,8 +916,9 @@ body
    align-items:center ;
    justify-content: center;
    */
-  
 }
+  
+
 
 .professional
 {
@@ -1369,12 +1371,10 @@ hr {
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
-  top: 1020px;
+
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
  
 }
 
@@ -1383,12 +1383,10 @@ hr {
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
-  top: 1850px;
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
+
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
  
 }
 
@@ -1533,15 +1531,10 @@ hr {
 
 .modal-content-3 {
   background-color: black;
-  margin: 35% auto;
+  margin: 35% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 20px;
-    margin-right: 20px;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
   
 
@@ -2176,6 +2169,7 @@ hr {
 .flex-container-1
 {
   height:300%;
+  width:100vw;
 }
 
 .portfolio
@@ -2201,18 +2195,17 @@ hr {
   {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 50px;
-   
     height: 100%;
-
-    
     background-color: rgba(28, 161, 82, 0.3);
     overflow-y: auto;
     overflow-x: hidden;
-    width:100vw;
-    
+    width: 90%;
+    align-self: center;
     z-index: 4;
+
 
   }
 
@@ -2335,6 +2328,7 @@ hr {
 
 .drop-glitch {
   text-align: center;
+  width:100vw;
 }
 
 
