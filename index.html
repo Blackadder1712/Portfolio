@@ -186,16 +186,18 @@
             <h1 class="cyberpunk glitched" id="glitch">It's all about.......me!</h1>
             
            <!--link to pro biography--> 
-            <button id="myBtn">
-              <h1> Professional Biography</h1>
+            <div class ="me">
+              <button id="myBtn">
+                <h1> Professional Biography</h1>
 
-            </button>
+              </button>
 
-           <!--link to personal bio-->
-            <button id="myBtn-2">
-              <h1> Personal Biography</h1>
+            <!--link to personal bio-->
+              <button id="myBtn-2">
+                <h1> Personal Biography</h1>
 
-            </button>
+              </button>
+            </div>
 
           
             <div class="portfolio" id="portfolio">
@@ -225,30 +227,7 @@
  
 
                 
-                <div id="myModal-5" class="modal-5">
-                  <div class="modal-content-5">
-                    <span class="close-5">&times;</span>
-                    <h2> Javascript Array Reflection</h2>
-                    <img src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" id="js-small">
-                    <h3 class="js-pop"> For this Project we had to build a multi-dimensional array which consisted of
-                      multiple Email addresses
-                      holding an array of user-selected images. These images were fetched from an API via an ajax
-                      call.Using javascript functions to allow the user to
-                      select their images of choice and re enter a duplicate email if they want to add more images.
-
-
-                    </h3>
-
-                    <button class="submit"><a
-                        href="https://blackadder1712.github.io/Javascript-Array/">Project</a></button>
-                    <button class="submit"><a href="https://github.com/Blackadder1712/Javascript-Array">Github
-                        Repository</a></button>
-
-
-
-
-                  </div>
-                </div>
+                
 
         
 
@@ -378,39 +357,44 @@
               </div>
 
                  <!-- The circles/dots -->
-                <div style="text-align:center; width:100vw" id="btn-box">
-                  <span class="dots" id="java-dot" onclick="currentSlides(1)"><img src="img/R.png"></span>
+                <div class ="btn-box">
+                  <a href = "#" class="dots" id="java-dot" onclick="currentSlides(1)"><img src="img/R.png"></a>
 
-                  <span class="dots" id="sql-dot" onclick="currentSlides(2)"><img src="img/sql-logo.png"></span>
+                  <a href = "#" class="dots" id="sql-dot" onclick="currentSlides(2)"><img src="img/sql-logo.png"></a>
   
   
   
-                  <span class="dots" id="html-dot" onclick="currentSlides(3)"><img src="img/html_css.png"></span>
+                  <a href = "#" class="dots" id="html-dot" onclick="currentSlides(3)"><img src="img/html_css.png"></a>
   
                 </div>
                 <div class="scs-scheme" id="scheming">
                   <h1 class="cyberpunk glitched" id="schemed">SCS Scheme</h1>
 
-                  <div id="myBtn-10">
-                    <h1> Scion Coalition Scheme</h1>
-                  </div>
-
-                  <div id="myModal-10" class="modal-10">
-                    <div class="modal-content-10">
-                      <span class="close-10">&times;</span>
-                      <h2> The Scion Coalition Scheme is an intensive, specially tailored training program<br>
-                        run by Netmatters in order to give willing candidates the opportunity to enter the industry<br>
-                        as web developers. Under the supervision of senior web developers, scions generally aim to complete<br>
-                        training within six to nine months. The course is intensive and therefore the level of learning achieved is<br>
-                            extensive in a short space of time.
-                      </h2>
-      
+                  <div class="scheme">
+                    <div id="myBtn-10">
+                      <h1> Scion Coalition Scheme</h1>
                     </div>
-                  </div>
+
+                    <div id="myModal-10" class="modal-10">
+                      <div class="modal-content-10">
+                        <span class="close-10">&times;</span>
+                        <h2> The Scion Coalition Scheme is an intensive, specially tailored training program<br>
+                          run by Netmatters in order to give willing candidates the opportunity to enter the industry<br>
+                          as web developers. Under the supervision of senior web developers, scions generally aim to complete<br>
+                          training within six to nine months. The course is intensive and therefore the level of learning achieved is<br>
+                              extensive in a short space of time.
+                        </h2>
+        
+                      </div>
+                    </div>
 
 
-                  <div id="myBtn-11">
-                    <h1> Treehouse</h1>
+                    <div id="myBtn-11">
+                      <h1> Treehouse</h1>
+                    </div>
+                    <div id="myBtn-33">
+                      <h1> Netmatters</h1>
+                    </div>
                   </div>
 
                   <div id="myModal-11" class="modal-11">
@@ -428,9 +412,7 @@
                     </div>
                   </div>
 
-                  <div id="myBtn-33">
-                    <h1> Netmatters</h1>
-                  </div>
+                
                   <div id="myModal-33" class="modal-33">
                     <div class="modal-content-33">
                       <span class="close-33">&times;</span>
@@ -553,10 +535,35 @@
               as well as using scss.
             </h3>
 
-            <button class="submit"><a
+            <button class="n-ref"><a
                 href="http://netmatters.amy-vincent.netmatters-scs.co.uk/">Project</a></button>
-            <button class="submit"><a href="https://github.com/Blackadder1712/Netmatters">Github
+            <button class="n-git"><a href="https://github.com/Blackadder1712/Netmatters">Github
                 Repository</a></button>
+
+          </div>
+        </div>
+
+        <div id="myModal-5" class="modal-5">
+          <div class="modal-content-5">
+            <span class="close-5">&times;</span>
+            <h2> Javascript Array Reflection</h2>
+            <img src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" id="js-small">
+            <h3 class="js-pop"> For this Project we had to build a multi-dimensional array which consisted of
+              multiple Email addresses
+              holding an array of user-selected images. These images were fetched from an API via an ajax
+              call.Using javascript functions to allow the user to
+              select their images of choice and re enter a duplicate email if they want to add more images.
+
+
+            </h3>
+
+            <button class="J-proj"><a
+                href="https://blackadder1712.github.io/Javascript-Array/">Project</a></button>
+            <button class="J-git"><a href="https://github.com/Blackadder1712/Javascript-Array">Github
+                Repository</a></button>
+
+
+
 
           </div>
         </div>

@@ -90,6 +90,9 @@
     100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px),
      calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
      margin-bottom:30px ;
+     bottom:30px;
+     width:80%;
+     margin:auto;
 }
 
 #myBtn-2
@@ -108,6 +111,8 @@
     100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px),
      calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
      margin-bottom:30px ;
+     width:80%;
+     margin:auto;
 }
 
 #myBtn-2:hover
@@ -133,6 +138,8 @@
     100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px),
      calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
      margin-bottom:30px ;
+     width:80%;
+     margin:auto;
 }
 
 #myBtn-10:hover
@@ -164,6 +171,17 @@
     100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px),
      calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
      margin-bottom:30px ;
+     width:80%;
+     margin:auto;
+    
+}
+
+.scheme
+{
+  margin-top:30px;
+  display:flex;
+  flex-direction: column;
+  gap:30px;
 }
 
 #myBtn-11:hover
@@ -196,6 +214,19 @@
     100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px),
      calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
      margin-bottom:30px ;
+
+     width:80%;
+     margin:auto;
+}
+
+.me 
+{
+  display: flex;
+  flex-direction: column;
+  padding:auto;
+  width: 100%;
+  gap:30px;
+  margin-top:30px;
 }
 
 #scheming
@@ -824,12 +855,16 @@ margin-left:25px;
   text-align: center;
 }
 
-#btn-box
+.btn-box
 {
- display: flex;
- flex-direction: row;
- gap: 90px;
- margin-left:50px
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width:80%;
+  margin:auto;
+  padding-top:30px;
+ 
+  
  
 
 }
@@ -918,6 +953,294 @@ body
    */
 }
   
+.n-ref 
+{
+  font-family: "Roboto", "sans serif";
+
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: #1ca152;
+  padding: 5px;
+  border-radius: 8%;
+  margin-top: 20px;
+  width: 150px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.n-ref a
+{
+  color:white;
+  text-decoration: none;
+}
+
+.n-ref:before {
+  content: '';
+  background:  $matrix-green;
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.n-ref:active {
+  color: #000
+}
+
+.n-ref:active:after {
+  background: transparent;
+}
+
+.n-ref:hover:before {
+  opacity: 1;
+}
+
+.n-ref:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+.n-git
+{
+  font-family: "Roboto", "sans serif";
+
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: #1ca152;
+  padding: 5px;
+  border-radius: 8%;
+  margin-top: 20px;
+  width: 150px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.n-git a
+{
+  color:white;
+  text-decoration: none;
+}
+
+.n-git:before {
+  content: '';
+  background:  $matrix-green;
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.n-git:active {
+  color: #000
+}
+
+.n-git:active:after {
+  background: transparent;
+}
+
+.n-git:hover:before {
+  opacity: 1;
+}
+
+.n-git:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.J-proj
+{
+  font-family: "Roboto", "sans serif";
+
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: #1ca152;
+  padding: 5px;
+  border-radius: 8%;
+  margin-top: 20px;
+  width: 150px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.J-proj a
+{
+  color:white;
+  text-decoration: none;
+}
+
+.J-proj:before {
+  content: '';
+  background:  $matrix-green;
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.J-proj:active {
+  color: #000
+}
+
+.J-proj:active:after {
+  background: transparent;
+}
+
+.J-proj:hover:before {
+  opacity: 1;
+}
+
+.J-proj:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.J-git
+{
+  font-family: "Roboto", "sans serif";
+
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: #1ca152;
+  padding: 5px;
+  border-radius: 8%;
+  margin-top: 20px;
+  width: 150px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.J-git a
+{
+  color:white;
+  text-decoration: none;
+}
+
+.J-git:before {
+  content: '';
+  background:  $matrix-green;
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.J-git:active {
+  color: #000
+}
+
+.J-git:active:after {
+  background: transparent;
+}
+
+.J-git:hover:before {
+  opacity: 1;
+}
+
+.J-git:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
 
 
 .professional
@@ -1396,26 +1719,22 @@ hr {
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
-  top: 1850px;
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
+
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
  
 }
 
 .modal-5 {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   left: 0;
-  top: 1900px;
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
+
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
  
 }
 
@@ -1541,25 +1860,18 @@ hr {
 
 .modal-content-4 {
   background-color: black;
-  margin: 35% auto;
+  margin: 35% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
- 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 .modal-content-5 {
   background-color: black;
-  margin: 35% auto;
+  margin: 35% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  margin-left: 20px;
-    margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 .modal-content-6 {
@@ -1806,10 +2118,7 @@ hr {
   z-index: 100;
 }
 
-.back
-{
-  margin:30px;
-}
+
 
 .close:hover,
 .close:focus {
@@ -2398,6 +2707,7 @@ text set in the data-text attribute. */
   transition: 0.4s ease;
   border-radius: 0 5px 5px 0;
   user-select: none;
+  display: none;
 }
 
 
