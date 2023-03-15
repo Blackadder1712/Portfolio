@@ -280,8 +280,8 @@ margin-top:800px
     position:fixed;
     width: 200px;
     height: 100%;
-    background-color:$matrix-green
-
+    background-color:$matrix-green;
+    z-index:100;
      
   }
 
@@ -309,7 +309,7 @@ margin-top:800px
  {
   width: 200px;
   align-items: center;
- 
+ display: block;
 
  }
  
