@@ -5,7 +5,15 @@
 /* Medium devices ? min-width: 768px and up (small screen/laptops)*/
 @media screen and (min-width: 768px) {
 
-  
+  .myBtn 
+  {
+    height:50%;
+  }
+
+  .myBtn-2
+  {
+    height:50%;
+  }
 
 .pages *
    {
@@ -78,6 +86,9 @@
   
   .pages
   {
+  display: flex;
+  flex-direction:column;
+  gap:30px;
   margin-left:10%;
   }
 
@@ -258,16 +269,7 @@ margin-top:800px
   margin: 10px;
   
 }
-  .caption-text-about
-  { 
-    visibility: hidden;
-
-    position:relative;
-    width: 100%;
-    height: 100%
-    
-  }
-
+ 
  
 
  .hamburger {
@@ -309,7 +311,9 @@ margin-top:800px
  {
   width: 200px;
   align-items: center;
- display: block;
+ display: flex;
+ flex-direction:column;
+ justify-content:space-around;
 
  }
  
@@ -370,7 +374,7 @@ margin-top:800px
    padding:30px;
    line-height:95px;
    cursor: pointer;
-   padding-left:68px
+ 
   }
 
   .name
@@ -705,6 +709,21 @@ margin-top:800px
 
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px) {
+
+  .pages
+  {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap:30px;
+  }
+
+  .main-pages
+  {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+  }
 
 .caption-text-code
 {

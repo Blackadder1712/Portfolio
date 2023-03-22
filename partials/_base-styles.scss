@@ -39,7 +39,7 @@
     padding: 16px;
     border:none;
     text-align: center;
-    margin-right: 80px;
+    margin: auto;
    
     margin-top: 0px;
     font-size: $text-font-size;
@@ -51,6 +51,12 @@
   
  
   
+}
+
+canvas
+{
+  width:90%;
+  height:1000px;
 }
 
 
@@ -368,8 +374,7 @@
     padding: 16px;
     
     text-align: center; 
-    margin-left:130px; 
-    margin-top: 0px;
+    margin:auto;
     font-size: $text-font-size;
     font-weight: $title-font-weight;
     font-family: $main-font;
@@ -400,7 +405,7 @@
     padding: 16px;
     
     text-align: center; 
-    margin-left:105px;
+    margin:auto;
     margin-top: 0px;
     font-size: $text-font-size;
     font-weight: $title-font-weight;
@@ -859,10 +864,10 @@ margin-left:25px;
 {
   display: flex;
   flex-direction:row;
-  justify-content: space-between;
   width:80%;
   margin:auto;
   padding-top:30px;
+  gap:35%;
  
   
  
@@ -2271,29 +2276,8 @@ hr {
   right:200px;
 }
 
-.sqllogo
-{
-  position:relative;
-  justify-content: center;
-  align-self: center;
-  z-index:3;
-  top:-200;
-  width:30%;
-  right:50%;
-  background-color: white;
-}
 
- .htmllogo
-{
-  position:relative;
-  justify-content: center;
-  align-self: center;
-  z-index:30;
-  top:-200;
-  width:30%;
-  left:55%;
-  background-color: white;
-}
+
 
 
 
