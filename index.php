@@ -239,13 +239,9 @@
                 <div class="Containers" id="myBtn-12">
                   <h1 class="java-code">Javascript</h1>
 
-
-                  <div class="j-snip">
-                    <img src="img/JAVASCRIPT-demo.png" class="javabtn-2" alt="java snippet">
-                  
-
-
-                  </div>
+                  "
+                  <a href = "j-page.php" class="j-snip"><img src="img/JAVASCRIPT-demo.png" class="javabtn-2" alt="java snippet"></a>
+              
 
 
 

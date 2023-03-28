@@ -6,7 +6,7 @@
  $db = "portfolio";
 
  /*cpanel
- $server = "localhost";
+ $server = "localhost:3306";
  $username = "amyvince_amy";
  $password = "f)5%)NNd.cpA";
  $db = "amyvince_portfolio";*/
