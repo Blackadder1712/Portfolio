@@ -2,7 +2,10 @@
 
 
 
-
+.submit a
+{
+  text-decoration: none;
+}
 //Dropdown menu button 
 .dropbtn
 {
@@ -2974,7 +2977,12 @@ visibility: hidden;
 letter-spacing: .4px;
 }
 
-
+#emails
+{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
 
 
 //Email form
@@ -3158,7 +3166,7 @@ border-color:white;
   padding:5px;
   border-radius: 8%;
  margin-top: 20px;
-  
+  text-decoration: none;
  width:150px;
  align-items: center;
 
@@ -3357,6 +3365,15 @@ letter-spacing: .4px;
   padding:15%
 }
 //Email form
+
+.email-sec
+{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  text-align:center;
+  gap:10px;
+}
 
 .contact
 {

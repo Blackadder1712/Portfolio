@@ -28,6 +28,10 @@
 
 <body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">
   <!--Drop down menu for smaller VP-->
+
+  <?php require_once "db/connect.php";?> 
+  <?php include 'email-form/signup.inc.php';?>
+
   <header class="flex-container-1">
 
     <nav>
@@ -38,7 +42,7 @@
         </div>
 
         <div class="dropdown-content">
-          <div class="in"><a href="index.html">Home</a></div>
+          <div class="in"><a href="index.php">Home</a></div>
           <div class="in"><a href="#glitch">About Me</a></div>
 
           <div class="in"><a href="#port">Portfolio</a></div>
@@ -222,18 +226,6 @@
 
                 </div>
 
-
-
-
-
- 
-
-                
-                
-
-        
-
-
               </div>
 
             </div>
@@ -324,6 +316,18 @@
 
                   </div>
 
+                  <div class="Containers" id="myBtn-16">
+                    <h1 class="php-code">PHP</h1>
+                    <div class="php-snip">
+
+                
+                      <img src="img/php-snip.png" class="phpbtn" alt="php coding">
+
+                    </div>
+
+
+                  </div>
+
                   <div id="myModal-8" class="modal-8">
                     <div class="modal-content-8">
                       <span class="close-8">&times;</span>
@@ -349,9 +353,7 @@
 
                 </div>
           
-                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-         
+            
 
 
 
@@ -363,8 +365,7 @@
                   <a href = "#" class="dots" id="java-dot" onclick="currentSlides(1)"><img src="img/R.png"></a>
 
                   <a href = "#" class="dots" id="sql-dot" onclick="currentSlides(2)"><img src="img/sql-logo.png"></a>
-  
-  
+
   
                   <a href = "#" class="dots" id="html-dot" onclick="currentSlides(3)"><img src="img/html_css.png"></a>
   
@@ -450,36 +451,218 @@
                     
                         <h2>Mobile: 07950518798</h2>
                         <h2>Email: amyvincent1990@outlook.com</h2>
-                        <div class="forms">
-                          <div class="contact">
-                            <div class="mb-3">
-                              <label for="mb-label" class="form-label">First Name</label>
-                              <input type="text" class="form-control" placeholder="REQUIRED" id="Name">
-                            </div>
+
+                        <?php
+                          /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
+                          
+                          if(strpos($fullUrl, "signup=empty") == true )//check url for string 
+                          {
+                              echo "<p class='pop'>Not all fields completed</p>"; //display error 
+                              //exit();
+                          }
+
+                          if(strpos($fullUrl, "signup=char") == true )//check url for string 
+                          {
+                              echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                            // exit();
+                          }
+
+                          else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
+                          {
+                              echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                              //exit();
+                          }*/
+
+                          if(!isset($_GET['signup']))
+                          {
+                            //exit(); // exit if user not submitted form 
+                          }
+                          else
+                          {
+                          
+                                $signupCheck = $_GET['signup']; //check url
+                          
+                            
+                                if($signupCheck == "empty")
+                                {
+                                  echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
+                                
+                                }
+                                elseif($signupCheck == "char")
+                                {
+                                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                                }
+                                elseif($signupCheck == "invalidtelephone")
+                                {
+                                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                                }
+
+                                elseif($signupCheck == "email")
+                                {
+                                  echo "<p class='pop'>Please enter valid email</p>"; //display error 
+                                }
+
+                                elseif($signupCheck == "success")
+                                {
+                                  echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
+                            
+                      
+                            
+                              
+                                }
+                                
+              
+                            
+                          
+                        
+
+
+                          }
+                        ?>
+                          <div class="email-box-2">
+                <div class="holder">                 
+                  <form action= "email-form/signup.inc.php" method="POST">
+                   
+                    <div class="email-form-2" id="email-form">
+
+                    
+
+                      <div class= "email-sec">
+                          <div class="nameandemail-2" id="emails">
+                            <?php 
+                              if(isset($_GET['name']))
+                              {
+                                
+                                $name = $_GET['name'];
+                                echo'<div class="email-3">
+                                       <label for="exampleFormControlInput1" class="form-label">Your Name <i
+                                       class="fa-solid fa-asterisk"></i></label>
+                                        <input type="text" name="name" class="form-control-email" id="exampleFormControlInput1" value="'.$name.'">
+                                      </div>'; //display after submit if input correct                                    
+                              }
+                              else
+                              {
+                                 //if no error messages 
+                                 echo' <div class="email-3">
+                                         <label for="exampleFormControlInput1" class="form-label">Your Name <i
+                                            class="fa-solid fa-asterisk"></i></label>
+                                          <input  name="name" class="form-control-email" id="exampleFormControlInput1">
+   
+   
+                                        </div>';
+                              }
+
+                              if(isset($_GET['company']))
+                              {
+                                
+                                $company = $_GET['company'];
+                                echo'<div class="email-3">
+                                       <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
+                                       class="fa-solid fa-asterisk"></i></label>
+                                        <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1" value="'.$company.'">
+                                      </div>'; //display after submit if input correct                                    
+                              }
+                              else
+                              {
+                                 //if no error messages 
+                                 echo'<div class="email-3">
+                                 <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
+                                 class="fa-solid fa-asterisk"></i></label>
+                                  <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1">
+                                </div>'; //display after submit if input correct    
+                              }
+                            
+
+                              
+                              if(isset($_GET['email']))
+                              {
+                                
+                                $email = $_GET['email'];
+                                echo'<div class="email-3">
+                                       <label for="exampleFormControlInput1" class="form-label">Your Email <i
+                                       class="fa-solid fa-asterisk"></i></label>
+                                        <input type="text" name="email" class="form-control-email" id="exampleFormControlInput1" value="'.$email.'">
+                                      </div>'; //display after submit if input correct                                    
+                              }
+                              else
+                              {
+                                 //if no error messages 
+                                 echo'<div class="email-3">
+                                 <label for="exampleFormControlInput1" class="form-label">Your Email <i
+                                 class="fa-solid fa-asterisk"></i></label>
+                                  <input type="text" name="email" class="form-control-email" id="exampleFormControlInput1">
+                                </div>'; //display after submit if input correct    
+                              }
+
+                              if(isset($_GET['telephone']))
+                              {
+                                
+                                $telephone = $_GET['telephone'];
+                                echo'<div class="email-3">
+                                       <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
+                                       class="fa-solid fa-asterisk"></i></label>
+                                        <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1" value="'.$telephone.'">
+                                      </div>'; //display after submit if input correct                                    
+                              }
+                              else
+                              {
+                                 //if no error messages 
+                                 echo'<div class="email-3">
+                                 <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
+                                 class="fa-solid fa-asterisk"></i></label>
+                                  <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1">
+                                </div>'; //display after submit if input correct    
+                              }
+
+                              if(isset($_GET['subject']))
+                              {
+                                
+                                $subject = $_GET['subject'];
+                                echo'<div class="email-3">
+                                       <label for="exampleFormControlInput1" class="form-label">Subject<i
+                                       class="fa-solid fa-asterisk"></i></label>
+                                        <input type="text" name="subject" class="form-control-email" id="exampleFormControlInput1" value="'.$subject.'">
+                                      </div>'; //display after submit if input correct                                    
+                              }
+                              else
+                              {
+                                 //if no error messages 
+                                 echo'<div class="email-3">
+                                 <label for="exampleFormControlInput1" class="form-label">Subject <i
+                                 class="fa-solid fa-asterisk"></i></label>
+                                  <input type="text" name="subject" class="form-control-email" id="exampleFormControlInput1">
+                                </div>'; //display after submit if input correct    
+                              }
+
+                              
+                              if(isset($_GET['message']))
+                              {
+                                
+                                $message = $_GET['message'];
+                                echo'<div class="email-3">
+                                       <label for="exampleFormControlInput1" class="form-label">Message <i
+                                       class="fa-solid fa-asterisk"></i></label>
+                                        <input type="text" name="message" class="form-control-email" id="exampleFormControlInput1" value="'.$message.'">
+                                      </div>'; //display after submit if input correct                                    
+                              }
+                              else
+                              {
+                                 //if no error messages 
+                                 echo'<div class="email-3">
+                                 <label for="exampleFormControlInput1" class="form-label">Message <i
+                                 class="fa-solid fa-asterisk"></i></label>
+                                  <input type="text" name="message" class="form-control-email" id="exampleFormControlInput1">
+                                </div>'; //display after submit if input correct    
+                              }
+                            ?>
+                        
+
                       
                       
                       
-                            <div class="mb-3">
-                              <label for="mb-label" class="form-label">Last Name</label>
-                              <input type="text" class="form-control" placeholder="Please enter last name" id="LastName">
-                            </div>
-                      
-                      
-                            <div class="mb-3">
-                              <label for="mb-label" class="form-label">Email Address</label>
-                              <input type="email" class="form-control" placeholder="REQUIRED" id="email">
-                            </div>
-                      
-                      
-                            <div class="mb-3">
-                              <label for="mb-label" class="form-label">Message</label>
-                              <textarea class="form-control" placeholder="REQUIRED" id="Subject" cols="20" rows="10"></textarea>
-                            </div>
-                      
-                      
-                      
-                      
-                            <button class="submit">Submit</button>
+                         
+                            
+                             <button class="submit" type="submit" name ="submit" >Submit</button>
                           </div>
                       
                       
@@ -637,7 +820,7 @@
 
   <div class="sidebar">
     <nav id="myPages" class="main-pages">
-      <button onclick="window.location.href = 'index.html';">A</button>
+      <button onclick="window.location.href = 'index.php';">A</button>
       <ul class="pages">
 
 
@@ -724,7 +907,7 @@
   <!--dropdown effect-->
   <script src="js/dropdown.js"></script>
   <!--email validation-->
-  <script src="js/email-val.js"></script>
+  <!--<script src="js/email-val.js"></script>-->
   <!--name validation-->
 
   <!--page animations-->
