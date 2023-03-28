@@ -345,6 +345,15 @@
                       </h3>
                     </div> 
                   </div>    
+
+                  <div class="Containers" id="myBtn-17">
+                    <h1 class="word-code">WORDPRESS</h1>
+                    <div class="word-snip">
+
+                
+                      <img src="img/coming-soon.png" class="wordbtn" alt="wordpress coding">
+
+                    </div>
   
 
 
@@ -359,6 +368,7 @@
 
 
               </div>
+              <div class = "c-buttons">
 
                  <!-- The circles/dots -->
                 <div class ="btn-box">
@@ -368,8 +378,19 @@
 
   
                   <a href = "#" class="dots" id="html-dot" onclick="currentSlides(3)"><img src="img/html_css.png"></a>
+                  
+
   
                 </div>
+
+                <div class ="btn-box-2">
+                 
+                  <a href = "#" class="dots" id="php-dot" onclick="currentSlides(4)"><img src="img/new-php-logo.png"></a>
+                  <a href = "#" class="dots" id="word-dot" onclick="currentSlides(5)"><img src="img/wordpress-logo.png"></a>
+
+  
+                </div>
+              </div>  
                 <div class="scs-scheme" id="scheming">
                   <h1 class="cyberpunk glitched" id="schemed">SCS Scheme</h1>
 

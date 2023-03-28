@@ -35,7 +35,7 @@
 
   margin-top:150px;
 }
-.htmlbtn
+.htmlbtn, .phpbtn, .wordbtn, .javabtn, .sqlbtn
   {
     background-color:$matrix-green ;
     color:black;
@@ -43,7 +43,7 @@
     border:none;
     text-align: center;
     margin: auto;
-   
+    width:80vw;
     margin-top: 0px;
     font-size: $text-font-size;
     font-weight: $title-font-weight;
@@ -426,7 +426,7 @@ canvas
   
 }
 
-.htmlbtn
+.htmlbtn, .phpbtn, .wordbtn
   {
     background-color:$matrix-green ;
   
@@ -474,7 +474,7 @@ canvas
   background-color: white;
 }
 
-.htmlbtn:hover
+.htmlbtn:hover, .phpbtn:hover , .wordbtn:hover
 {
   background-color:white;
 }
@@ -863,18 +863,46 @@ margin-left:25px;
   text-align: center;
 }
 
+.c-buttons
+{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  margin:20px;
+  gap:70px;
+  
+  
+}
+
 .btn-box
 {
   display: flex;
   flex-direction:row;
   width:80%;
   margin:auto;
+
   padding-top:30px;
   gap:35%;
- 
+
   
  
 
+}
+
+.btn-box-2
+{
+  display: flex;
+  flex-direction:row;
+  width:80%;
+  align-items: center;
+  gap:40%;
+  justify-content: center;
+  margin:auto;
+
+ 
+ 
+
+  
 }
 .dots {
   cursor: pointer;
@@ -887,7 +915,7 @@ margin-left:25px;
   transition: background-color 0.5s ease;
 }
 
-java-dot
+
 
 .sidebar 
 {
@@ -2257,11 +2285,12 @@ hr {
 
 
 
-.j-snip,.sql-snip, .html-snip
+.j-snip,.sql-snip, .html-snip, .php-snip, .word-snip
 {
   display: flex;
   align-items: center;
   justify-content: center;
+
 
 }
 
