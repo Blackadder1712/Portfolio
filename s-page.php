@@ -1,4 +1,3 @@
-
 <html lang="en">
 
     <head>
@@ -104,7 +103,7 @@
       <button class="dropbtn" id="dropbtn" data-text="Back to Coding Examples">
         <a href = "index.php#coding" class = "back-btn">Back to Coding Examples</a>
       </button>
-      <div class = "j-title">Javascript Coding Snippet</div>
+      <div class = "j-title">SQL Coding Snippet</div>
 
       
         <ul class="j-desc">
@@ -112,7 +111,9 @@
         </ul>
   
       
-      <img src="img/JAVASCRIPT-demo.png" class="javascript-page" alt="java snippet">
+      <img src="img/SQL.png" class="javascript-page" alt="sql snippet">
+      
+      <img src="img/sql-code.png" class="javascript-page" alt="sql snippet">
 
 
 
@@ -122,20 +123,19 @@
 
                 <div class = "j-info">
                     
-                    <h3 class="js-pop"> This snippet of code was taken from the Javascript coding I used for the animated background of this
-                      webpage.
-                      As you can see the animation is initiated by a function, which first of all sets the height of each
-                      character column by dividing the height of the canvas by the tilesize. It then goes into an infinite “for
-                      loop” that adds a column of random height with each iteration, each column increasing the width of the
-                      canvas. What makes this “for loop” infinite is it will continue to increase the canvas width with each
-                      iteration, thus meaning that the counter value (i) will never be more than the canvas.width value, which
-                      is the argument.
+                    <h3 class="js-pop"> Above is an image displaying a movie database and an image of the SQL query I used to manipulate 
+                        ,search through and use to gather specific data needed from the tables within said database.
+                        I first of all set the columns of the tables i required an alias using the AS keyword. This makes 
+                        the code more efficient and easier to read and understand. Once required tables were connected using the INNER JOIN keyword I 
+                        could then sort through the data i needed by using the genre ID's and movie language column, filtering through the column to find specific data i needed
+                        from it, using the WHERE keyword . Finally i sorted the data by release date using the ORDER BY keyword. 
+        
         
 
                     </h3>
                     
                     <ul class="j-desc">
-                       <li><a href="j-page.php" class="Description">Scroll Up ^</a></li>
+                       <li><a href="s-page.php" class="Description">Scroll Up ^</a></li>
                     </ul>
                 </div> 
       
@@ -151,5 +151,4 @@
 
 
     </body>
-
 

@@ -239,7 +239,7 @@
                 <div class="Containers" id="myBtn-12">
                   <h1 class="java-code">Javascript</h1>
 
-                  "
+                 
                   <a href = "j-page.php" class="j-snip"><img src="img/JAVASCRIPT-demo.png" class="javabtn-2" alt="java snippet"></a>
               
 
@@ -248,36 +248,17 @@
 
                 </div>
 
-                <div id="myModal-6" class="modal-6">
-                  <div class="modal-content-6">
-                    <span class="close-6">&times;</span>
-                    <h2> Javascript </h2>
-                    <img src="img/JAVASCRIPT-demo.png" id="java-test">
-                    <h3 class="js-pop"> This snippet of code was taken from the Javascript coding I used for the animated background of this
-                      webpage.
-                      As you can see the animation is initiated by a function, which first of all sets the height of each
-                      character column by dividing the height of the canvas by the tilesize. It then goes into an infinite “for
-                      loop” that adds a column of random height with each iteration, each column increasing the width of the
-                      canvas. What makes this “for loop” infinite is it will continue to increase the canvas width with each
-                      iteration, thus meaning that the counter value (i) will never be more than the canvas.width value, which
-                      is the argument.
         
-
-                    </h3>
-                  </div> 
-                </div>     
-
 
 
 
 
                 <div class="Containers" id="myBtn-13">
                   <h1 class="SQL-code">SQL</h1>
-                  <div class="sql-snip">
+                  <a href = "s-page.php" class="j-snip"><img src="img/SQL.png"  class="sqlbtn" alt="SQL snippet"></a>
 
 
-                    <img src="img/SQL.png" class="sqlbtn" alt="SQL snippet">
-                 
+                  
 
 
 
@@ -304,8 +285,9 @@
                     <h1 class="html-code">HTML</h1>
                     <div class="html-snip">
 
-                
-                      <img src="img/HTML-demo.png" class="htmlbtn" alt="html coding">
+    
+                      <a href = "h-page.php" class="j-snip"><img src="img/HTML-demo.png"  class="htmlbtn" alt="HTML snippet"></a>
+
 
                     </div>
 
@@ -315,9 +297,8 @@
                   <div class="Containers" id="myBtn-16">
                     <h1 class="php-code">PHP</h1>
                     <div class="php-snip">
-
-                
-                      <img src="img/php-snip.png" class="phpbtn" alt="php coding">
+                      
+                      <a href = "p-page.php" class="j-snip"><img src="img/php-snip.png"  class="htmlbtn" alt="PHP snippet"></a>
 
                     </div>
 
@@ -395,18 +376,7 @@
                       <h1> Scion Coalition Scheme</h1>
                     </div>
 
-                    <div id="myModal-10" class="modal-10">
-                      <div class="modal-content-10">
-                        <span class="close-10">&times;</span>
-                        <h2> The Scion Coalition Scheme is an intensive, specially tailored training program<br>
-                          run by Netmatters in order to give willing candidates the opportunity to enter the industry<br>
-                          as web developers. Under the supervision of senior web developers, scions generally aim to complete<br>
-                          training within six to nine months. The course is intensive and therefore the level of learning achieved is<br>
-                              extensive in a short space of time.
-                        </h2>
-        
-                      </div>
-                    </div>
+                
 
 
                     <div id="myBtn-11">
@@ -417,40 +387,9 @@
                     </div>
                   </div>
 
-                  <div id="myModal-11" class="modal-11">
-                    <div class="modal-content-11">
-                      <span class="close-11">&times;</span>
-                      <h2> Treehouse is an online learning community, featuring videos covering a number of topics<br>
-                        from basic HTML to C# programming, iOS development, data analysis, and more.<br>
-                          By completing courses users can earn points, allowing them to track their progress<br>
-                          and see how much they've covered in certain areas.<br>
-                        Total Score
-                        teamtreehouse.com/ score :6445
-                        
-                      </h2>
-      
-                    </div>
-                  </div>
+                 
 
                 
-                  <div id="myModal-33" class="modal-33">
-                    <div class="modal-content-33">
-                      <span class="close-33">&times;</span>
-                      <h2> 
-                        Established in 2008
-                        Norfolk's leading technology company<br>
-                        Winner of the Princess Royal Training Award<br>
-                        Winner of EDP Skills of Tomorrow Award<br>
-                        80+ staff, 2 locations across Norfolk<br>
-                        Digital Marketing, Website & Software development & IT Support<br>
-                        Broad spectrum of clients, working nationwide<br>
-                        Operate to strict company values<br>
-                        
-                      </h2>
-      
-                    </div>
-                  </div>
-      
       
       
                 </div>
@@ -769,6 +708,54 @@
 
           </div>
         </div>
+
+        <div id="myModal-10" class="modal-10">
+                      <div class="modal-content-10">
+                        <span class="close-10">&times;</span>
+                        <h2> The Scion Coalition Scheme is an intensive, specially tailored training program<br>
+                          run by Netmatters in order to give willing candidates the opportunity to enter the industry<br>
+                          as web developers. Under the supervision of senior web developers, scions generally aim to complete<br>
+                          training within six to nine months. The course is intensive and therefore the level of learning achieved is<br>
+                              extensive in a short space of time.
+                        </h2>
+        
+                      </div>
+                    </div>
+
+                    <div id="myModal-11" class="modal-11">
+                    <div class="modal-content-11">
+                      <span class="close-11">&times;</span>
+                      <h2> Treehouse is an online learning community, featuring videos covering a number of topics<br>
+                        from basic HTML to C# programming, iOS development, data analysis, and more.<br>
+                          By completing courses users can earn points, allowing them to track their progress<br>
+                          and see how much they've covered in certain areas.<br>
+                        Total Score
+                        teamtreehouse.com/ score :6445
+                        
+                      </h2>
+      
+                    </div>
+                  </div>
+
+                  
+                  <div id="myModal-33" class="modal-33">
+                    <div class="modal-content-33">
+                      <span class="close-33">&times;</span>
+                      <h2> 
+                        Established in 2008
+                        Norfolk's leading technology company<br>
+                        Winner of the Princess Royal Training Award<br>
+                        Winner of EDP Skills of Tomorrow Award<br>
+                        80+ staff, 2 locations across Norfolk<br>
+                        Digital Marketing, Website & Software development & IT Support<br>
+                        Broad spectrum of clients, working nationwide<br>
+                        Operate to strict company values<br>
+                        
+                      </h2>
+      
+                    </div>
+                  </div>
+      
 
 
 

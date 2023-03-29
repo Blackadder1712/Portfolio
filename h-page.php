@@ -104,7 +104,7 @@
       <button class="dropbtn" id="dropbtn" data-text="Back to Coding Examples">
         <a href = "index.php#coding" class = "back-btn">Back to Coding Examples</a>
       </button>
-      <div class = "j-title">Javascript Coding Snippet</div>
+      <div class = "j-title">HTML/CSS Coding Snippet</div>
 
       
         <ul class="j-desc">
@@ -112,7 +112,8 @@
         </ul>
   
       
-      <img src="img/JAVASCRIPT-demo.png" class="javascript-page" alt="java snippet">
+      <img src="img/HTML-demo.png" class="javascript-page" alt="java snippet">
+      <img src="img/css-pic.png" class="javascript-page" alt="java snippet">
 
 
 
@@ -122,14 +123,21 @@
 
                 <div class = "j-info">
                     
-                    <h3 class="js-pop"> This snippet of code was taken from the Javascript coding I used for the animated background of this
-                      webpage.
-                      As you can see the animation is initiated by a function, which first of all sets the height of each
-                      character column by dividing the height of the canvas by the tilesize. It then goes into an infinite “for
-                      loop” that adds a column of random height with each iteration, each column increasing the width of the
-                      canvas. What makes this “for loop” infinite is it will continue to increase the canvas width with each
-                      iteration, thus meaning that the counter value (i) will never be more than the canvas.width value, which
-                      is the argument.
+                    <h3 class="js-pop"> This first snippet of code is the html to my contact page from this website,
+                        As you can see each input field is child element (.mb-3) with its own unique ID,
+                        within a parent element(“.contact”). Tho the input fields look similar on screen,
+                        this differential is required when different attributes and properties need to be attached
+                        to each child element. This was very important in the scenario when it came to applying Regex
+                        as each field had its own specific Regex variable. Not only this , each field differed in label name ,
+                        field size etc. It was vital to gain access to each field as an individual.
+        
+
+                    </h3>
+
+                    <h3 class="js-pop"> The second snippet of code is the css i used to style the borders of all the main 
+                        elements on the page. I didnt want them to have the boring square frame so i decided to use clip-path, this 
+                        allowed me to customise the angles and shape of the border to create a "file" looking border and background . I also added 
+                        a hover effect so the user knows which images are buttons/clickable.
         
 
                     </h3>
