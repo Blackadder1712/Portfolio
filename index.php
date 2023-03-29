@@ -598,7 +598,7 @@
                                 echo'<div class="email-3">
                                        <label for="exampleFormControlInput1" class="form-label">Message <i
                                        class="fa-solid fa-asterisk"></i></label>
-                                        <input type="text" name="message" class="form-control-email" id="exampleFormControlInput1" value="'.$message.'">
+                                        <input type="textarea" cols="40" rows ="5" name="message" class="form-control-email" id="exampleFormControlInput1" value="'.$message.'">
                                       </div>'; //display after submit if input correct                                    
                               }
                               else
@@ -607,7 +607,7 @@
                                  echo'<div class="email-3">
                                  <label for="exampleFormControlInput1" class="form-label">Message <i
                                  class="fa-solid fa-asterisk"></i></label>
-                                  <input type="text" name="message" class="form-control-email" id="exampleFormControlInput1">
+                                  <input type="textarea" cols="40" rows ="5" name="message" class="form-control-email" id="exampleFormControlInput1">
                                 </div>'; //display after submit if input correct    
                               }
                             ?>
