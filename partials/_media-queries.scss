@@ -749,6 +749,13 @@ margin-top:800px
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px) {
 
+  .side-home
+  {
+    display:none;
+  }
+
+
+
   .b-ground
   {
     width: 100%;
@@ -756,8 +763,24 @@ margin-top:800px
 
   .holder
   {
-    max-width:1180px;
-  }
+    max-width: 1180px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cyberpunk glitched:hover{
+  transition: all .5s;
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+
+.cyberpunk glitched:hover span{
+  animation-play-state: paused;
+}
+
+  
 
 
   #canvas
@@ -767,34 +790,103 @@ margin-top:800px
   }
   .scroll
   {
-    
-    margin:0px;
-  };
+    width:80%;
+    margin:auto;
+  }
+
+  #large
+  {
+    display:flex;
+  }
+
+  #small
+  {
+    display:none;
+  }
 
  .sidebar
-  {display: none;
+  {display: flex;
+    height: 150px;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    background-color: transparent;
+    
   }
+
+  #port
+  {
+    padding-top:220px;
+  }
+
+  #coding
+  {
+    padding-top:65px;
+  }
+
+  #contact
+  {
+    padding-top: 190px;
+  }
+
+  #schemed
+  {
+    padding-top:110px;
+  }
+
+  .pages li
+  {
+    background-color: transparent;
+    border:none;
+    margin-top:-20px;
+  };
 
   .pages
   {
+     margin:0px;
+     padding:0px;
+  }
+  .main-pages {
+   
+    align-items: center;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    gap: 5%;
+    margin: 25px;
+    width: auto;
+    max-width: 1180px;
+  }
+  .pages
+  {
+    display: flex;
+    flex-direction:row;
     justify-content: space-between;
     gap:30px;
+    width: 80%;
   }
 
-  .main-pages
+  .socials
   {
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
+    display:none;
   }
+
 
 .caption-text-code
 {
   padding-top:1400px;
 }
 
+.caption-text-index
+{
+  margin-top:360px;
+}
+
+#glitch
+{
+  padding-top: 220px;
+}
 .netmatters
 {
   padding-top: 80px;

@@ -34,6 +34,69 @@
 
   <header class="flex-container-1">
 
+     <header class="container" id="contain">
+
+
+
+     <img src="img/netmatters-logo.png" class="top-logo" alt="netmatters-logo">
+
+     <div class="header-contact">
+     <div class="support">
+      <a href="#"><i class="fa-solid fa-computer-mouse"></i> SUPPORT</a>
+
+     </div>
+
+      <div class="contact">
+        <a href="contact.php"><i class="fa-regular fa-paper-plane"></i> CONTACT</a>
+      </div>
+
+      </div>
+
+
+
+
+
+
+
+
+<button class="phone"><i class="fa-2x fa-solid fa-phone-volume"></i></button>
+
+<div class="ham">
+  <div class="hamburger-menu">
+    <div class="ham-bar bar-top"></div>
+    <div class="ham-bar bar-mid"></div>
+    <div class="ham-bar bar-bottom"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="search-bar">
+
+
+  <div class="header-search">
+    <input type="text" class="form-control-1" placeholder="Search..." aria-label="Search"
+      aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+        class="fa-solid fa-magnifying-glass"></i></button>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+</header>
+
     <nav>
       <div class="dropdown">
         <div class="drop-glitch">
@@ -825,42 +888,64 @@
 
 
   <!--Sidebar for larger VP-->
+ 
+    <div class="sidebar">
+      <nav id="myPages" class="main-pages">
+        <a href="index.php" class="side-home">A</a>
+          <ul class="pages" id="large">
 
-  <div class="sidebar">
-    <nav id="myPages" class="main-pages">
-    <a href="index.php" class="side-home">A</a>
-      <ul class="pages">
+       
+            <li>
+              <h1 class = "cyberpunk glitched"><a href="#glitch"  class="nav-link-2">About Me</a></h1>
+           
+            </li>
+        
 
+            
+            <li><h1 class = "cyberpunk glitched"><a href="#port" class="nav-link-3">Portfolio</a></h1></li>
 
-        <li><a href="#glitch" class="nav-link-2">About Me</a></li>
+            <li><h1 class = "cyberpunk glitched"><a href="#coding" class="nav-link-4">Coding Examples</a></h1></li>
 
-        <li><a href="#port" class="nav-link-3">Portfolio</a></li>
+            <li><h1 class = "cyberpunk glitched"><a href="#scheming" class="nav-link-5">SCS Scheme</a></h1></li>
 
-        <li><a href="#coding" class="nav-link-4">Coding Examples</a></li>
-
-        <li><a href="#scheming" class="nav-link-5">SCS Scheme</a></li>
-
-        <li><a href="#contact" class="nav-link-6">Contact Me</a></li>
-
-
-      </ul>
-      <div class="socials">
-
-        <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-          <img src="img/linkdn.png" class="linkbtn" alt="LinkedIn logo">
-        </a>
-        <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-          <img src="img/git.png" alt="Github logo" class="gitbtn">
-        </a>
+            <li><h1 class = "cyberpunk glitched"><a href="#contact" class="nav-link-6">Contact Me</a></h1></li>
 
 
-
-      </div>
-
-    </nav>
+          </ul>
+          <ul class="pages" id=small>
 
 
-  </div>
+              <li><a href="#glitch"  class="nav-link-2">About Me</a></li>
+
+              <li><a href="#port" class="nav-link-3">Portfolio</a></li>
+
+              <li><a href="#coding" class="nav-link-4">Coding Examples</a></li>
+
+              <li><a href="#scheming" class="nav-link-5">SCS Scheme</a></li>
+
+              <li><a href="#contact" class="nav-link-6">Contact Me</a></li>
+
+
+          </ul>
+
+          <div class="socials">
+
+            <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+              <img src="img/linkdn.png" class="linkbtn" alt="LinkedIn logo">
+            </a>
+            <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+              <img src="img/git.png" alt="Github logo" class="gitbtn">
+            </a>
+
+
+
+          </div>
+
+      </nav>
+
+
+    </div>
+ 
 
 
 
