@@ -105,9 +105,8 @@
         </div>
 
         <div class="dropdown-content">
-          <div class="in"><a href="index.php">Home</a></div>
+        <div class="in"><a href="index.php">Home</a></div>
           <div class="in"><a href="#glitch">About Me</a></div>
-
           <div class="in"><a href="#port">Portfolio</a></div>
           <div class="in"><a href="#coding">Coding Examples</a></div>
           <div class="in"><a href="#scheming">SCS Scheme</a></div>
@@ -259,12 +258,12 @@
             
            <!--link to pro biography--> 
             <div class ="me">
-              <button id="myBtn">
+              <button id="myBtn" >
                 <h1> Professional Biography</h1>
 
               </button>
 
-            <!--link to personal bio-->
+             <!--link to personal bio-->
               <button id="myBtn-2">
                 <h1> Personal Biography</h1>
 

@@ -749,6 +749,12 @@ margin-top:800px
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px) {
 
+  .me
+  {
+    display: flex;
+    flex-direction:row;
+  }
+
   .side-home
   {
     display:none;
