@@ -161,13 +161,16 @@
           }
         </script>
 
-        <div class="b-ground">
-          <canvas id="canvas" width="550%" height="1000%" style="display:block auto;"></canvas>
+        <div class ="holder">
+          <div class="b-ground">
+            <canvas id="canvas" width="550%" height="1000%" style="display:block auto;"></canvas>
+          </div>
         </div>
       
 
       </div>
-      <div class="scroll">
+      <div class ="holder">
+        <div class="scroll">
        
           <div class="border">
 
@@ -635,6 +638,7 @@
           </div>
           
         </div>
+      </div>  
 
       </div>
       <!--holds modal pop ups-->
@@ -824,7 +828,7 @@
 
   <div class="sidebar">
     <nav id="myPages" class="main-pages">
-      <button onclick="window.location.href = 'index.php';">A</button>
+    <a href="index.php" class="side-home">A</a>
       <ul class="pages">
 
 

@@ -60,7 +60,7 @@
 
 canvas
 {
-  width:90%;
+  width:-webkit-fill-available;
   height:1000px;
   overflow-x: scroll;
 }
@@ -2601,6 +2601,12 @@ hr {
 
   }
 
+  .holder
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .scroll-2 {
     display: none;
     flex-direction: column;
