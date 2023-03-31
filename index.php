@@ -275,20 +275,32 @@
               <h1 class="cyberpunk glitched" id="port">Portfolio!</h1>
 
               
+                <div class ="portfolio-info">
+                  <div class="html/css" id="myBtn-3">
+                    <h1 class="html">HTML/CSS</h1>
+                    <input type="image" src="img/netmatters.jpg" alt="Image of netmatters project" class="netbtn">
 
-                <div class="html/css" id="myBtn-3">
-                  <h1 class="html">HTML/CSS</h1>
-                  <input type="image" src="img/netmatters.jpg" alt="Image of netmatters project" class="netbtn">
+                  </div>
 
+
+                  <div class="Javascript" id="myBtn-4">
+                    <h1 class="java-1">Javascript</h1>
+
+                    <input type="image" src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" class="javabtn"
+                      alt="coming soon image">
+
+                  </div>
+
+                
                 </div>
+                <div class ="portfolio-info-2">
+                 <div class="Wordpress" id="myBtn-5">
+                    <h1 class="word-1">Wordpress</h1>
 
+                    <input type="image" src="img/coming-soon.png" class="wordbtn"
+                      alt="coming soon image">
 
-                <div class="Javascript" id="myBtn-4">
-                  <h1 class="java-1">Javascript</h1>
-
-                  <input type="image" src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" class="javabtn"
-                    alt="coming soon image">
-
+                  </div>
                 </div>
 
               </div>
@@ -683,7 +695,7 @@
                       
                          
                             
-                             <button class="submit" type="submit" name ="submit" >Submit</button>
+                            <button class="submit" type="submit" name ="submit" ><a href = "#contact">Submit</a></button>
                           </div>
                       
                       

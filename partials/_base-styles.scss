@@ -47,7 +47,7 @@
 
 
 
-.htmlbtn, .phpbtn, .wordbtn, .javabtn, .sqlbtn
+.htmlbtn, .phpbtn, .wordbtn, .javabtn-2, .sqlbtn
   {
     background-color:$matrix-green ;
     color:black;
@@ -64,26 +64,58 @@
     max-width: 90%;
     align-self: center;
     
+    
   
  
   
 }
-
-
-
-.pages li:hover {
-	
-
-	
-		.o1{
-			fill: rgba(#CC8110, 0.3);
-		}
-		
-		.o2 {
-			stroke-dashoffset: -420;
-		}
-	
+.htmlbtn:hover, .phpbtn:hover, .wordbtn:hover, .javabtn-2:hover, .sqlbtn:hover, #myBtn:hover, #myBtn-2:hover,
+#myBtn-3:hover, #myBtn-4:hover, #myBtn-5:hover, #myBtn-10:hover, #myBtn-11:hover, #myBtn-33:hover, .submit:hover
+{
+animation: glitch1 0.5s infinite;
 }
+
+.htmlbtn:nth-child(2), .phpbtn:nth-child(2), .wordbtn:nth-child(2), 
+.javabtn-2:nth-child(2), .sqlbtn:nth-child(2), #myBtn:nth-child(2), #myBtn2:nth-child(2),
+ #myBtn-3:nth-child(2), #myBtn-4:nth-child(2), #myBtn-5:nth-child(2), #myBtn-10:nth-child(2), 
+ #myBtn-11:nth-child(2), #myBtn-33:nth-child(2), .submit:nth-child(2)
+{
+  color: #f0f5f1;
+  animation: glitch2 10.0s infinite;
+}
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  50% {
+    transform: skew(-2deg, 0.6deg);
+    opacity: 0.75;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(3px, 1px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+
+
 
 
   
@@ -996,7 +1028,13 @@ margin-left:25px;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.5s ease;
+
 }
+
+
+
+
+
 
 
 

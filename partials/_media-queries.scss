@@ -749,6 +749,61 @@ margin-top:800px
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px) {
 
+  .scroll-2
+  {
+    margin-left:0px;
+    width:100%;
+    height:100%;
+  }
+  
+  .modal-content-3, .modal-content-5
+  {
+    margin-top:165px
+  }
+
+  .modal-content-10, .modal-content-11, .modal-content-33
+  {
+    margin-top:190px;
+    margin-right:50px;
+    margin-left:50px
+  }
+
+  .portfolio-info
+  {
+    display: flex;
+    flex-direction:row;
+  }
+  .portfolio-info-2
+  {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+  }
+
+  .Wordpress
+  {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+
+
+  .javabtn, .netbtn, .wordbtn
+  {
+    width:500px;
+    height:250px;
+    margin:0px;
+
+  }
+
+  h1.html, h1.java-1, h1.word-1
+  {
+    font-size:40px;
+    margin-bottom:20px;
+  }
+
+ 
   .me
   {
     display: flex;
@@ -913,6 +968,27 @@ margin-top:800px
 @media screen and (min-width: 1025px) 
 {
 
+  .slideshow-container-fade
+  {
+    display:none;
+  }
+
+  .dots img 
+   {
+    width:140px;
+   }
+
+   .c-buttons
+   {
+    gap:240px;
+   }
+
+   .btn-box-2 
+   {
+    justify-content: space-around;
+    gap:0px;
+    margin:0px;
+   }
   .caption-text-code
 { 
  
