@@ -69,6 +69,20 @@
  
   
 }
+
+#myBtn-3, #myBtn-4, #myBtn-5
+{
+  color: var(--yellow-color);
+  border: 30px solid #1ca152;
+  border-right: 5px solid #1ca152;
+  border-left: 5px solid #1ca152;
+  border-bottom: 24px solid #1ca152;
+  background-color: black;
+  clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+  height:500px;
+  margin:30px;
+
+}
 .htmlbtn:hover, .phpbtn:hover, .wordbtn:hover, .javabtn-2:hover, .sqlbtn:hover, #myBtn:hover, #myBtn-2:hover,
 #myBtn-3:hover, #myBtn-4:hover, #myBtn-5:hover, #myBtn-10:hover, #myBtn-11:hover, #myBtn-33:hover, .submit:hover
 {
@@ -388,17 +402,10 @@ canvas
     
     text-align: center;
     margin-left: 10%;
-    margin-top: 0px;
+    margin-top: 40px;
     font-size: $text-font-size;
     font-weight: $title-font-weight;
     font-family: $main-font;
-    color: var(--yellow-color);
-    border: 30px solid #1ca152;
-    border-right: 5px solid #1ca152;
-    border-left: 5px solid #1ca152;
-    border-bottom: 24px solid #1ca152;
-    background-color: black;
-    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
    
     max-width: 80%;
     align-self: center;
@@ -443,18 +450,11 @@ canvas
     
     text-align: center;
     margin-left: 10%;
-    margin-top: 0px;
+    margin-top: 40px;
     font-size: $text-font-size;
     font-weight: $title-font-weight;
     font-family: $main-font;
-    color: var(--yellow-color);
-    border: 30px solid #1ca152;
-    border-right: 5px solid #1ca152;
-    border-left: 5px solid #1ca152;
-    border-bottom: 24px solid #1ca152;
-    background-color: black;
-    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
-   
+    
     max-width: 80%;
     align-self: center;
   
@@ -549,18 +549,12 @@ canvas
     
     text-align: center; 
 
-    margin-top: 0px;
+    margin-top: 40px;
     font-size: $text-font-size;
     font-weight: $title-font-weight;
     font-family: $main-font;
-    color: var(--yellow-color);
-    border: 30px solid #1ca152;
-    border-right: 5px solid #1ca152;
-    border-left: 5px solid #1ca152;
-    border-bottom: 24px solid #1ca152;
-    background-color: black;
-    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
-   
+    
+    display:flex;
     max-width: 80%;
     align-self: center;
   
@@ -575,7 +569,7 @@ canvas
 {
   
     color: white;
-    font-size: 40px;
+    font-size: 20px;
  
  
    
@@ -620,6 +614,10 @@ canvas
 
 }
 
+.java-1
+{
+  font-size: 25px;
+}
 .java-caption
 {
   font-family: $main-font;
@@ -2358,14 +2356,18 @@ hr {
 
 .net-pop
 {
-  color:white;
+ 
+  color: white;
+  padding: 18px;
+  font-size: 18px;
 }
+
 
 .js-pop
 {
-  color:white;
-  padding:10px;
-  align-items: center;
+  color: white;
+  padding: 18px;
+  font-size: 18px;
 }
 
 /* Slideshow container */

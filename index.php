@@ -223,11 +223,11 @@
           }
         </script>
 
-        <div class ="holder">
+        
           <div class="b-ground">
             <canvas id="canvas" width="550%" height="1000%" style="display:block auto;"></canvas>
           </div>
-        </div>
+ 
       
 
       </div>
@@ -274,20 +274,36 @@
             <div class="portfolio" id="portfolio">
               <h1 class="cyberpunk glitched" id="port">Portfolio!</h1>
 
+              <div class ="port-box">
+
               
                 <div class ="portfolio-info">
                   <div class="html/css" id="myBtn-3">
-                    <h1 class="html">HTML/CSS</h1>
+                  
                     <input type="image" src="img/netmatters.jpg" alt="Image of netmatters project" class="netbtn">
+                    <h1 class="html">HTML/CSS/JAVASCRIPT<br>PHP/SQL</h1>
+                    <h3 class="net-pop"> For this Project we had to rebuild the Netmatters webpage from scratch
+                      using a mix of HTML, CSS, Javascript as well as PHP.....
+                      
+                   
+                    </h3>
+
 
                   </div>
 
 
                   <div class="Javascript" id="myBtn-4">
-                    <h1 class="java-1">Javascript</h1>
+                  
 
                     <input type="image" src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" class="javabtn"
                       alt="coming soon image">
+                      <h1 class="java-1">Javascript</h1>
+                      <h3 class="js-pop">
+                          For this Project we had to build a multi-dimensional array which consisted of
+                          multiple Email addresses
+                          
+                       </h3>
+
 
                   </div>
 
@@ -295,10 +311,14 @@
                 </div>
                 <div class ="portfolio-info-2">
                  <div class="Wordpress" id="myBtn-5">
-                    <h1 class="word-1">Wordpress</h1>
+                  
 
                     <input type="image" src="img/coming-soon.png" class="wordbtn"
                       alt="coming soon image">
+                      <h1 class="word-1">Wordpress</h1>
+                      <h3 class="js-pop">
+                        5 page Wordress website coming soon! 
+                       </h3>
 
                   </div>
                 </div>
@@ -753,11 +773,16 @@
             <span class="close-3">&times;</span>
             <h2> Netmatter's HTML/CSS Reflection</h2>
             <img src="img/netmatters.jpg" id="net-small">
-            <h3 class="net-pop"> For this Project we had to rebuild the Netmatters webpage from scratch
-              using a mix of HTML, CSS and Javascript.As well as this i also learnt how and when to create
-              cookies
-              as well as using scss.
-            </h3>
+
+            <h3 class="net-pop">
+                      For this Project we had to rebuild the Netmatters webpage from scratch
+                      using a mix of HTML, CSS, Javascript as well as PHP. I used javascript for certian functions 
+                      such as the sliding nav menu and cookie sessions. I used PHP to not only store client information within
+                      a selected database that i had created using phpadmin and SQL, I also used it to streamline my HTML code, by taking repeated code, storing it within a PHP 
+                      function/file and calling on it when needed. Saving myself from repeating code. 
+            </h3>          
+                      
+        
 
             <button class="n-ref"><a
                 href="http://netmatters.amy-vincent.netmatters-scs.co.uk/">Project</a></button>
@@ -772,14 +797,15 @@
             <span class="close-5">&times;</span>
             <h2> Javascript Array Reflection</h2>
             <img src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" id="js-small">
-            <h3 class="js-pop"> For this Project we had to build a multi-dimensional array which consisted of
-              multiple Email addresses
-              holding an array of user-selected images. These images were fetched from an API via an ajax
-              call.Using javascript functions to allow the user to
-              select their images of choice and re enter a duplicate email if they want to add more images.
+            <h3 class="js-pop">
+                          For this Project we had to build a multi-dimensional array which consisted of
+                          multiple Email addresses
+                          holding an array of user-selected images. These images were fetched from an API via an ajax
+                          call.Using javascript functions to allow the user to
+                          select their images of choice and re enter a duplicate email if they want to add more images.
+                       </h3>
 
-
-            </h3>
+         
 
             <button class="J-proj"><a
                 href="https://blackadder1712.github.io/Javascript-Array/">Project</a></button>
