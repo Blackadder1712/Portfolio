@@ -508,7 +508,7 @@
                         </h3>
                     
                         <h2>Mobile: 07950518798</h2>
-                        <h2>Email: amyvincent1990@outlook.com</h2>
+                        <h2 class= "email">Email: amyvincent1990@outlook.com</h2>
 
                         <?php
                           /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error

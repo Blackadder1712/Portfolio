@@ -81,6 +81,7 @@
   clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
   height:500px;
   margin:30px;
+  height:450px;
 
 }
 .htmlbtn:hover, .phpbtn:hover, .wordbtn:hover, .javabtn-2:hover, .sqlbtn:hover, #myBtn:hover, #myBtn-2:hover,
@@ -294,7 +295,8 @@ canvas
   margin-top:30px;
   display:flex;
   flex-direction: column;
-  gap:30px;
+  gap:18px;
+  font-size:10px;
 }
 
 #myBtn-11:hover
@@ -340,6 +342,7 @@ canvas
   width: 100%;
   gap:30px;
   margin-top:30px;
+  height:400px;
 }
 
 #scheming
@@ -2747,7 +2750,11 @@ hr {
 
 
 
-
+.email
+{
+  margin:10px;
+  font-size: inherit;
+}
 
 
 //Main image and caption 
@@ -2757,9 +2764,9 @@ hr {
   flex-direction: column;
   padding:30px;
   background-color: transparent;
-  height:3000px;
+ 
   margin:10px;
-  width:95%;
+  width:75%;
   align-items: center;
 
     color: var(--yellow-color);
