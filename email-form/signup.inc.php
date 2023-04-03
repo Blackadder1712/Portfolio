@@ -1,3 +1,4 @@
+
 <?php
 
 if(isset($_POST['submit'])) //check if form submitted
@@ -98,4 +99,3 @@ if(isset($_POST['submit'])) //check if form submitted
 {
    header("Location: index.php?signup=error");//if not go back to main index  ,? placeholder 
 }*/
-

@@ -59,15 +59,6 @@
 
 
 
-<button class="phone"><i class="fa-2x fa-solid fa-phone-volume"></i></button>
-
-<div class="ham">
-  <div class="hamburger-menu">
-    <div class="ham-bar bar-top"></div>
-    <div class="ham-bar bar-mid"></div>
-    <div class="ham-bar bar-bottom"></div>
-  </div>
-</div>
 
 
 
@@ -77,21 +68,7 @@
 
 
 
-<div class="search-bar">
 
-
-  <div class="header-search">
-    <input type="text" class="form-control-1" placeholder="Search..." aria-label="Search"
-      aria-describedby="button-addon2">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-        class="fa-solid fa-magnifying-glass"></i></button>
-
-
-
-
-
-  </div>
-</div>
 
 
 
@@ -508,7 +485,7 @@
                         </h3>
                     
                         <h2>Mobile: 07950518798</h2>
-                        <h2 class= "email">Email: amyvincent1990@outlook.com</h2>
+                        <h2 class = "email">Email: amyvincent1990@outlook.com</h2>
 
                         <?php
                           /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
@@ -720,7 +697,7 @@
                       
                          
                             
-                            <button class="submit" type="submit" name ="submit" ><a href = "#contact">Submit</a></button>
+                            <button class="submit" type="submit" name ="submit" >Submit</button>
                           </div>
                       
                       
