@@ -35,22 +35,11 @@
   <header class="flex-container-1">
 
      <header class="container" id="contain">
+ 
 
 
 
-     <img src="img/netmatters-logo.png" class="top-logo" alt="netmatters-logo">
-
-     <div class="header-contact">
-     <div class="support">
-      <a href="#"><i class="fa-solid fa-computer-mouse"></i> SUPPORT</a>
-
-     </div>
-
-      <div class="contact">
-        <a href="contact.php"><i class="fa-regular fa-paper-plane"></i> CONTACT</a>
-      </div>
-
-      </div>
+     
 
 
 
@@ -89,9 +78,7 @@
           <div class="in"><a href="#scheming">SCS Scheme</a></div>
           <div class="in"><a href="#contact">Contact Me</a></div>
           <div class="socials-small">
-            <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-              <img src="img/linkdn.png" alt="LinkedIn logo" class="linkbtn-small">
-            </a>
+        
             <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
               <img src="img/git.png" alt="Github logo" class="gitbtn-small">
             </a>
@@ -357,7 +344,7 @@
 
                  <div class="Containers" id="myBtn-15">
                     <h1 class="html-code">HTML</h1>
-                    <div class="html-snip">
+                    <div class="html-snip-1">
 
     
                       <a href = "h-page.php" class="j-snip"><img src="img/HTML-demo.png"  class="htmlbtn" alt="HTML snippet"></a>
@@ -477,83 +464,85 @@
                   <h1 class="cyberpunk glitched" id="contact">Contact Me</h1>
                     <div class="sendit">
                     
-          
-                        <h1>Get in Touch </h1>
-                    
-                        <h3>If you would like more information on the services I have to offer,<br> please dont
-                          hesitate to get in touch:
-                        </h3>
-                    
-                        <h2>Mobile: 07950518798</h2>
-                        <h2 class = "email">Email: amyvincent1990@outlook.com</h2>
-
-                        <?php
-                          /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
-                          
-                          if(strpos($fullUrl, "signup=empty") == true )//check url for string 
-                          {
-                              echo "<p class='pop'>Not all fields completed</p>"; //display error 
-                              //exit();
-                          }
-
-                          if(strpos($fullUrl, "signup=char") == true )//check url for string 
-                          {
-                              echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                            // exit();
-                          }
-
-                          else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
-                          {
-                              echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                              //exit();
-                          }*/
-
-                          if(!isset($_GET['signup']))
-                          {
-                            //exit(); // exit if user not submitted form 
-                          }
-                          else
-                          {
-                          
-                                $signupCheck = $_GET['signup']; //check url
-                          
-                            
-                                if($signupCheck == "empty")
-                                {
-                                  echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
-                                
-                                }
-                                elseif($signupCheck == "char")
-                                {
-                                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                                }
-                                elseif($signupCheck == "invalidtelephone")
-                                {
-                                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                                }
-
-                                elseif($signupCheck == "email")
-                                {
-                                  echo "<p class='pop'>Please enter valid email</p>"; //display error 
-                                }
-
-                                elseif($signupCheck == "success")
-                                {
-                                  echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
-                            
+                        <div class = "details">
+                          <h1>Get in Touch </h1>
                       
-                            
+                          <h3>If you would like more information on the services I have to offer,<br> please dont
+                            hesitate to get in touch:
+                          </h3>
+                      
+                          <h2>Mobile: 07950518798</h2>
+                          <h2 class = "email">Email: amyvincent1990@outlook.com</h2>
+                        </div>    
+                        <div class="form">
+                            <?php
+                              /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
                               
-                                }
+                              if(strpos($fullUrl, "signup=empty") == true )//check url for string 
+                              {
+                                  echo "<p class='pop'>Not all fields completed</p>"; //display error 
+                                  //exit();
+                              }
+
+                              if(strpos($fullUrl, "signup=char") == true )//check url for string 
+                              {
+                                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                                // exit();
+                              }
+
+                              else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
+                              {
+                                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                                  //exit();
+                              }*/
+
+                              if(!isset($_GET['signup']))
+                              {
+                                //exit(); // exit if user not submitted form 
+                              }
+                              else
+                              {
+                              
+                                    $signupCheck = $_GET['signup']; //check url
+                              
                                 
-              
-                            
+                                    if($signupCheck == "empty")
+                                    {
+                                      echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
+                                    
+                                    }
+                                    elseif($signupCheck == "char")
+                                    {
+                                      echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                                    }
+                                    elseif($signupCheck == "invalidtelephone")
+                                    {
+                                      echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                                    }
+
+                                    elseif($signupCheck == "email")
+                                    {
+                                      echo "<p class='pop'>Please enter valid email</p>"; //display error 
+                                    }
+
+                                    elseif($signupCheck == "success")
+                                    {
+                                      echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
+                                
                           
-                        
+                                
+                                  
+                                    }
+                                    
+                  
+                                
+                              
+                            
 
 
-                          }
-                        ?>
+                              }
+                            ?>
+                        </div>
                           <div class="email-box-2">
                 <div class="holder">                 
                   <form action= "email-form/signup.inc.php" method="POST">
@@ -587,26 +576,6 @@
                                         </div>';
                               }
 
-                              if(isset($_GET['company']))
-                              {
-                                
-                                $company = $_GET['company'];
-                                echo'<div class="email-3">
-                                       <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
-                                       class="fa-solid fa-asterisk"></i></label>
-                                        <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1" value="'.$company.'">
-                                      </div>'; //display after submit if input correct                                    
-                              }
-                              else
-                              {
-                                 //if no error messages 
-                                 echo'<div class="email-3">
-                                 <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
-                                 class="fa-solid fa-asterisk"></i></label>
-                                  <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1">
-                                </div>'; //display after submit if input correct    
-                              }
-                            
 
                               
                               if(isset($_GET['email']))
@@ -629,25 +598,7 @@
                                 </div>'; //display after submit if input correct    
                               }
 
-                              if(isset($_GET['telephone']))
-                              {
-                                
-                                $telephone = $_GET['telephone'];
-                                echo'<div class="email-3">
-                                       <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
-                                       class="fa-solid fa-asterisk"></i></label>
-                                        <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1" value="'.$telephone.'">
-                                      </div>'; //display after submit if input correct                                    
-                              }
-                              else
-                              {
-                                 //if no error messages 
-                                 echo'<div class="email-3">
-                                 <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
-                                 class="fa-solid fa-asterisk"></i></label>
-                                  <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1">
-                                </div>'; //display after submit if input correct    
-                              }
+                     
 
                               if(isset($_GET['subject']))
                               {
@@ -697,7 +648,7 @@
                       
                          
                             
-                            <button class="submit" type="submit" name ="submit" >Submit</button>
+                           <a href= "#contact" ><button class="submit"  type="submit" name ="submit" >Submit</button></a>
                           </div>
                       
                       
@@ -912,15 +863,11 @@
       <nav id="myPages" class="main-pages">
         <a href="index.php" class="side-home">A</a>
           <ul class="pages" id="large">
-
-       
-            <li>
+           <li>
               <h1 class = "cyberpunk glitched"><a href="#glitch"  class="nav-link-2">About Me</a></h1>
            
             </li>
-        
-
-            
+              
             <li><h1 class = "cyberpunk glitched"><a href="#port" class="nav-link-3">Portfolio</a></h1></li>
 
             <li><h1 class = "cyberpunk glitched"><a href="#coding" class="nav-link-4">Coding Examples</a></h1></li>
@@ -928,6 +875,11 @@
             <li><h1 class = "cyberpunk glitched"><a href="#scheming" class="nav-link-5">SCS Scheme</a></h1></li>
 
             <li><h1 class = "cyberpunk glitched"><a href="#contact" class="nav-link-6">Contact Me</a></h1></li>
+            
+            <li><a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+                  <img src="img/git.png" alt="Github logo" class="gitbtn">
+                </a></li>
+             
 
 
           </ul>
@@ -943,22 +895,19 @@
               <li><a href="#scheming" class="nav-link-5">SCS Scheme</a></li>
 
               <li><a href="#contact" class="nav-link-6">Contact Me</a></li>
+              <div class="socials">
+                <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
+                  <img src="img/git.png" alt="Github logo" class="gitbtn">
+                </a>
+              </div>
+             
+            </a>
+
 
 
           </ul>
 
-          <div class="socials">
-
-            <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-              <img src="img/linkdn.png" class="linkbtn" alt="LinkedIn logo">
-            </a>
-            <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
-              <img src="img/git.png" alt="Github logo" class="gitbtn">
-            </a>
-
-
-
-          </div>
+        
 
       </nav>
 
@@ -1006,6 +955,7 @@
   <script src="js/hover-10.js"></script>
   <script src="js/hover-11.js"></script>
   <script src="js/hover-13.js"></script>
+  <script src="js/sticky.js"></script>
   <!--sticky nav-->
 
   <script src="sticky.js"></script>

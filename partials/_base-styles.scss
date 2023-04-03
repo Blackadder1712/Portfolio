@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,300;0,700;1,300&display=swap');
+.scroll-down #large
+{
+  transform: translate3d(0, -100%,0);
+}
+
+.scroll-up #large
+{
+  filter: drop-shadow(0 10px 20px rgb(170,170,170))
+}
 
 
 
@@ -297,6 +306,7 @@ canvas
   flex-direction: column;
   gap:18px;
   font-size:10px;
+
 }
 
 #myBtn-11:hover
@@ -861,7 +871,7 @@ margin-left:25px;
 { 
   position: fixed;
   top:0;
-  display:inline-block;
+
   width:100%;
   text-align: center;
   z-index: 10;
@@ -1530,7 +1540,7 @@ h4.cyberpunk {
   font-weight: 700;
 }
 
-h1.cyberpunk:before,
+/*h1.cyberpunk:before,
 h2.cyberpunk:before,
 h3.cyberpunk:before,
 h4.cyberpunk:before {
@@ -1543,7 +1553,7 @@ h4.cyberpunk:before {
     height: 10px;
     background-color:white;
     clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
-}
+}*/
 
 h1.cyberpunk.glitched {
   animation-name: h1glitched;
@@ -2431,7 +2441,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  height:55vw;
 
 }
 
@@ -2713,7 +2723,7 @@ hr {
 .caption-text-index
 {
   z-index :5;
-  margin-top: 160px;
+  margin-top: 200px;
   margin-left: 10px;
   margin-right:10px;
  
