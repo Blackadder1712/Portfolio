@@ -103,11 +103,12 @@
       <button class="dropbtn" id="dropbtn" data-text="Back to Coding Examples">
         <a href = "index.php#coding" class = "back-btn">Back to Coding Examples</a>
       </button>
-      <div class = "j-title">SQL Coding Snippet</div>
+      <h1 class="cyberpunk glitched" id="coding">SQL Coding Snippet</h1>
 
       
         <ul class="j-desc">
                 <li><a href="#java-info" class="Description">Description</a></li>
+                <li><a href="index.php#coding" class="Description" id = "back">Back to Coding Examples</a></li>
         </ul>
   
       

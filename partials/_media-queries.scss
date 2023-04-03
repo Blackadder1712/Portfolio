@@ -53,10 +53,21 @@
 /* Medium devices ? min-width: 768px and up (small screen/laptops)*/
 @media screen and (min-width: 768px) {
 
+  .j-desc
+  {
+    gap:30px
+  }
+   
   .caption-text-index
   {
     margin-top:200px;
   }
+
+  #back
+{
+  display:block;
+  padding:5px;
+}
   
   .pages
   {
@@ -147,10 +158,7 @@
 }
 
 
-  #canvas
-  {
-    margin-left:200px;
-  }
+
   
   .pages
   {
@@ -1028,6 +1036,28 @@ margin-top:800px
   #scheming
   {
     padding-top:120px;
+  }
+   .scheme
+   {
+    flex-direction:row;
+   }
+   .details
+   {
+    width:30%
+   }
+
+   .email-box-2
+   {
+    width:70%;
+   }
+  
+  #java-dot, #sql-dot,#html-dot, #php-dot, #word-dot
+  {
+    display: none;
+  }
+  #java-dot-2, #sql-dot-2, #html-dot-2, #php-dot-2, #word-dot-2
+  {
+    display: block;
   }
 
   #contact

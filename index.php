@@ -412,12 +412,16 @@
                 <div class ="btn-box">
                  
                     <a href = "#" class="dots" id="java-dot" onclick="currentSlides(1)"><img src="img/R.png"></a>
+                    <a href = "j-page.php" class="dots" id="java-dot-2"><img src="img/R.png"></a>
                   
       
                    <a href = "#" class="dots" id="sql-dot" onclick="currentSlides(2)"><img src="img/sql-logo.png"></a>
+                   <a href = "s-page.php" class="dots" id="sql-dot-2" ><img src="img/sql-logo.png"></a>
+                
                 
 
                    <a href = "#" class="dots" id="html-dot" onclick="currentSlides(3)"><img src="img/html_css.png"></a>
+                   <a href = "h-page.php" class="dots" id="html-dot-2"><img src="img/html_css.png"></a>
                 
 
   
@@ -427,10 +431,11 @@
                    
               
                     <a href = "#" class="dots" id="php-dot" onclick="currentSlides(4)"><img src="img/new-php-logo.png"></a>
+                    <a href = "p-page.php" class="dots" id="php-dot-2" ><img src="img/new-php-logo.png"></a>
                  
 
                     <a href = "#" class="dots" id="word-dot" onclick="currentSlides(5)"><img src="img/wordpress-logo.png"></a>
-              
+                    <a href = "#" class="dots" id="word-dot-2" ><img src="img/wordpress-logo.png"></a>
   
                 </div>
               </div>  

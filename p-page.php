@@ -103,13 +103,13 @@
       <button class="dropbtn" id="dropbtn" data-text="Back to Coding Examples">
         <a href = "index.php#coding" class = "back-btn">Back to Coding Examples</a>
       </button>
-      <div class = "j-title">PHP Coding Snippet</div>
+      <h1 class="cyberpunk glitched" id="coding">PHP Coding Snippet</h1>
 
       
         <ul class="j-desc">
                 <li><a href="#java-info" class="Description">Description</a></li>
+                <li><a href="index.php#coding" class="Description" id = "back">Back to Coding Examples</a></li>
         </ul>
-  
       
       <img src="img/php-snip.png" class="javascript-page" alt="java snippet">
      
@@ -131,9 +131,10 @@
                        
                  
                     
-                    <ul class="j-desc">
-                       <li><a href="p-page.php" class="Description">Scroll Up ^</a></li>
-                    </ul>
+                        <ul class="j-desc">
+                                <li><a href="#java-info" class="Description">Description</a></li>
+                               
+                        </ul>
                 </div> 
       
 
