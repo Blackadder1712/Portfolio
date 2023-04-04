@@ -6,9 +6,9 @@
  $db = "portfolio";
 
  /*cpanel
- $server = "localhost:3306";
+ $server = "sxb1plzcpnl491036";
  $username = "amyvince_amy";
- $password = "f)5%)NNd.cpA";
+ $password = "=v.U!{8i{Ql!";
  $db = "amyvince_portfolio";*/
 
  //Check connection

@@ -480,73 +480,73 @@
                           <h2 class = "email">Email: amyvincent1990@outlook.com</h2>
                         </div>    
                         <div class="form">
-                            <?php
-                              /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
-                              
-                              if(strpos($fullUrl, "signup=empty") == true )//check url for string 
-                              {
-                                  echo "<p class='pop'>Not all fields completed</p>"; //display error 
-                                  //exit();
-                              }
-
-                              if(strpos($fullUrl, "signup=char") == true )//check url for string 
-                              {
-                                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                                // exit();
-                              }
-
-                              else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
-                              {
-                                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                                  //exit();
-                              }*/
-
-                              if(!isset($_GET['signup']))
-                              {
-                                //exit(); // exit if user not submitted form 
-                              }
-                              else
-                              {
-                              
-                                    $signupCheck = $_GET['signup']; //check url
-                              
-                                
-                                    if($signupCheck == "empty")
-                                    {
-                                      echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
-                                    
-                                    }
-                                    elseif($signupCheck == "char")
-                                    {
-                                      echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                                    }
-                                    elseif($signupCheck == "invalidtelephone")
-                                    {
-                                      echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                                    }
-
-                                    elseif($signupCheck == "email")
-                                    {
-                                      echo "<p class='pop'>Please enter valid email</p>"; //display error 
-                                    }
-
-                                    elseif($signupCheck == "success")
-                                    {
-                                      echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
-                                
+                        <?php
+                          /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
                           
-                                
-                                  
-                                    }
-                                    
-                  
-                                
-                              
+                          if(strpos($fullUrl, "signup=empty") == true )//check url for string 
+                          {
+                              echo "<p class='pop'>Not all fields completed</p>"; //display error 
+                              //exit();
+                          }
+
+                          if(strpos($fullUrl, "signup=char") == true )//check url for string 
+                          {
+                              echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                            // exit();
+                          }
+
+                          else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
+                          {
+                              echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                              //exit();
+                          }*/
+
+                          if(!isset($_GET['signup']))
+                          {
+                            //exit(); // exit if user not submitted form 
+                          }
+                          else
+                          {
+                          
+                                $signupCheck = $_GET['signup']; //check url
+                          
                             
+                                if($signupCheck == "empty")
+                                {
+                                  echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
+                                
+                                }
+                                elseif($signupCheck == "char")
+                                {
+                                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                                }
+                                elseif($signupCheck == "invalidtelephone")
+                                {
+                                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                                }
+
+                                elseif($signupCheck == "email")
+                                {
+                                  echo "<p class='pop'>Please enter valid email</p>"; //display error 
+                                }
+
+                                elseif($signupCheck == "success")
+                                {
+                                  echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
+                            
+                      
+                            
+                              
+                                }
+                                
+              
+                            
+                          
+                        
 
 
-                              }
-                            ?>
+                          }
+                        ?>
                         </div>
                           <div class="email-box-2">
                 <div class="holder">                 
@@ -558,7 +558,7 @@
 
                       <div class= "email-sec">
                           <div class="nameandemail-2" id="emails">
-                            <?php 
+                          <?php 
                               if(isset($_GET['name']))
                               {
                                 
@@ -581,6 +581,26 @@
                                         </div>';
                               }
 
+                              if(isset($_GET['company']))
+                              {
+                                
+                                $company = $_GET['company'];
+                                echo'<div class="email-3">
+                                       <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
+                                       class="fa-solid fa-asterisk"></i></label>
+                                        <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1" value="'.$company.'">
+                                      </div>'; //display after submit if input correct                                    
+                              }
+                              else
+                              {
+                                 //if no error messages 
+                                 echo'<div class="email-3">
+                                 <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
+                                 class="fa-solid fa-asterisk"></i></label>
+                                  <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1">
+                                </div>'; //display after submit if input correct    
+                              }
+                            
 
                               
                               if(isset($_GET['email']))
@@ -603,7 +623,25 @@
                                 </div>'; //display after submit if input correct    
                               }
 
-                     
+                              if(isset($_GET['telephone']))
+                              {
+                                
+                                $telephone = $_GET['telephone'];
+                                echo'<div class="email-3">
+                                       <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
+                                       class="fa-solid fa-asterisk"></i></label>
+                                        <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1" value="'.$telephone.'">
+                                      </div>'; //display after submit if input correct                                    
+                              }
+                              else
+                              {
+                                 //if no error messages 
+                                 echo'<div class="email-3">
+                                 <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
+                                 class="fa-solid fa-asterisk"></i></label>
+                                  <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1">
+                                </div>'; //display after submit if input correct    
+                              }
 
                               if(isset($_GET['subject']))
                               {
