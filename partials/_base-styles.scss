@@ -42,6 +42,7 @@
 #schemed
 {
   padding-top:30px;
+ 
 }
 
 
@@ -50,6 +51,8 @@
 {
 
   margin-top:150px;
+  flex-direction: column;
+
 }
 
 
@@ -380,6 +383,7 @@ canvas
 #scheming
 {
   padding-top:60px;
+  display:none;
 }
 
 #myBtn-33:hover
@@ -1041,8 +1045,9 @@ margin-left:25px;
 
 .c-buttons
 {
+  
   width:100%;
-  display:flex;
+  display:none;
   flex-direction:column;
   margin:20px;
   gap:70px;
@@ -1136,7 +1141,7 @@ body
      
   }
 
-  
+ 
 
 
 .caption-text-about
@@ -1145,7 +1150,7 @@ body
   margin-top: 420px;
   visibility: hidden;
   z-index: 5;
-  display:flex;
+  display:none;
 
 
   padding:10px;
@@ -2561,6 +2566,7 @@ hr {
 #coding
 {
   margin-top: 90px;
+  display:none;
 }
 
 .Backwards, .forwards {
@@ -3361,9 +3367,6 @@ skew to change the 'thickness' of the glitch.*/
 
 
 
-    
-
-
 //Navbar for bigger viewports
 
 
@@ -3371,6 +3374,7 @@ skew to change the 'thickness' of the glitch.*/
 #portfolio
 {
   padding-bottom: 10%;
+  display:none;
 }
 
 .Main-page-1
@@ -3680,8 +3684,12 @@ color: white;
   
 }
 
-
-
+#former
+{
+  display:none;
+  flex-direction: column;
+  align-items: center;
+}
 .form-control
 
 {

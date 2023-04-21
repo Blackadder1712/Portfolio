@@ -72,11 +72,11 @@
 
         <div class="dropdown-content">
         <div class="in"><a href="index.php">Home</a></div>
-          <div class="in"><a href="#glitch">About Me</a></div>
-          <div class="in"><a href="#port">Portfolio</a></div>
-          <div class="in"><a href="#coding">Coding Examples</a></div>
-          <div class="in"><a href="#scheming">SCS Scheme</a></div>
-          <div class="in"><a href="#contact">Contact Me</a></div>
+          <div class="in" id = "about-me"><a href="#glitch">About Me</a></div>
+          <div class="in" id = "porty"><a href="#port">Portfolio</a></div>
+          <div class="in" id = "coder"><a href="#coding">Coding Examples</a></div>
+          <div class="in" id = "scs"><a href="#scheming">SCS Scheme</a></div>
+          <div class="in" id = "form"><a href="#contact">Contact Me</a></div>
           <div class="socials-small">
         
             <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
@@ -200,7 +200,7 @@
        
           <div class="border">
 
-            <div class="caption-text-index">
+            <div class="caption-text-index" id = "caption-text-index">
 
 
 
@@ -217,7 +217,7 @@
 
 
            <!--title-->
-          <div class="caption-text-about">
+          <div class="caption-text-about" id = "caption-text-about">
             <h1 class="cyberpunk glitched" id="glitch">It's all about.......me!</h1>
             
            <!--link to pro biography--> 
@@ -233,6 +233,7 @@
 
               </button>
             </div>
+         </div>  
 
           
             <div class="portfolio" id="portfolio">
@@ -407,7 +408,7 @@
 
 
               </div>
-              <div class = "c-buttons">
+              <div class = "c-buttons" id = "c-buttons">
 
                  <!-- The circles/dots -->
                 <div class ="btn-box">
@@ -470,7 +471,7 @@
       
                 </div>
                
-              
+              <div class="form" id = "former">
                   <h1 class="cyberpunk glitched" id="contact">Contact Me</h1>
                     <div class="sendit">
                     
@@ -702,6 +703,7 @@
                       
                         </div>
                     </div>
+               </div>      
         
 
                 
@@ -1029,6 +1031,11 @@
   <script src="js/hover-11.js"></script>
   <script src="js/hover-13.js"></script>
   <script src="js/sticky.js"></script>
+  <script src="js/about-me.js"></script>
+  <script src = "js/portfolio.js"></script>
+  <script src = "js/coding-ex.js"></script>
+  <script src = "js/scheming.js"></script>
+  <script src = "js/contact.js"></script>
   <!--sticky nav-->
 
   <script src="sticky.js"></script>
