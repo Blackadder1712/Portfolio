@@ -7,6 +7,7 @@
   .portfolio
   {
     margin-top:290px;
+    max-width:1080px;
   }
 
   #java-info
@@ -19,6 +20,7 @@
   .sendit
   {
     font-size:20px;
+    max-width:1080px;
   }
 
  h2
@@ -831,10 +833,15 @@ margin-top:800px
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px) {
 
+  .close-w
+  {
+    z-index:300;
+  }
+
   .sendit
   {
     flex-direction: row;
-    width:100%;
+    width:80%;
     gap:10px;
   }
 
@@ -852,6 +859,7 @@ margin-top:800px
   {
     height:100px;
     width:100px;
+    margin-top:-30px;
   }
   .pages li 
   {
@@ -881,7 +889,7 @@ margin-top:800px
     height:100%;
   }
   
-  .modal-content-3, .modal-content-5
+  .modal-content-3, .modal-content-5, .modal-content-w
   {
     margin-top:165px
   }
@@ -947,13 +955,14 @@ margin-top:800px
   h1.html
   {
     font-size:20px;
-  }
+  } 
 
  
   .me
   {
     display: flex;
     flex-direction:row;
+    max-width:1080px;
   }
 
   .side-home
@@ -994,6 +1003,7 @@ margin-top:800px
   {
     margin:0px;
     width:-webkit-fill-available;
+    height:100%;
   }
   .scroll
   {
@@ -1013,14 +1023,14 @@ margin-top:800px
 
  .sidebar
   {display: flex;
-    height: 150px;
+    height: 120px;
     width: 100vw;
     flex-direction: column;
     align-items: center;
     margin: auto;
 
-    background-color: transparent;
-    
+    background-color: rgba(0,0,0,.4);
+    padding-top:20px;
   }
 
   #port
@@ -1040,6 +1050,7 @@ margin-top:800px
    .scheme
    {
     flex-direction:row;
+    max-width:1080px;
    }
    .details
    {
@@ -1164,6 +1175,7 @@ margin-top:800px
   margin-top:0px;
   margin-left:-80px;
   gap:5px;
+  max-width:1080px;
 }
 
 .netmatters

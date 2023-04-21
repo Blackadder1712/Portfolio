@@ -274,14 +274,15 @@
                 
                 </div>
                 <div class ="portfolio-info-2">
-                 <div class="Wordpress" id="myBtn-5">
+                 <div class="Wordpress" id="myBtn-w">
                   
 
-                    <input type="image" src="img/coming-soon.png" class="wordbtn"
+                    <input type="image" src="img/silent-hill-pic.jpg" class="wordbtn"
                       alt="coming soon image">
                       <h1 class="word-1">Wordpress</h1>
-                      <h3 class="js-pop">
-                        5 page Wordress website coming soon! 
+                      <h3 class="word-pop">
+                        Full 5 page Wordpress website created using Elementor in conjuction with
+                        a variety of plug-ins as well as my own custom HTML/CSS.
                        </h3>
 
                   </div>
@@ -441,9 +442,11 @@
               </div>  
                 <div class="scs-scheme" id="scheming">
                   <h1 class="cyberpunk glitched" id="schemed">SCS Scheme</h1>
+                 
 
                   <div class="scheme">
                     <div id="myBtn-10">
+                      <img class ="scion" src ="img/scion.jpg">
                       <h1> Scion Coalition Scheme</h1>
                     </div>
 
@@ -451,9 +454,11 @@
 
 
                     <div id="myBtn-11">
-                      <h1> Treehouse</h1>
+                      <img class ="scion" src ="img/Treehouse-Logo.png">
+                   
                     </div>
                     <div id="myBtn-33">
+                      <img class ="scion" src ="img/net.jpg">
                       <h1> Netmatters</h1>
                     </div>
                   </div>
@@ -718,11 +723,12 @@
         <div id="myModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <h2> My interest and love of Digital Technology led to me attending University Campus <br> Suffolk to
-              study
-              BA Computer Games Design, where i learnt to use
-              Unity, Unreal Engine and Flash.<br> Though life circumstances pushed me down a different path ,<br> I
-           solidly cemented a love and passion for coding and the unlimited possibilities it creates.</h2>
+            <h2> Netmatters have not only trained me in languages such as HTML/CSS, JavaScript,
+               PHP, Laravel etc (to name a few) they have taught me the importance of continually
+               improving soft skills. This extensive yet fast paced course has taught me great time management,
+                prioritising tasks and meeting deadlines , just to name a few of the amazing skills I have now become
+                 well rehearsed in. To me these skills are just as important as the coding, being reliable is the first
+                  stepping stone to any career.
 
           </div>
         </div>
@@ -756,7 +762,7 @@
         
 
             <button class="n-ref"><a
-                href="http://netmatters.amy-vincent.netmatters-scs.co.uk/">Project</a></button>
+                href="http://vincentwebdev.co.uk/NETMATTERS">Project</a></button>
             <button class="n-git"><a href="https://github.com/Blackadder1712/Netmatters">Github
                 Repository</a></button>
 
@@ -782,6 +788,29 @@
                 href="https://blackadder1712.github.io/Javascript-Array/">Project</a></button>
             <button class="J-git"><a href="https://github.com/Blackadder1712/Javascript-Array">Github
                 Repository</a></button>
+
+
+
+
+          </div>
+        </div>
+
+        <div id="myModal-w" class="modal-w">
+          <div class="modal-content-w">
+            <span class="close-w">&times;</span>
+            <h2>Silent Hill Wordpress Site</h2>
+            <img src="img/silent-hill-pic.jpg" id="js-small">
+            <h3 class="js-pop">
+                          For this Project I built a full 5 page website using Wordpress and Elementor , i used a variety
+                          of Plug-ins as well as my own custom html/css to achieve the style and look i wanted.
+                       </h3>
+
+         
+
+            <button class="w-proj"><a
+                href="http://vincentwebdev.co.uk/silent_hill/elementor-354/">Project</a>
+            </button>
+           
 
 
 
@@ -989,6 +1018,7 @@
   <script src="js/coding-examples.js"></script>
   <script src="js/hover.js"></script>
   <script src="js/hover-2.js"></script>
+  <script src="js/hover-w.js"></script>
   <script src="js/hover-3.js"></script>
   <script src="js/hover-4.js"></script>
   <script src="js/hover-5.js"></script>
