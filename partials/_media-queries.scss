@@ -70,6 +70,8 @@
 /* Medium devices ? min-width: 768px and up (small screen/laptops)*/
 @media screen and (min-width: 768px) {
 
+  
+
   .j-desc
   {
     gap:30px
@@ -214,9 +216,10 @@
 
   .scroll
   {
-    margin-left:190px;
+   
     top:0px;
-    width: calc(100vw - 200px)
+    height:100vw;
+    
 
   }
 
@@ -233,24 +236,6 @@
 }
   
 
-.htmlbtn
-{
-
-
- 
-  border:none;
-  margin-right:10.5%;
-  margin-left: 10%;
-  margin-top: 20px;
-  max-width: 40%;
- 
- 
-  
- 
-
-
-
-}
 
 .main-page
 {
@@ -313,17 +298,7 @@ margin-top:800px
 
 
 
-  .dropbtn
-{
-display:none
- 
-  
-}
 
-.dropdown
-{
-  display: none;
-}
 
   
   .caption-text
@@ -376,7 +351,7 @@ margin-top:800px
 
   .sidebar
   {
-    display: flex;
+    display: none;
     position:fixed;
     width: 200px;
     height: 100%;
@@ -420,8 +395,17 @@ margin-top:800px
   padding-top:20px;
  }
 
-
+ .border
+ {
+  margin-top:0px;
+ }
  
+ .portfolio-info
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
  fieldset
  {
    align-items: center;
@@ -518,12 +502,24 @@ margin-top:800px
   .c-buttons
   {
     margin-top: -120px;
+    flex-direction:row;
+    gap:0px;
+    margin-top:10px;
   }
-
+   
+  .scheme
+  {
+    flex-direction:row;
+  }
+  .btn-box-2
+  {
+    margin-top: 40px;
+  }
   .htmlbtn, .phpbtn, .wordbtn, .javabtn-2, .sqlbtn 
   {
-    width:45vw;
+    width:400px;
     margin-top: 10px;
+    height:350px;
     
   }
 
@@ -849,6 +845,10 @@ margin-top:800px
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px) {
 
+  .dropdown
+  {
+    display:none;
+  }
   .close-w
   {
     z-index:300;

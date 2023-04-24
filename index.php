@@ -267,12 +267,9 @@
 
 
                     </div>
-
-                  
-                  </div>
-                  <div class ="portfolio-info-2">
-                  <div class="Wordpress" id="myBtn-w">
-                    
+                      
+                    <div class="Wordpress" id="myBtn-w">
+                      
 
                       <input type="image" src="img/silent-hill-pic.jpg" class="wordbtn"
                         alt="coming soon image">
@@ -283,7 +280,11 @@
                         </h3>
 
                     </div>
-                  </div>
+                </div>
+
+                  
+                  
+               
 
                 </div>
 
@@ -962,7 +963,7 @@
 
 
           </ul>
-          <ul class="pages" id=small>
+         <!-- <ul class="pages" id=small>
 
 
               <li><a href="#glitch"  class="nav-link-2">About Me</a></li>
@@ -984,7 +985,7 @@
 
 
 
-          </ul>
+          </ul>-->
 
         
 
