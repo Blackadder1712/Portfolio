@@ -1,5 +1,20 @@
 @media screen and (min-width: 576px)
 {
+
+  .javabtn-2, .sqlbtn, .htmlbtn
+  {
+    height:250px;
+  }
+
+  .htmlbtn
+  {
+    margin-top:0px;
+  }
+
+  .html-code
+  {
+    margin-top:0px;
+  }
    #contact
    {
     margin-top:240px;
@@ -29,7 +44,7 @@
  }
  .j-snip, .sql-snip, .html-snip, .php-snip, .word-snip
  {
-  height:55vw;
+  height:fit-content;
  } 
 
  .dots img
@@ -39,7 +54,7 @@
 
  #coding
  {
-  margin-top:150px;
+  margin-top:30px;
  }
 
  .net-pop
@@ -509,11 +524,12 @@ margin-top:800px
   {
     width:45vw;
     margin-top: 10px;
+    
   }
 
   #coding
   {
-    margin-top:50px;
+    margin-top:40px;
   }
 
   .caption-text-about

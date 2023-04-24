@@ -74,7 +74,7 @@
         <div class="in"><a href="index.php">Home</a></div>
           <div class="in" id = "about-me"><a href="#glitch">About Me</a></div>
           <div class="in" id = "porty"><a href="#port">Portfolio</a></div>
-          <div class="in" id = "coder"><a href="#coding">Coding Examples</a></div>
+          <div class="in" id = "coder"><a href="#coded">Coding Examples</a></div>
           <div class="in" id = "scs"><a href="#scheming">SCS Scheme</a></div>
           <div class="in" id = "form"><a href="#contact">Contact Me</a></div>
           <div class="socials-small">
@@ -196,525 +196,530 @@
 
       </div>
       <div class ="holder">
-        <div class="scroll">
+            <div class="scroll">
        
-          <div class="border">
+              <div class="border">
 
-            <div class="caption-text-index" id = "caption-text-index">
-
-
-
-
-              <!--Burger menu-->
-              <div class="img-title" id="img-title"></div>
-
-              <!--Captions-->
-
-            </div>
-
-          </div>
+                <div class="caption-text-index" id = "caption-text-index">
 
 
 
-           <!--title-->
-          <div class="caption-text-about" id = "caption-text-about">
-            <h1 class="cyberpunk glitched" id="glitch">It's all about.......me!</h1>
-            
-           <!--link to pro biography--> 
-            <div class ="me">
-              <button id="myBtn" >
-                <h1> Professional Biography</h1>
 
-              </button>
+                  <!--Burger menu-->
+                  <div class="img-title" id="img-title"></div>
 
-             <!--link to personal bio-->
-              <button id="myBtn-2">
-                <h1> Personal Biography</h1>
+                  <!--Captions-->
 
-              </button>
-            </div>
-         </div>  
+                </div>
 
-          
-            <div class="portfolio" id="portfolio">
-              <h1 class="cyberpunk glitched" id="port">Portfolio!</h1>
+              </div>
+           
+              <div class="caption-text-about" id = "caption-text-about">
+                <h1 class="cyberpunk glitched" id="glitch">It's all about.......me!</h1>
+                
+               <!--link to pro biography--> 
+                <div class ="me">
+                  <button id="myBtn" >
+                    <h1> Professional Biography</h1>
 
-              <div class ="port-box">
+                  </button>
 
-              
-                <div class ="portfolio-info">
-                  <div class="html/css" id="myBtn-3">
-                  
-                    <input type="image" src="img/netmatters.jpg" alt="Image of netmatters project" class="netbtn">
-                    <h1 class="html">HTML/CSS/JAVASCRIPT<br>PHP/SQL</h1>
-                    <h3 class="net-pop"> For this Project we had to rebuild the Netmatters webpage from scratch
-                      using a mix of HTML, CSS, Javascript as well as PHP.....
-                      
-                   
-                    </h3>
+                <!--link to personal bio-->
+                  <button id="myBtn-2">
+                    <h1> Personal Biography</h1>
 
+                  </button>
+                </div>
+              </div>  
 
-                  </div>
+              <div class="portfolio" id="portfolio">
+                <h1 class="cyberpunk glitched" id="port">Portfolio!</h1>
 
-
-                  <div class="Javascript" id="myBtn-4">
-                  
-
-                    <input type="image" src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" class="javabtn"
-                      alt="coming soon image">
-                      <h1 class="java-1">Javascript</h1>
-                      <h3 class="js-pop">
-                          For this Project we had to build a multi-dimensional array which consisted of
-                          multiple Email addresses
-                          
-                       </h3>
-
-
-                  </div>
+                <div class ="port-box">
 
                 
-                </div>
-                <div class ="portfolio-info-2">
-                 <div class="Wordpress" id="myBtn-w">
+                  <div class ="portfolio-info">
+                    <div class="html/css" id="myBtn-3">
+                    
+                      <input type="image" src="img/netmatters.jpg" alt="Image of netmatters project" class="netbtn">
+                      <h1 class="html">HTML/CSS/JAVASCRIPT<br>PHP/SQL</h1>
+                      <h3 class="net-pop"> For this Project we had to rebuild the Netmatters webpage from scratch
+                        using a mix of HTML, CSS, Javascript as well as PHP.....
+                        
+                    
+                      </h3>
+
+
+                    </div>
+
+
+                    <div class="Javascript" id="myBtn-4">
+                    
+
+                      <input type="image" src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" class="javabtn"
+                        alt="coming soon image">
+                        <h1 class="java-1">Javascript</h1>
+                        <h3 class="js-pop">
+                            For this Project we had to build a multi-dimensional array which consisted of
+                            multiple Email addresses
+                            
+                        </h3>
+
+
+                    </div>
+
                   
-
-                    <input type="image" src="img/silent-hill-pic.jpg" class="wordbtn"
-                      alt="coming soon image">
-                      <h1 class="word-1">Wordpress</h1>
-                      <h3 class="word-pop">
-                        Full 5 page Wordpress website created using Elementor in conjuction with
-                        a variety of plug-ins as well as my own custom HTML/CSS.
-                       </h3>
-
                   </div>
+                  <div class ="portfolio-info-2">
+                  <div class="Wordpress" id="myBtn-w">
+                    
+
+                      <input type="image" src="img/silent-hill-pic.jpg" class="wordbtn"
+                        alt="coming soon image">
+                        <h1 class="word-1">Wordpress</h1>
+                        <h3 class="word-pop">
+                          Full 5 page Wordpress website created using Elementor in conjuction with
+                          a variety of plug-ins as well as my own custom HTML/CSS.
+                        </h3>
+
+                    </div>
+                  </div>
+
                 </div>
 
               </div>
 
-            </div>
+              <div class="form" id = "former">
+                <h1 class="cyberpunk glitched" id="contact">Contact Me</h1>
+                  <div class="sendit">
+                  
+                      <div class = "details">
+                        <h1>Get in Touch </h1>
+                    
+                        <h3>If you would like more information on the services I have to offer,<br> please dont
+                          hesitate to get in touch:
+                        </h3>
+                    
+                        <h2>Mobile: 07950518798</h2>
+                        <h2 class = "email">Email: amyvincent1990@outlook.com</h2>
+                      </div>    
+                      
+                      <?php
+                        /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
+                        
+                        if(strpos($fullUrl, "signup=empty") == true )//check url for string 
+                        {
+                            echo "<p class='pop'>Not all fields completed</p>"; //display error 
+                            //exit();
+                        }
 
-            <div class="coding" id="coding">
-              <h1 class="cyberpunk glitched" id="coding">Coding Examples!</h1>
+                        if(strpos($fullUrl, "signup=char") == true )//check url for string 
+                        {
+                            echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                          // exit();
+                        }
+
+                        else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
+                        {
+                            echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                            //exit();
+                        }*/
+
+                        if(!isset($_GET['signup']))
+                        {
+                          //exit(); // exit if user not submitted form 
+                        }
+                        else
+                        {
+                        
+                              $signupCheck = $_GET['signup']; //check url
+                        
+                          
+                              if($signupCheck == "empty")
+                              {
+                                echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
+                              
+                              }
+                              elseif($signupCheck == "char")
+                              {
+                                echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                              }
+                              elseif($signupCheck == "invalidtelephone")
+                              {
+                                echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                              }
+
+                              elseif($signupCheck == "email")
+                              {
+                                echo "<p class='pop'>Please enter valid email</p>"; //display error 
+                              }
+
+                              elseif($signupCheck == "success")
+                              {
+                                echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
+                          
+                    
+                          
+                            
+                              }
+                              
+            
+                          
+                        
+                      
 
 
-                
-              <div class="slideshow-container-fade">
-                <div class="Containers" id="myBtn-12">
-                  <h1 class="java-code">Javascript</h1>
+                        }
+                      ?>
+                      </div>
+                        <div class="email-box-2">
+                          <div class="holder">   
+                              
+                             <form action= "email-form/signup.inc.php" method="POST">
+                  
+                              <div class="email-form-2" id="email-form">
 
-                 
-                  <a href = "j-page.php" class="j-snip"><img src="img/JAVASCRIPT-demo.png" class="javabtn-2" alt="java snippet"></a>
-              
+                                  <div class= "email-sec">
+                                      <div class="nameandemail-2" id="emails">
+                                          <?php 
+                                              if(isset($_GET['name']))
+                                              {
+                                                
+                                                $name = $_GET['name'];
+                                                echo'<div class="email-3">
+                                                      <label for="exampleFormControlInput1" class="form-label">Your Name <i
+                                                      class="fa-solid fa-asterisk"></i></label>
+                                                        <input type="text" name="name" class="form-control-email" id="exampleFormControlInput1" value="'.$name.'">
+                                                      </div>'; //display after submit if input correct                                    
+                                              }
+                                              else
+                                              {
+                                                //if no error messages 
+                                                echo' <div class="email-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">Your Name <i
+                                                            class="fa-solid fa-asterisk"></i></label>
+                                                          <input  name="name" class="form-control-email" id="exampleFormControlInput1">
+                  
+                  
+                                                        </div>';
+                                              }
+
+                                              if(isset($_GET['company']))
+                                              {
+                                                
+                                                $company = $_GET['company'];
+                                                echo'<div class="email-3">
+                                                      <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
+                                                      class="fa-solid fa-asterisk"></i></label>
+                                                        <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1" value="'.$company.'">
+                                                      </div>'; //display after submit if input correct                                    
+                                              }
+                                              else
+                                              {
+                                                //if no error messages 
+                                                echo'<div class="email-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
+                                                class="fa-solid fa-asterisk"></i></label>
+                                                  <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1">
+                                                </div>'; //display after submit if input correct    
+                                              }
+                                    
+
+                                      
+                                              if(isset($_GET['email']))
+                                              {
+                                                
+                                                $email = $_GET['email'];
+                                                echo'<div class="email-3">
+                                                      <label for="exampleFormControlInput1" class="form-label">Your Email <i
+                                                      class="fa-solid fa-asterisk"></i></label>
+                                                        <input type="text" name="email" class="form-control-email" id="exampleFormControlInput1" value="'.$email.'">
+                                                      </div>'; //display after submit if input correct                                    
+                                              }
+                                              else
+                                              {
+                                                //if no error messages 
+                                                echo'<div class="email-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Your Email <i
+                                                class="fa-solid fa-asterisk"></i></label>
+                                                  <input type="text" name="email" class="form-control-email" id="exampleFormControlInput1">
+                                                </div>'; //display after submit if input correct    
+                                              }
+
+                                              if(isset($_GET['telephone']))
+                                              {
+                                                
+                                                $telephone = $_GET['telephone'];
+                                                echo'<div class="email-3">
+                                                      <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
+                                                      class="fa-solid fa-asterisk"></i></label>
+                                                        <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1" value="'.$telephone.'">
+                                                      </div>'; //display after submit if input correct                                    
+                                              }
+                                              else
+                                              {
+                                                //if no error messages 
+                                                echo'<div class="email-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
+                                                class="fa-solid fa-asterisk"></i></label>
+                                                  <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1">
+                                                </div>'; //display after submit if input correct    
+                                              }
+
+                                              if(isset($_GET['subject']))
+                                              {
+                                                
+                                                $subject = $_GET['subject'];
+                                                echo'<div class="email-3">
+                                                      <label for="exampleFormControlInput1" class="form-label">Subject<i
+                                                      class="fa-solid fa-asterisk"></i></label>
+                                                        <input type="text" name="subject" class="form-control-email" id="exampleFormControlInput1" value="'.$subject.'">
+                                                      </div>'; //display after submit if input correct                                    
+                                              }
+                                              else
+                                              {
+                                                //if no error messages 
+                                                echo'<div class="email-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Subject <i
+                                                class="fa-solid fa-asterisk"></i></label>
+                                                  <input type="text" name="subject" class="form-control-email" id="exampleFormControlInput1">
+                                                </div>'; //display after submit if input correct    
+                                              }
+
+                                      
+                                              if(isset($_GET['message']))
+                                              {
+                                                
+                                                $message = $_GET['message'];
+                                                echo'<div class="email-3">
+                                                      <label for="exampleFormControlInput1" class="form-label">Message <i
+                                                      class="fa-solid fa-asterisk"></i></label>
+                                                        <input type="textarea" cols="40" rows ="5" name="message" class="form-control-email" id="exampleFormControlInput1" value="'.$message.'">
+                                                      </div>'; //display after submit if input correct                                    
+                                              }
+                                              else
+                                              {
+                                                //if no error messages 
+                                                echo'<div class="email-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Message <i
+                                                class="fa-solid fa-asterisk"></i></label>
+                                                  <input type="textarea" cols="40" rows ="5" name="message" class="form-control-email" id="exampleFormControlInput1">
+                                                </div>'; //display after submit if input correct    
+                                              }
+                                            ?>
+                                                <a href= "#contact" ><button class="submit"  type="submit" name ="submit" >Submit</button></a>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>     
+                      
+                      
+                        </div>
+                      
+              </div>      
+ 
 
 
+                     
 
-
-                </div>
-
-        
-
-
-
-
-                <div class="Containers" id="myBtn-13">
-                  <h1 class="SQL-code">SQL</h1>
-                  <a href = "s-page.php" class="j-snip"><img src="img/SQL.png"  class="sqlbtn" alt="SQL snippet"></a>
+              <div class="coding" id="coding">
+                <h1 class="cyberpunk glitched" id="codes">Coding Examples!</h1>
 
 
                   
+                <div class="slideshow-container-fade">
+                  <div class="Containers" id="myBtn-12">
+                    <h1 class="java-code">Javascript</h1>
+
+                  
+                    <a href = "j-page.php" class="j-snip"><img src="img/JAVASCRIPT-demo.png" class="javabtn-2" alt="java snippet"></a>
+                
 
 
 
 
                   </div>
-                </div>
+                
 
-
-                <div id="myModal-7" class="modal-7">
-                  <div class="modal-content-7">
-                    <span class="close-7">&times;</span>
-                    <h2> SQL</h2>
-                    <img src="img/sql code.png" id="sql-test">
-                    <h3 class="js-pop"> Above is a link displaying a movie database, I have created a reprosentational query to display my knowledge 
-                      of the SQL programme and how it is used in data clottectytion, maintenance etc. 
-        
-
-                    </h3>
-                  </div> 
-                </div>    
-
-
-                 <div class="Containers" id="myBtn-15">
-                    <h1 class="html-code">HTML</h1>
-                    <div class="html-snip-1">
-
-    
-                      <a href = "h-page.php" class="j-snip"><img src="img/HTML-demo.png"  class="htmlbtn" alt="HTML snippet"></a>
-
-
-                    </div>
-
-
-                  </div>
-
-                  <div class="Containers" id="myBtn-16">
-                    <h1 class="php-code">PHP</h1>
-                    <div class="php-snip">
-                      
-                      <a href = "p-page.php" class="j-snip"><img src="img/php-snip.png"  class="htmlbtn" alt="PHP snippet"></a>
-
-                    </div>
-
-
-                  </div>
-
-                  <div id="myModal-8" class="modal-8">
-                    <div class="modal-content-8">
-                      <span class="close-8">&times;</span>
-                      <h2> HTML</h2>
-                      <img src="img/HTML-demo.png" id="html-test">
-                      <h3 class="js-pop">  This snippet of code is the html to my contact page from this website,
-                        As you can see each input field is child element (.mb-3) with its own unique ID,
-                        within a parent element(“.contact”). Tho the input fields look similar on screen,
-                        this differential is required when different attributes and properties need to be attached
-                        to each child element. This was very important in the scenario when it came to applying Regex
-                        as each field had its own specific Regex variable. Not only this , each field differed in label name ,
-                        field size etc. It was vital to gain access to each field as an individual.
           
-  
+
+
+
+
+                  <div class="Containers" id="myBtn-13">
+                    <h1 class="SQL-code">SQL</h1>
+                    <a href = "s-page.php" class="j-snip"><img src="img/SQL.png"  class="sqlbtn" alt="SQL snippet"></a>
+
+
+                    
+
+
+
+
+                    
+                  </div>
+
+
+                  <div id="myModal-7" class="modal-7">
+                    <div class="modal-content-7">
+                      <span class="close-7">&times;</span>
+                      <h2> SQL</h2>
+                      <img src="img/sql code.png" id="sql-test">
+                      <h3 class="js-pop"> Above is a link displaying a movie database, I have created a reprosentational query to display my knowledge 
+                        of the SQL programme and how it is used in data clottectytion, maintenance etc. 
+          
+
                       </h3>
                     </div> 
                   </div>    
 
-                  <div class="Containers" id="myBtn-17">
-                    <h1 class="word-code">WORDPRESS</h1>
-                    <div class="word-snip">
 
-                
-                      <img src="img/coming-soon.png" class="wordbtn" alt="wordpress coding">
+                  <div class="Containers" id="myBtn-15">
+                      <h1 class="html-code">HTML</h1>
+                      <div class="html-snip-1">
 
-                    </div>
-  
-
-
-
-
-
-                </div>
-          
-            
-
-
-
-
-              </div>
-              <div class = "c-buttons" id = "c-buttons">
-
-                 <!-- The circles/dots -->
-                <div class ="btn-box">
-                 
-                    <a href = "#" class="dots" id="java-dot" onclick="currentSlides(1)"><img src="img/R.png"></a>
-                    <a href = "j-page.php" class="dots" id="java-dot-2"><img src="img/R.png"></a>
-                  
       
-                   <a href = "#" class="dots" id="sql-dot" onclick="currentSlides(2)"><img src="img/sql-logo.png"></a>
-                   <a href = "s-page.php" class="dots" id="sql-dot-2" ><img src="img/sql-logo.png"></a>
-                
-                
-
-                   <a href = "#" class="dots" id="html-dot" onclick="currentSlides(3)"><img src="img/html_css.png"></a>
-                   <a href = "h-page.php" class="dots" id="html-dot-2"><img src="img/html_css.png"></a>
-                
-
-  
-                </div>
-
-                <div class ="btn-box-2">
-                   
-              
-                    <a href = "#" class="dots" id="php-dot" onclick="currentSlides(4)"><img src="img/new-php-logo.png"></a>
-                    <a href = "p-page.php" class="dots" id="php-dot-2" ><img src="img/new-php-logo.png"></a>
-                 
-
-                    <a href = "#" class="dots" id="word-dot" onclick="currentSlides(5)"><img src="img/wordpress-logo.png"></a>
-                    <a href = "#" class="dots" id="word-dot-2" ><img src="img/wordpress-logo.png"></a>
-  
-                </div>
-              </div>  
-                <div class="scs-scheme" id="scheming">
-                  <h1 class="cyberpunk glitched" id="schemed">SCS Scheme</h1>
-                 
-
-                  <div class="scheme">
-                    <div id="myBtn-10">
-                      <img class ="scion" src ="img/scion.jpg">
-                      <h1> Scion Coalition Scheme</h1>
-                    </div>
-
-                
+                        <a href = "h-page.php" class="j-snip"><img src="img/HTML-demo.png"  class="htmlbtn" alt="HTML snippet"></a>
 
 
-                    <div id="myBtn-11">
-                      <img class ="scion" src ="img/Treehouse-Logo.png">
-                   
-                    </div>
-                    <div id="myBtn-33">
-                      <img class ="scion" src ="img/net.jpg">
-                      <h1> Netmatters</h1>
-                    </div>
+                      </div>
+
+
                   </div>
 
-                 
-
-                
-      
-      
-                </div>
-               
-              <div class="form" id = "former">
-                  <h1 class="cyberpunk glitched" id="contact">Contact Me</h1>
-                    <div class="sendit">
-                    
-                        <div class = "details">
-                          <h1>Get in Touch </h1>
-                      
-                          <h3>If you would like more information on the services I have to offer,<br> please dont
-                            hesitate to get in touch:
-                          </h3>
-                      
-                          <h2>Mobile: 07950518798</h2>
-                          <h2 class = "email">Email: amyvincent1990@outlook.com</h2>
-                        </div>    
-                        <div class="form">
-                        <?php
-                          /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
-                          
-                          if(strpos($fullUrl, "signup=empty") == true )//check url for string 
-                          {
-                              echo "<p class='pop'>Not all fields completed</p>"; //display error 
-                              //exit();
-                          }
-
-                          if(strpos($fullUrl, "signup=char") == true )//check url for string 
-                          {
-                              echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                            // exit();
-                          }
-
-                          else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
-                          {
-                              echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                              //exit();
-                          }*/
-
-                          if(!isset($_GET['signup']))
-                          {
-                            //exit(); // exit if user not submitted form 
-                          }
-                          else
-                          {
-                          
-                                $signupCheck = $_GET['signup']; //check url
-                          
-                            
-                                if($signupCheck == "empty")
-                                {
-                                  echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
-                                
-                                }
-                                elseif($signupCheck == "char")
-                                {
-                                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                                }
-                                elseif($signupCheck == "invalidtelephone")
-                                {
-                                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                                }
-
-                                elseif($signupCheck == "email")
-                                {
-                                  echo "<p class='pop'>Please enter valid email</p>"; //display error 
-                                }
-
-                                elseif($signupCheck == "success")
-                                {
-                                  echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
-                            
-                      
-                            
-                              
-                                }
-                                
-              
-                            
-                          
+                    <div class="Containers" id="myBtn-16">
+                      <h1 class="php-code">PHP</h1>
+                      <div class="php-snip">
                         
+                        <a href = "p-page.php" class="j-snip"><img src="img/php-snip.png"  class="htmlbtn" alt="PHP snippet"></a>
+
+                      </div>
 
 
-                          }
-                        ?>
-                        </div>
-                          <div class="email-box-2">
-                <div class="holder">                 
-                  <form action= "email-form/signup.inc.php" method="POST">
-                   
-                    <div class="email-form-2" id="email-form">
-
-                    
-
-                      <div class= "email-sec">
-                          <div class="nameandemail-2" id="emails">
-                          <?php 
-                              if(isset($_GET['name']))
-                              {
-                                
-                                $name = $_GET['name'];
-                                echo'<div class="email-3">
-                                       <label for="exampleFormControlInput1" class="form-label">Your Name <i
-                                       class="fa-solid fa-asterisk"></i></label>
-                                        <input type="text" name="name" class="form-control-email" id="exampleFormControlInput1" value="'.$name.'">
-                                      </div>'; //display after submit if input correct                                    
-                              }
-                              else
-                              {
-                                 //if no error messages 
-                                 echo' <div class="email-3">
-                                         <label for="exampleFormControlInput1" class="form-label">Your Name <i
-                                            class="fa-solid fa-asterisk"></i></label>
-                                          <input  name="name" class="form-control-email" id="exampleFormControlInput1">
-   
-   
-                                        </div>';
-                              }
-
-                              if(isset($_GET['company']))
-                              {
-                                
-                                $company = $_GET['company'];
-                                echo'<div class="email-3">
-                                       <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
-                                       class="fa-solid fa-asterisk"></i></label>
-                                        <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1" value="'.$company.'">
-                                      </div>'; //display after submit if input correct                                    
-                              }
-                              else
-                              {
-                                 //if no error messages 
-                                 echo'<div class="email-3">
-                                 <label for="exampleFormControlInput1" class="form-label">Your Company Name <i
-                                 class="fa-solid fa-asterisk"></i></label>
-                                  <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1">
-                                </div>'; //display after submit if input correct    
-                              }
-                            
-
-                              
-                              if(isset($_GET['email']))
-                              {
-                                
-                                $email = $_GET['email'];
-                                echo'<div class="email-3">
-                                       <label for="exampleFormControlInput1" class="form-label">Your Email <i
-                                       class="fa-solid fa-asterisk"></i></label>
-                                        <input type="text" name="email" class="form-control-email" id="exampleFormControlInput1" value="'.$email.'">
-                                      </div>'; //display after submit if input correct                                    
-                              }
-                              else
-                              {
-                                 //if no error messages 
-                                 echo'<div class="email-3">
-                                 <label for="exampleFormControlInput1" class="form-label">Your Email <i
-                                 class="fa-solid fa-asterisk"></i></label>
-                                  <input type="text" name="email" class="form-control-email" id="exampleFormControlInput1">
-                                </div>'; //display after submit if input correct    
-                              }
-
-                              if(isset($_GET['telephone']))
-                              {
-                                
-                                $telephone = $_GET['telephone'];
-                                echo'<div class="email-3">
-                                       <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
-                                       class="fa-solid fa-asterisk"></i></label>
-                                        <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1" value="'.$telephone.'">
-                                      </div>'; //display after submit if input correct                                    
-                              }
-                              else
-                              {
-                                 //if no error messages 
-                                 echo'<div class="email-3">
-                                 <label for="exampleFormControlInput1" class="form-label">Your Telephone Number <i
-                                 class="fa-solid fa-asterisk"></i></label>
-                                  <input type="text" name="telephone" class="form-control-email" id="exampleFormControlInput1">
-                                </div>'; //display after submit if input correct    
-                              }
-
-                              if(isset($_GET['subject']))
-                              {
-                                
-                                $subject = $_GET['subject'];
-                                echo'<div class="email-3">
-                                       <label for="exampleFormControlInput1" class="form-label">Subject<i
-                                       class="fa-solid fa-asterisk"></i></label>
-                                        <input type="text" name="subject" class="form-control-email" id="exampleFormControlInput1" value="'.$subject.'">
-                                      </div>'; //display after submit if input correct                                    
-                              }
-                              else
-                              {
-                                 //if no error messages 
-                                 echo'<div class="email-3">
-                                 <label for="exampleFormControlInput1" class="form-label">Subject <i
-                                 class="fa-solid fa-asterisk"></i></label>
-                                  <input type="text" name="subject" class="form-control-email" id="exampleFormControlInput1">
-                                </div>'; //display after submit if input correct    
-                              }
-
-                              
-                              if(isset($_GET['message']))
-                              {
-                                
-                                $message = $_GET['message'];
-                                echo'<div class="email-3">
-                                       <label for="exampleFormControlInput1" class="form-label">Message <i
-                                       class="fa-solid fa-asterisk"></i></label>
-                                        <input type="textarea" cols="40" rows ="5" name="message" class="form-control-email" id="exampleFormControlInput1" value="'.$message.'">
-                                      </div>'; //display after submit if input correct                                    
-                              }
-                              else
-                              {
-                                 //if no error messages 
-                                 echo'<div class="email-3">
-                                 <label for="exampleFormControlInput1" class="form-label">Message <i
-                                 class="fa-solid fa-asterisk"></i></label>
-                                  <input type="textarea" cols="40" rows ="5" name="message" class="form-control-email" id="exampleFormControlInput1">
-                                </div>'; //display after submit if input correct    
-                              }
-                            ?>
-                        
-
-                      
-                      
-                      
-                         
-                            
-                           <a href= "#contact" ><button class="submit"  type="submit" name ="submit" >Submit</button></a>
-                          </div>
-                      
-                      
-                        </div>
                     </div>
-               </div>      
+
+                    <div id="myModal-8" class="modal-8">
+                      <div class="modal-content-8">
+                        <span class="close-8">&times;</span>
+                        <h2> HTML</h2>
+                        <img src="img/HTML-demo.png" id="html-test">
+                        <h3 class="js-pop">  This snippet of code is the html to my contact page from this website,
+                          As you can see each input field is child element (.mb-3) with its own unique ID,
+                          within a parent element(“.contact”). Tho the input fields look similar on screen,
+                          this differential is required when different attributes and properties need to be attached
+                          to each child element. This was very important in the scenario when it came to applying Regex
+                          as each field had its own specific Regex variable. Not only this , each field differed in label name ,
+                          field size etc. It was vital to gain access to each field as an individual.
+            
+    
+                        </h3>
+                      </div> 
+                    </div>    
+
+                    <div class="Containers" id="myBtn-17">
+                      <h1 class="word-code">WORDPRESS</h1>
+                      <div class="word-snip">
+
+                  
+                        <img src="img/coming-soon.png" class="wordbtn" alt="wordpress coding">
+
+                      </div>
+                    </div>
+    
+
+
+
+
+
+                  
+            
+              
+
+
+
+
+                </div>
+
+                <div class = "c-buttons" id = "c-buttons">
+
+                  <!-- The circles/dots -->
+                  <div class ="btn-box">
+                  
+                      <a href = "#" class="dots" id="java-dot" onclick="currentSlides(1)"><img src="img/R.png"></a>
+                      <a href = "j-page.php" class="dots" id="java-dot-2"><img src="img/R.png"></a>
+                    
+        
+                    <a href = "#" class="dots" id="sql-dot" onclick="currentSlides(2)"><img src="img/sql-logo.png"></a>
+                    <a href = "s-page.php" class="dots" id="sql-dot-2" ><img src="img/sql-logo.png"></a>
+                  
+                  
+
+                    <a href = "#" class="dots" id="html-dot" onclick="currentSlides(3)"><img src="img/html_css.png"></a>
+                    <a href = "h-page.php" class="dots" id="html-dot-2"><img src="img/html_css.png"></a>
+                  
+
+    
+                  </div>
+
+                  <div class ="btn-box-2">
+                    
+                
+                      <a href = "#" class="dots" id="php-dot" onclick="currentSlides(4)"><img src="img/new-php-logo.png"></a>
+                      <a href = "p-page.php" class="dots" id="php-dot-2" ><img src="img/new-php-logo.png"></a>
+                  
+
+                      <a href = "#" class="dots" id="word-dot" onclick="currentSlides(5)"><img src="img/wordpress-logo.png"></a>
+                      <a href = "#" class="dots" id="word-dot-2" ><img src="img/wordpress-logo.png"></a>
+    
+                  </div>
+                </div>
+              </div>  
+  
+
+                <div class="scs-scheme" id="scheming">
+                    <h1 class="cyberpunk glitched" id="schemed">SCS Scheme</h1>
+
+                    <div class="scheme">
+
+                      <div id="myBtn-10">
+                        <img class ="scion" src ="img/scion.jpg">
+                        <h1> Scion Coalition Scheme</h1>
+                      </div>
+
+                      <div id="myBtn-11">
+                        <img class ="scion" src ="img/Treehouse-Logo.png">
+                        <h1> Treehouse</h1>
+                    
+                      </div>
+
+                      <div id="myBtn-33">
+                        <img class ="scion" src ="img/net.jpg">
+                        <h1> Netmatters</h1>
+                      </div>
+                    </div>  
+                  </div>
+                    
+                    
+            
+              
+            
+                
         
 
-                
-             </div> 
+                          
+            
+              
+
+                    
+              
             </div>
-           
-          <!-- The circles/dots -->
+            
+              
 
           </div>
           
-        </div>
+      </div>
       </div>  
 
       </div>
@@ -938,7 +943,7 @@
         <a href="index.php" class="side-home">A</a>
           <ul class="pages" id="large">
            <li>
-              <h1 class = "cyberpunk glitched"><a href="#glitch"  class="nav-link-2">About Me</a></h1>
+              <h1 class = "cyberpunk glitched" ><a href="#glitch"  class="nav-link-2" >About Me</a></h1>
            
             </li>
               
@@ -1017,7 +1022,7 @@
 
 
   <script src="js/carousel.js"></script>
-  <script src="js/coding-examples.js"></script>
+  <script src="js/coding-ex.js"></script>
   <script src="js/hover.js"></script>
   <script src="js/hover-2.js"></script>
   <script src="js/hover-w.js"></script>
@@ -1033,7 +1038,7 @@
   <script src="js/sticky.js"></script>
   <script src="js/about-me.js"></script>
   <script src = "js/portfolio.js"></script>
-  <script src = "js/coding-ex.js"></script>
+ 
   <script src = "js/scheming.js"></script>
   <script src = "js/contact.js"></script>
   <!--sticky nav-->

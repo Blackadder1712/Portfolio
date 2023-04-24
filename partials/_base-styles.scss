@@ -72,7 +72,7 @@
     font-size: $text-font-size;
     font-weight: $title-font-weight;
     font-family: $main-font;
-   
+    
     max-width: 90%;
     align-self: center;
     
@@ -114,10 +114,7 @@
   margin-right: 30px;
 }
 
-.wordbtn
-{
-  height:130px;
-}
+
 .htmlbtn:hover, .phpbtn:hover, .wordbtn:hover, .javabtn-2:hover, .sqlbtn:hover, #myBtn:hover, #myBtn-2:hover,
 #myBtn-3:hover, #myBtn-4:hover, #myBtn-5:hover, #myBtn-10:hover, #myBtn-11:hover, #myBtn-33:hover, #myBtn-w:hover, .submit:hover
 {
@@ -326,7 +323,7 @@ canvas
 
 .scheme
 {
-  margin-top:30px;
+ 
   display:flex;
   flex-direction: column;
   gap:18px;
@@ -376,7 +373,7 @@ canvas
   padding:auto;
   width: 100%;
   gap:30px;
-  margin-top:30px;
+  margin-top:-5px;
   height:400px;
 }
 
@@ -606,15 +603,15 @@ canvas
     
     text-align: center; 
 
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: $text-font-size;
     font-weight: $title-font-weight;
     font-family: $main-font;
-    
+    height:120px;
     display:flex;
     max-width: 80%;
     align-self: center;
-    height:170px;
+
   
 }
 
@@ -670,6 +667,11 @@ canvas
   z-index: 1;
   align-items: center;
 
+}
+
+#word-dot
+{
+  display:none;
 }
 
 #java-dot-2, #sql-dot-2, #html-dot-2, #php-dot-2, #word-dot-2
@@ -1147,7 +1149,7 @@ body
 .caption-text-about
 { 
 
-  margin-top: 420px;
+
   visibility: hidden;
   z-index: 5;
   display:none;
@@ -2565,8 +2567,16 @@ hr {
 
 #coding
 {
-  margin-top: 90px;
-  display:none;
+  margin-top: 70px;
+  display: none;
+  flex-direction:column;
+  align-items: center;
+
+}
+
+.java-code, .SQL-code, .html-code, .php-code, .word-code
+{
+  margin-top:0px;
 }
 
 .Backwards, .forwards {
@@ -2826,7 +2836,6 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top:90px;
   justify-content: space-around;
   margin-left:10px;
   margin-right:10px;
@@ -3423,8 +3432,9 @@ skew to change the 'thickness' of the glitch.*/
 .scion
 {
   width:100%;
-  height:300px;
+  height: 100px;
 }
+
 
 .coding
 {
