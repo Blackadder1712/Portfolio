@@ -1,5 +1,18 @@
 @media screen and (min-width: 576px)
 {
+   .btn-box
+   {
+    padding-left:10%
+   }
+  .caption-text-index
+  {
+    margin-top:190px;
+  }
+
+  .wordbtn
+  {
+    height:40%;
+  }
 
   .javabtn-2, .sqlbtn, .htmlbtn
   {
@@ -54,7 +67,7 @@
 
  #coding
  {
-  margin-top:30px;
+  margin-top:60px;
  }
 
  .net-pop
@@ -70,7 +83,7 @@
 /* Medium devices ? min-width: 768px and up (small screen/laptops)*/
 @media screen and (min-width: 768px) {
 
-  
+ 
 
   .j-desc
   {
@@ -79,7 +92,7 @@
    
   .caption-text-index
   {
-    margin-top:200px;
+    margin-top:220px;
   }
 
   #back
@@ -164,11 +177,7 @@
   color: black;
 }
 
-.scroll-2
-{
-  margin-left:200px;
-  width: calc(100vw - 200px);
-}
+
 .side-home
 {
   color:white;
@@ -515,7 +524,7 @@ margin-top:800px
   {
     margin-top: 40px;
   }
-  .htmlbtn, .phpbtn, .wordbtn, .javabtn-2, .sqlbtn 
+  .htmlbtn, .phpbtn,  .javabtn-2, .sqlbtn 
   {
     width:400px;
     margin-top: 10px;
@@ -845,6 +854,7 @@ margin-top:800px
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px) {
 
+
   .dropdown
   {
     display:none;
@@ -895,11 +905,13 @@ margin-top:800px
   {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
   }
 
   .scroll-2
   {
+    padding-top:10px;
     margin-left:0px;
     width:100%;
     height:100%;
@@ -925,12 +937,17 @@ margin-top:800px
     max-width:1180px;
   }
 
-  #myBtn-3, #myBtn-4
+  #myBtn-3, #myBtn-4, #myBtn-w
   {
-     width:50%;
+     width:100%;
      margin:0px;
      display: flex;
      flex-direction: column;
+  }
+
+  .wordbtn
+  {
+    height:30%;
   }
   .portfolio-info-2
   {
@@ -959,7 +976,7 @@ margin-top:800px
     
   .portfolio
   {
-    margin-top:20px;
+    margin-top:90px;
   }
 
   h1.java-1, h1.word-1
@@ -1097,16 +1114,7 @@ margin-top:800px
     padding-top:110px;
   }
 
-  .port-box
-  {
-    flex-direction:row;
-    gap:10px;
-  }
 
-  .portfolio-info
-  {
-    width:66%;
-  }
 
   .portfolio-info-2
   {
@@ -1169,7 +1177,7 @@ margin-top:800px
 
 .caption-text-index
 {
-  margin-top:260px;
+  margin-top:340px;
 }
 
 .dots img
@@ -1213,6 +1221,22 @@ margin-top:800px
 /* Large devices ? min-width: 1025px and up(small Desktop)*/
 @media screen and (min-width: 1025px) 
 {
+  .scroll-2
+  {
+    margin-top:-40px;
+
+  }
+
+  .modal-content-3, .modal-content-5, .modal-content-w
+  {
+    max-width: 1000px;
+    z-index:300;
+  }
+
+  .caption-text-about
+  {
+    margin-top:150px;
+  }
   #glitch
   {
     padding-top:110px;
@@ -1225,7 +1249,7 @@ margin-top:800px
 
   .caption-text-index
   {
-    margin-top:260px;
+    margin-top:300px;
   }
 
   .pages li
@@ -1317,6 +1341,14 @@ margin-top:800px
 
 }
 
+
+@media screen and (min-width: 1260px)
+{
+  .caption-text-index
+  {
+   margin-top:280px;
+  }
+} 
 
     
 
