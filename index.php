@@ -35,31 +35,6 @@
   <header class="flex-container-1">
 
      <header class="container" id="contain">
- 
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </header>
 
@@ -940,18 +915,16 @@
       <nav id="myPages" class="main-pages">
         <a href="index.php" class="side-home">A</a>
           <ul class="pages" id="large">
-           <li>
-              <h1 class = "cyberpunk glitched" ><a href="#glitch"  class="nav-link-2" >About Me</a></h1>
            
-            </li>
+            <li><h1 class = "cyberpunk glitched" id="aboutL"><a href="#glitch" >About Me</a></h1></li>
               
-            <li><h1 class = "cyberpunk glitched"><a href="#port" class="nav-link-3">Portfolio</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id ="portL" ><a href="#port" class="nav-link-3">Portfolio</a></h1></li>
 
-            <li><h1 class = "cyberpunk glitched"><a href="#coding" class="nav-link-4">Coding Examples</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id = "codeL"><a href="#coding" class="nav-link-4">Coding Examples</a></h1></li>
 
-            <li><h1 class = "cyberpunk glitched"><a href="#scheming" class="nav-link-5">SCS Scheme</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id = "schemeL"><a href="#scheming" class="nav-link-5">SCS Scheme</a></h1></li>
 
-            <li><h1 class = "cyberpunk glitched"><a href="#contact" class="nav-link-6">Contact Me</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id = "contactL"><a href="#contact"  class="nav-link-6">Contact Me</a></h1></li>
             
             <li><a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
                   <img src="img/git.png" alt="Github logo" class="gitbtn">
@@ -1021,6 +994,7 @@
 
   <script src="js/carousel.js"></script>
   <script src="js/coding-ex.js"></script>
+  <script src="js/coding-ex-l.js"></script>
   <script src="js/hover.js"></script>
   <script src="js/hover-2.js"></script>
   <script src="js/hover-w.js"></script>
@@ -1035,10 +1009,13 @@
   <script src="js/hover-13.js"></script>
   <script src="js/sticky.js"></script>
   <script src="js/about-me.js"></script>
+  <script src="js/about-me-l.js"></script>
   <script src = "js/portfolio.js"></script>
- 
+  <script src = "js/portfolio-l.js"></script>
   <script src = "js/scheming.js"></script>
+  <script src = "js/scheming-l.js"></script>
   <script src = "js/contact.js"></script>
+  <script src = "js/contact-l.js"></script>
   <!--sticky nav-->
 
   <script src="sticky.js"></script>

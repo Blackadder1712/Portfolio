@@ -406,7 +406,7 @@ margin-top:800px
 
  .border
  {
-  margin-top:0px;
+  margin-top:10px;
  }
  
  .portfolio-info
@@ -539,7 +539,7 @@ margin-top:800px
 
   .caption-text-about
   {
-    margin-top:70px;
+    margin-top:50px;
   }
 
 
@@ -852,7 +852,21 @@ margin-top:800px
      
 
 /* Large devices ? min-width: 992px and up(small Desktop)*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px)
+ {
+
+  .caption-text-about
+  {
+    margin-top:30px;
+  }
+
+
+  #contact
+  {
+    padding-top:0px;
+  }
+
+  
 
 
   .dropdown
@@ -976,7 +990,7 @@ margin-top:800px
     
   .portfolio
   {
-    margin-top:90px;
+    margin-top:190px;
   }
 
   h1.java-1, h1.word-1
@@ -1056,7 +1070,7 @@ margin-top:800px
 
  .sidebar
   {display: flex;
-    height: 120px;
+    height: 150px;
     width: 100vw;
     flex-direction: column;
     align-items: center;
@@ -1066,6 +1080,7 @@ margin-top:800px
     padding-top:20px;
   }
 
+  
   #port
   {
     padding-top:90px;
@@ -1073,7 +1088,7 @@ margin-top:800px
 
   #coding
   {
-    padding-top:90px;
+    padding-top:260px;
   }
 
   #scheming
@@ -1104,10 +1119,7 @@ margin-top:800px
     display: block;
   }
 
-  #contact
-  {
-    padding-top: 90px;
-  }
+
 
   #schemed
   {
@@ -1151,7 +1163,7 @@ margin-top:800px
     display: flex;
     flex-direction: column;
     gap: 5%;
-    margin: 25px;
+ 
     width: auto;
     max-width: 1180px;
   }
@@ -1177,7 +1189,7 @@ margin-top:800px
 
 .caption-text-index
 {
-  margin-top:340px;
+  margin-top:430px;
 }
 
 .dots img
@@ -1216,7 +1228,7 @@ margin-top:800px
 {
   display:none;
 }
-}
+ }
 
 /* Large devices ? min-width: 1025px and up(small Desktop)*/
 @media screen and (min-width: 1025px) 
