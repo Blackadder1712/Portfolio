@@ -9,6 +9,7 @@ var me = document.getElementById("caption-text-about");
 var home = document.getElementById("caption-text-index");
 var port = document.getElementById("portfolio");
 var scheme = document.getElementById("scheming");
+var form = document.getElementById("former");
 
 
 
@@ -20,6 +21,7 @@ Lbtn.onclick = function()
   home.style.display = "none";
   port.style.display = "none";
   scheme.style.display = "none";
+  form.style.display = "none";
  
 }
   

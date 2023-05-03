@@ -4,7 +4,7 @@ var btn = document.getElementById("porty");
 //get the element 
 
 var port = document.getElementById("portfolio");
-
+var code = document.getElementById("coding");
 var me = document.getElementById("caption-text-about");
 var home = document.getElementById("caption-text-index");
 var scheme = document.getElementById("scheming");
@@ -15,5 +15,6 @@ btn.onclick = function() {
     me.style.display = "none";
     home.style.display = "none";
     scheme.style.display = "none";
+    code.style.display = "none";
   }
   

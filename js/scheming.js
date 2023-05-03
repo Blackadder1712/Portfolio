@@ -9,6 +9,7 @@ var me = document.getElementById("caption-text-about");
 var home = document.getElementById("caption-text-index");
 var port = document.getElementById("portfolio");
 var scheme = document.getElementById("scheming");
+var form = document.getElementById("former");
 
 // When the user clicks on the button, open the modal and background
 btn.onclick = function() {
@@ -18,4 +19,5 @@ btn.onclick = function() {
     buttons.style.display = "none";
     me.style.display = "none";
     scheme.style.display = "flex";
+    form.style.display = "none";
   }

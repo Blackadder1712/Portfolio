@@ -227,7 +227,7 @@
   {
    
     top:0px;
-    height:100vw;
+    height:100%;
     
 
   }
@@ -402,6 +402,7 @@ margin-top:800px
  #contact
  {
   padding-top:20px;
+  margin-top:60px;
  }
 
  .border
@@ -857,7 +858,7 @@ margin-top:800px
 
   .caption-text-about
   {
-    margin-top:30px;
+   margin-top: -20px;
   }
 
 
@@ -943,6 +944,7 @@ margin-top:800px
     margin-left:50px
   }
 
+ 
   .portfolio-info
   {
     display: flex;
@@ -990,7 +992,7 @@ margin-top:800px
     
   .portfolio
   {
-    margin-top:190px;
+    margin-top:30px;
   }
 
   h1.java-1, h1.word-1
@@ -1010,6 +1012,7 @@ margin-top:800px
     display: flex;
     flex-direction:row;
     max-width:1080px;
+    
   }
 
   .side-home
@@ -1063,6 +1066,11 @@ margin-top:800px
     display:flex;
   }
 
+  #large h1
+  {
+    font-size:25px;
+  }
+
   #small
   {
     display:none;
@@ -1086,14 +1094,19 @@ margin-top:800px
     padding-top:90px;
   }
 
+  #former
+  {
+    margin-top: 90px;
+  }
+
   #coding
   {
-    padding-top:260px;
+    margin-top:210px;
   }
 
   #scheming
   {
-    padding-top:120px;
+   margin-top:30px;
   }
    .scheme
    {
@@ -1189,7 +1202,7 @@ margin-top:800px
 
 .caption-text-index
 {
-  margin-top:430px;
+  margin-top:290px;
 }
 
 .dots img
@@ -1205,6 +1218,7 @@ margin-top:800px
 {
   width:100%;
   justify-content:center ;
+  gap:60%;
 }
 .c-buttons
 {
@@ -1247,7 +1261,7 @@ margin-top:800px
 
   .caption-text-about
   {
-    margin-top:150px;
+    margin-top:50px;
   }
   #glitch
   {

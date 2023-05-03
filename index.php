@@ -279,76 +279,7 @@
                         <h2>Mobile: 07950518798</h2>
                         <h2 class = "email">Email: amyvincent1990@outlook.com</h2>
                       </div>    
-                      
-                      <?php
-                        /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
-                        
-                        if(strpos($fullUrl, "signup=empty") == true )//check url for string 
-                        {
-                            echo "<p class='pop'>Not all fields completed</p>"; //display error 
-                            //exit();
-                        }
-
-                        if(strpos($fullUrl, "signup=char") == true )//check url for string 
-                        {
-                            echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                          // exit();
-                        }
-
-                        else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
-                        {
-                            echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                            //exit();
-                        }*/
-
-                        if(!isset($_GET['signup']))
-                        {
-                          //exit(); // exit if user not submitted form 
-                        }
-                        else
-                        {
-                        
-                              $signupCheck = $_GET['signup']; //check url
-                        
-                          
-                              if($signupCheck == "empty")
-                              {
-                                echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
-                              
-                              }
-                              elseif($signupCheck == "char")
-                              {
-                                echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                              }
-                              elseif($signupCheck == "invalidtelephone")
-                              {
-                                echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                              }
-
-                              elseif($signupCheck == "email")
-                              {
-                                echo "<p class='pop'>Please enter valid email</p>"; //display error 
-                              }
-
-                              elseif($signupCheck == "success")
-                              {
-                                echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
-                          
-                    
-                          
-                            
-                              }
-                              
-            
-                          
-                        
-                      
-
-
-                        }
-                      ?>
-                      </div>
-                        <div class="email-box-2">
+                      <div class="email-box-2">
                           <div class="holder">   
                               
                              <form action= "email-form/signup.inc.php" method="POST">
@@ -493,7 +424,77 @@
                       
                         </div>
                       
-              </div>      
+                      
+                      <?php
+                        /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
+                        
+                        if(strpos($fullUrl, "signup=empty") == true )//check url for string 
+                        {
+                            echo "<p class='pop'>Not all fields completed</p>"; //display error 
+                            //exit();
+                        }
+
+                        if(strpos($fullUrl, "signup=char") == true )//check url for string 
+                        {
+                            echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                          // exit();
+                        }
+
+                        else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
+                        {
+                            echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                            //exit();
+                        }*/
+
+                        if(!isset($_GET['signup']))
+                        {
+                          //exit(); // exit if user not submitted form 
+                        }
+                        else
+                        {
+                        
+                              $signupCheck = $_GET['signup']; //check url
+                        
+                          
+                              if($signupCheck == "empty")
+                              {
+                                echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
+                              
+                              }
+                              elseif($signupCheck == "char")
+                              {
+                                echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                              }
+                              elseif($signupCheck == "invalidtelephone")
+                              {
+                                echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                              }
+
+                              elseif($signupCheck == "email")
+                              {
+                                echo "<p class='pop'>Please enter valid email</p>"; //display error 
+                              }
+
+                              elseif($signupCheck == "success")
+                              {
+                                echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
+                          
+                    
+                          
+                            
+                              }
+                              
+            
+                          
+                        
+                      
+
+
+                        }
+                      ?>
+                      </div>
+                     
+                  </div>      
  
 
 
@@ -638,8 +639,6 @@
                       <a href = "p-page.php" class="dots" id="php-dot-2" ><img src="img/new-php-logo.png"></a>
                   
 
-                      <a href = "#" class="dots" id="word-dot" onclick="currentSlides(5)"><img src="img/wordpress-logo.png"></a>
-                      <a href = "#" class="dots" id="word-dot-2" ><img src="img/wordpress-logo.png"></a>
                   
 
     
@@ -916,15 +915,15 @@
         <a href="index.php" class="side-home">A</a>
           <ul class="pages" id="large">
            
-            <li><h1 class = "cyberpunk glitched" id="aboutL"><a href="#glitch" >About Me</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id="aboutL"><div>About Me</div></h1></li>
               
-            <li><h1 class = "cyberpunk glitched" id ="portL" ><a href="#port" class="nav-link-3">Portfolio</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id ="portL" ><div>Portfolio</div></h1></li>
 
-            <li><h1 class = "cyberpunk glitched" id = "codeL"><a href="#coding" class="nav-link-4">Coding Examples</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id = "codeL"><div>Coding Examples</div></h1></li>
 
-            <li><h1 class = "cyberpunk glitched" id = "schemeL"><a href="#scheming" class="nav-link-5">SCS Scheme</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id = "schemeL"><div>SCS Scheme</div></h1></li>
 
-            <li><h1 class = "cyberpunk glitched" id = "contactL"><a href="#contact"  class="nav-link-6">Contact Me</a></h1></li>
+            <li><h1 class = "cyberpunk glitched" id = "contactL"><div>Contact Me</div></h1></li>
             
             <li><a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
                   <img src="img/git.png" alt="Github logo" class="gitbtn">
