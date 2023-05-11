@@ -1,5 +1,10 @@
 @media screen and (min-width: 576px)
 {
+
+  .caption-text-about
+  {
+    margin-top:-70px;
+  }
    .btn-box
    {
     padding-left:10%
@@ -28,13 +33,10 @@
   {
     margin-top:0px;
   }
-   #contact
-   {
-    margin-top:240px;
-   }
+
   .portfolio
   {
-    margin-top:290px;
+   
     max-width:1080px;
   }
 
@@ -67,7 +69,7 @@
 
  #coding
  {
-  margin-top:60px;
+  margin-top:10px;
  }
 
  .net-pop
@@ -81,7 +83,19 @@
 
 
 /* Medium devices ? min-width: 768px and up (small screen/laptops)*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) 
+{
+
+  #former
+  {
+    margin-top:0px;
+  }
+
+  .scs-scheme
+  {
+    margin-top:100px;
+    width:100%
+  }
 
  
 
@@ -95,11 +109,11 @@
     margin-top:220px;
   }
 
-  #back
-{
-  display:block;
-  padding:5px;
-}
+    #back
+  {
+    display:block;
+    padding:5px;
+  }
   
   .pages
   {
@@ -115,11 +129,11 @@
     height:50%;
   }
 
-.pages *
-   {
-    box-sizing: border-box;
-    transition: all .35s ease;
-   }
+  .pages 
+    {
+      box-sizing: border-box;
+      transition: all .35s ease;
+    }
 
    .pages li
    {
@@ -146,44 +160,44 @@
   position: absolute;
   transition: all .35s ease;
   opacity: 0;
-}
+ }
 
 
-.pages a::before {
-  content: '';
-  right: 0;
-  top: 0;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
-  transform: translate(-100%, 50%);
-}
+  .pages a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    transform: translate(-100%, 50%);
+  }
 
-.pages a:after {
-  content: '';
-  left: 0;
-  bottom: 0;
-  border-bottom: 3px solid black;
-  border-left: 3px solid black;
-  transform: translate(100%, -50%)
-}
+  .pages a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    transform: translate(100%, -50%)
+  }
 
-.pages a:hover:before,
-.pages a:hover:after{
-  transform: translate(0,0);
-  opacity: 1;
-}
+  .pages a:hover:before,
+  .pages a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
 
-.pages a:hover {
-  color: black;
-}
+  .pages a:hover {
+    color: black;
+  }
 
 
-.side-home
-{
-  color:white;
-  font-size:80px;
-  text-decoration:none;
-}
+  .side-home
+  {
+    color:white;
+    font-size:80px;
+    text-decoration:none;
+  }
 
 
 
@@ -198,7 +212,7 @@
 
   .portfolio
   {
-    margin-top:20px;
+    margin-top:-10px;
   }
 
   .in
@@ -239,64 +253,64 @@
 
   
 
-.javabtn:hover
-{
-  border-color: white;
-}
+  .javabtn:hover
+  {
+    border-color: white;
+  }
   
 
 
-.main-page
-{
-   
-    visibility: hidden;
-    padding-top:-110px;
-    position:relative;
-    width: 100%;
-    height: 100%
+  .main-page
+  {
     
-  
-}
-.coding-title
-{
-  font-family: $main-font;
-  color:white;
-  display: block;
-text-align: center;
-line-height: 1.4;
-font-size: 25px;
-font-weight: 20px;
-visibility: hidden;
-letter-spacing: .4px;
-margin-left:20px;
-margin-right:30px;
-margin-top:800px
-}
-
-.code-img
-{
-  
-  
-    display:inline-block;
-    width:75%;
-    text-align: center;
-    z-index: 1;
-    align-items: center;
-    padding-left:12%
-
+      visibility: hidden;
+      padding-top:-110px;
+      position:relative;
+      width: 100%;
+      height: 100%
+      
     
+  }
+  .coding-title
+  {
+    font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 20px;
+  visibility: hidden;
+  letter-spacing: .4px;
+  margin-left:20px;
+  margin-right:30px;
+  margin-top:800px
+  }
 
-}
+  .code-img
+  {
+    
+    
+      display:inline-block;
+      width:75%;
+      text-align: center;
+      z-index: 1;
+      align-items: center;
+      padding-left:12%
 
-.netmatters
-{
-  
-  margin-top:50%;
-   
-   
-  
-  
-}
+      
+
+  }
+
+  .netmatters
+  {
+    
+    margin-top:50%;
+    
+    
+    
+    
+  }
 
 
 
@@ -322,35 +336,37 @@ margin-top:800px
     
   }
 
-  .coding-title
-{
-  font-family: $main-font;
-  color:white;
-  display: block;
-text-align: center;
-line-height: 1.4;
-font-size: 25px;
-font-weight: 20px;
-visibility: hidden;
-letter-spacing: .4px;
-margin-left:20px;
-margin-right:30px;
-margin-top:800px
-}
+    .coding-title
+  {
+    font-family: $main-font;
+    color:white;
+    display: block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 20px;
+  visibility: hidden;
+  letter-spacing: .4px;
+  margin-left:20px;
+  margin-right:30px;
+  margin-top:800px
+  }
+
+
   
   
    
     
 
-  .caption-text-scs
-{ 
-  padding-top:600px;
-  position:relative;
-  width: 80%;
-  height: 100%;
-  margin: 10px;
-  
-}
+    .caption-text-scs
+  { 
+    padding-top:600px;
+    position:relative;
+    width: 80%;
+    height: 100%;
+    margin: 10px;
+    
+  }
  
  
 
@@ -375,19 +391,19 @@ margin-top:800px
     margin-top:-10px
   }
 
-  .pages .nav-link-3
-{
-  padding-right:29px
-}
-
-
-.main-pages button
+    .pages .nav-link-3
   {
-    background-color: $matrix-green;
-    border: none;
-  
-   
+    padding-right:29px
   }
+
+
+  .main-pages button
+    {
+      background-color: $matrix-green;
+      border: none;
+    
+    
+    }
 
  .main-pages
  {
@@ -540,7 +556,7 @@ margin-top:800px
 
   .caption-text-about
   {
-    margin-top:50px;
+    margin-top:-10px;
   }
 
 
@@ -584,47 +600,47 @@ margin-top:800px
  
 
 
-  .caption-text-scs
-{
-    display:flex;
-    flex-direction: column;
-    width:100%
-    
-}
-
- 
-
-
-
-
-  
-
+    .caption-text-scs
+  {
+      display:flex;
+      flex-direction: column;
+      width:100%
+      
   }
 
-
  
-  .scroll-down
-{
-  position: absolute;
-  top: 200%;
-  left: 20%;
-  font-family: $main-font;
-    color:white;
-    display: block;
-  text-align: center;
-  line-height: 1.4;
-  font-size: 25px;
-  background-color: $matrix-green;
-  font-weight:$text-font-weight;
-  letter-spacing: .5px;
- 
-  padding:5px;
-  border-radius: 8%;
 
-  cursor: pointer;
+
+
+
   
 
-}
+  
+
+
+  
+    .scroll-down
+  {
+    position: absolute;
+    top: 200%;
+    left: 20%;
+    font-family: $main-font;
+      color:white;
+      display: block;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 25px;
+    background-color: $matrix-green;
+    font-weight:$text-font-weight;
+    letter-spacing: .5px;
+  
+    padding:5px;
+    border-radius: 8%;
+
+    cursor: pointer;
+    
+
+  }
 
 
 
@@ -712,30 +728,30 @@ margin-top:800px
 
 
 
-  
-  .page-image {
-
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-    filter: brightness(0.5);
-  
-   
-
-}
-  
-
-
-
-
-
-
-  .caption-text-scs
-{
-    display:flex;
-    flex-direction: column;
     
-}
+    .page-image {
+
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+      filter: brightness(0.5);
+    
+    
+
+  }
+    
+
+
+
+
+
+
+    .caption-text-scs
+  {
+      display:flex;
+      flex-direction: column;
+      
+  }
 
  
 
@@ -748,28 +764,28 @@ margin-top:800px
 
 
  
-  .scroll-down
-{
-  position: absolute;
-  top: 200%;
-  left: 20%;
-  font-family: $main-font;
-    color:white;
-    display: block;
-  text-align: center;
-  line-height: 1.4;
-  font-size: 25px;
-  background-color: $matrix-green;
-  font-weight:$text-font-weight;
-  letter-spacing: .5px;
- 
-  padding:5px;
-  border-radius: 8%;
-
-  cursor: pointer;
+    .scroll-down
+  {
+    position: absolute;
+    top: 200%;
+    left: 20%;
+    font-family: $main-font;
+      color:white;
+      display: block;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 25px;
+    background-color: $matrix-green;
+    font-weight:$text-font-weight;
+    letter-spacing: .5px;
   
+    padding:5px;
+    border-radius: 8%;
 
-}
+    cursor: pointer;
+    
+
+  }
 
 
 
@@ -850,11 +866,30 @@ margin-top:800px
       cursor: pointer;
      }
 
+     #myBtn-10 h1
+     {
+      font-size:15.5px;
+     }
+
+     #myBtn-3, #myBtn-4, #myBtn-w
+     {
+      width:100%;
+     }
      
+}
+    
 
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px)
  {
+
+  .net-pop
+  {
+    display:flex;
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+  }
 
   .caption-text-about
   {
@@ -930,6 +965,7 @@ margin-top:800px
     margin-left:0px;
     width:100%;
     height:100%;
+    z-index:500;
   }
   
   .modal-content-3, .modal-content-5, .modal-content-w
@@ -939,9 +975,9 @@ margin-top:800px
 
   .modal-content-10, .modal-content-11, .modal-content-33
   {
-    margin-top:190px;
-    margin-right:50px;
-    margin-left:50px
+ 
+    margin-right:auto;
+    margin-left: auto;
   }
 
  
@@ -959,6 +995,8 @@ margin-top:800px
      margin:0px;
      display: flex;
      flex-direction: column;
+     height:450px;
+
   }
 
   .wordbtn
@@ -981,12 +1019,54 @@ margin-top:800px
     width: 50%;
   }
 
+  .netbtn
+  {
+    background-color:$matrix-green ;
+    
+    padding: 16px;
+    
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 40px;
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+    display: block;
+    max-width: 80%;
+    align-self: center;
+  }
+
+  .word-pop
+  {
+  display:flex;
+  color: white;
+  padding: 18px;
+  font-size: 18px;
+  margin-top:-8px;
+  }
+  
+    .js-pop
+  {
+    display:flex;
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+  }
 
   .javabtn, .netbtn, .wordbtn
-  {width:500px;
-   
+  {width:80%;
     margin:0px;
     margin-top:20px;
+    background-color:$matrix-green ;
+    padding: 16px;
+    text-align: center;
+    font-size: $text-font-size;
+    font-weight: $title-font-weight;
+    font-family: $main-font;
+    display: flex;
+    max-width: 80%;
+    align-self: center;
+    height:100px;
 
   }
     
@@ -1052,7 +1132,7 @@ margin-top:800px
   #canvas
   {
     margin:0px;
-    width:-webkit-fill-available;
+    width:100%;
     height:100%;
   }
   .scroll
@@ -1091,7 +1171,8 @@ margin-top:800px
   
   #port
   {
-    padding-top:90px;
+    padding-top:95px;
+    padding-bottom:30px;
   }
 
   #former
@@ -1247,6 +1328,16 @@ margin-top:800px
 /* Large devices ? min-width: 1025px and up(small Desktop)*/
 @media screen and (min-width: 1025px) 
 {
+
+  .scheme
+  {
+    gap:10%;
+  }
+  
+  .javabtn, .netbtn, .wordbtn
+  {
+    height: 120px;
+  }
   .scroll-2
   {
     margin-top:-40px;
@@ -1257,6 +1348,7 @@ margin-top:800px
   {
     max-width: 1000px;
     z-index:300;
+    margin-top:50px;
   }
 
   .caption-text-about
@@ -1370,6 +1462,16 @@ margin-top:800px
 
 @media screen and (min-width: 1260px)
 {
+  .scheme
+  {
+    margin-left:5%;
+    margin-right:5%;
+  }
+
+  .javabtn, .netbtn, .wordbtn
+  {
+    height: 150px;
+  }
   .caption-text-index
   {
    margin-top:280px;

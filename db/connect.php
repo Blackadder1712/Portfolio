@@ -1,15 +1,15 @@
 <?php
- //local server info
+ /*local server info
  $server = "127.0.0.1";
  $username = "root";
  $password = "";
- $db = "portfolio";
+ $db = "portfolio";*/
 
- /*cpanel
+ //cpanel
  $server = "sxb1plzcpnl491036";
  $username = "amyvince_amy";
  $password = "=v.U!{8i{Ql!";
- $db = "amyvince_portfolio";*/
+ $db = "amyvince_portfolio";
 
  //Check connection
  try

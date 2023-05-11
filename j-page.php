@@ -136,7 +136,7 @@
                     </h3>
                     
                     <ul class="j-desc">
-                            <li><a href="#java-info" class="Description">Description</a></li>
+                            <li><a href="j-page.php" class="Description">Scroll Up</a></li>
                           
                     </ul>
                 </div> 

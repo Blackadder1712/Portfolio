@@ -47,11 +47,11 @@
 
         <div class="dropdown-content">
         <div class="in"><a href="index.php">Home</a></div>
-          <div class="in" id = "about-me"><a href="#glitch">About Me</a></div>
-          <div class="in" id = "porty"><a href="#port">Portfolio</a></div>
-          <div class="in" id = "coder"><a href="#coded">Coding Examples</a></div>
-          <div class="in" id = "scs"><a href="#scheming">SCS Scheme</a></div>
-          <div class="in" id = "form"><a href="#contact">Contact Me</a></div>
+          <div class="in" id = "about-me"><a>About Me</a></div>
+          <div class="in" id = "porty"><a>Portfolio</a></div>
+          <div class="in" id = "coder"><a>Coding Examples</a></div>
+          <div class="in" id = "scs"><a>SCS Scheme</a></div>
+          <div class="in" id = "form"><a>Contact Me</a></div>
           <div class="socials-small">
         
             <a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
