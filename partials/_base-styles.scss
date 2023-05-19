@@ -82,7 +82,7 @@
   
 }
 
-#myBtn-3, #myBtn-4, #myBtn-5
+#myBtn-3, #myBtn-4, #myBtn-5, #myBtn-l
 {
   color: var(--yellow-color);
   border: 30px solid #1ca152;
@@ -97,7 +97,7 @@
 
 }
 
-#myBtn-w
+#myBtn-w, #myBtn-l
 {
   color: var(--yellow-color);
   border: 30px solid #1ca152;
@@ -117,13 +117,13 @@
 
 
 .htmlbtn:hover, .phpbtn:hover, .wordbtn:hover, .javabtn-2:hover, .sqlbtn:hover, #myBtn:hover, #myBtn-2:hover,
-#myBtn-3:hover, #myBtn-4:hover, #myBtn-5:hover, #myBtn-10:hover, #myBtn-11:hover, #myBtn-33:hover, #myBtn-w:hover, .submit:hover
+#myBtn-3:hover, #myBtn-4:hover, #myBtn-5:hover, #myBtn-10:hover, #myBtn-11:hover, #myBtn-l:hover, #myBtn-33:hover, #myBtn-w:hover, .submit:hover
 {
 animation: glitch1 0.5s infinite;
 }
 
-.htmlbtn:nth-child(2), .phpbtn:nth-child(2), .wordbtn:nth-child(2), 
-.javabtn-2:nth-child(2), .sqlbtn:nth-child(2), #myBtn:nth-child(2), #myBtn2:nth-child(2),
+.htmlbtn:nth-child(2), .phpbtn:nth-child(2), .wordbtn:nth-child(2), .netbtn:nth-child(2),
+.javabtn-2:nth-child(2), .sqlbtn:nth-child(2), #myBtn:nth-child(2), #myBtn2:nth-child(2), #myBtn-l:nth-child(2),
  #myBtn-3:nth-child(2), #myBtn-4:nth-child(2), #myBtn-5:nth-child(2), #myBtn-10:nth-child(2), 
  #myBtn-11:nth-child(2), #myBtn-33:nth-child(2),  #myBtn-w:nth-child(2), .submit:nth-child(2)
 {
@@ -261,7 +261,7 @@ canvas
      margin:auto;
 }
 
-#myBtn-2:hover
+#myBtn-2:hover, #myBtn-3:hover, #myBtn-4:hover, #myBtn-l:hover, #myBtn-w:hover
 {
   border-color: white;
   cursor: pointer;
@@ -1317,6 +1317,28 @@ body
   border-radius: 10px;
 }
 
+.l-proj
+{
+  font-family: "Roboto", "sans serif";
+
+  line-height: 1.4;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: #1ca152;
+  padding: 5px;
+  border-radius: 8%;
+  margin-top: 20px;
+  width: 150px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
 .w-proj
 {
   font-family: "Roboto", "sans serif";
@@ -1346,6 +1368,11 @@ body
   text-decoration: none;
 }
 
+.l-proj a
+{
+  color:white;
+  text-decoration: none;
+}
 .w-proj a
 {
   color:white;
@@ -1433,7 +1460,7 @@ body
   top: 0;
   border-radius: 10px;
 }
-.J-git
+.J-git, .l-git
 {
   font-family: "Roboto", "sans serif";
 
@@ -1456,7 +1483,7 @@ body
   border-radius: 10px;
 }
 
-.J-git a
+.J-git a, .l-git a
 {
   color:white;
   text-decoration: none;
@@ -1479,7 +1506,28 @@ body
   border-radius: 10px;
 }
 
+.l-git:before {
+  content: '';
+  background:  $matrix-green;
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
 .J-git:active {
+  color: #000
+}
+
+.l-git:active {
   color: #000
 }
 
@@ -1487,7 +1535,15 @@ body
   background: transparent;
 }
 
+.l-git:active:after {
+  background: transparent;
+}
+
 .J-git:hover:before {
+  opacity: 1;
+}
+
+.l-git:hover:before {
   opacity: 1;
 }
 
@@ -1503,6 +1559,17 @@ body
   border-radius: 10px;
 }
 
+.l-git:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
 
 
 
@@ -1954,7 +2021,7 @@ hr {
 
 
 
-.modal-3 {
+.modal-3, .modal-l {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -2099,7 +2166,7 @@ hr {
 
 
 
-.modal-content-3 {
+.modal-content-3, .modal-content-l {
   background-color: black;
   margin: 95px auto; /* 15% from the top and centered */
   padding: 20px;
@@ -2203,7 +2270,7 @@ hr {
   z-index: 100;
 }
 
-.close-3 {
+.close-3, .close-l {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -2437,11 +2504,18 @@ hr {
   z-index: 100;
 }
 
+#net-pop
+{
+  display: flex;
+  color: white;
+  padding: 18px;
+  font-size: 18px;
+}
 
 
 
 
-#net-small
+#net-small, #lara-small
 {
   width:250px;
 }
@@ -2455,14 +2529,43 @@ hr {
 
 .word-pop
 {
- display:none;
+ //display:none;
+ display:flex;
+ color: white;
+ padding: 18px;
+ font-size: 18px;
+
 }
 
-.js-pop
+#word-pop
 {
   display:none;
 }
 
+.js-pop
+{
+  //display:none;
+  display:flex;
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+}
+
+#js-pop
+{
+  display:none;
+}
+
+
+
+.l-pop
+{
+  //display:none;
+  display:flex;
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+}
 /* Slideshow container */
 .coding-carousel {
   max-width: 1000px;
@@ -2755,7 +2858,7 @@ hr {
 
 .port-box
 {
-  margin-top:-40px;
+  margin-top:0px;
 }
 
 #port

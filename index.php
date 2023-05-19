@@ -212,8 +212,21 @@
 
                 <div class ="port-box">
 
+                 <div class ="portfolio-info">
+                    <div class="laravel/tailwind" id="myBtn-l">
+                    
+                      <input type="image" src="img/laraimage.png" alt="Image of netmatters project" class="netbtn">
+                      <h1 class="html">LARAVEL/PHP/SQL<br>TAILWIND</h1>
+                      <h3 class="net-pop"> For this Project I built a job listing website from scratch.<br>
+                      Allowing the user to create an account, log in/out as well as create,edit and delete listings. 
+                    
+                      </h3>
+
+
+                    </div>
+
                 
-                  <div class ="portfolio-info">
+                
                     <div class="html/css" id="myBtn-3">
                     
                       <input type="image" src="img/netmatters.jpg" alt="Image of netmatters project" class="netbtn">
@@ -234,7 +247,7 @@
                       <input type="image" src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" class="javabtn"
                         alt="coming soon image">
                         <h1 class="java-1">Javascript</h1>
-                        <h3 class="js-pop">
+                        <h3 class="js-pop" id = "js-pop">
                             For this Project we had to build a multi-dimensional array which consisted of
                             multiple Email addresses
                             
@@ -249,7 +262,7 @@
                       <input type="image" src="img/silent-hill-pic.jpg" class="wordbtn"
                         alt="coming soon image">
                         <h1 class="word-1">Wordpress</h1>
-                        <h3 class="word-pop">
+                        <h3 class="word-pop" id = "word-pop">
                           Full 5 page Wordpress website created using Elementor in conjuction with
                           a variety of plug-ins as well as my own custom HTML/CSS.
                         </h3>
@@ -702,12 +715,16 @@
         <div id="myModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <h2> Netmatters have not only trained me in languages such as HTML/CSS, JavaScript,
-               PHP, Laravel etc (to name a few) they have taught me the importance of continually
-               improving soft skills. This extensive yet fast paced course has taught me great time management,
-                prioritising tasks and meeting deadlines , just to name a few of the amazing skills I have now become
-                 well rehearsed in. To me these skills are just as important as the coding, being reliable is the first
-                  stepping stone to any career.
+            <h2>I have become well rehearsed in a variety of different coding languages, frameworks and libraries.<br>
+            Allowing me to produce a variety of different apps and websites, from a basic site with a small contact form <br>
+            to sites that are alot more authentication/authorisatin heavy, with user accounts, password verification and multi table <br>
+            databases. I have also utilized AJAX calls and API's to again improve user experience and website capabilities.<br>
+
+            As you can see these skills open me up to creating many varied digital products and websites.
+            
+            I recently fortook a Netmatters Training course in Web development, this helped me to really home in on my skills,<br>
+            insuring my code met industry standard as well as teaching me important soft skills such as time management<br>
+            turning me into a professional, well-rounded Junior Developer.
 
           </div>
         </div>
@@ -730,7 +747,7 @@
             <h2> Netmatter's HTML/CSS Reflection</h2>
             <img src="img/netmatters.jpg" id="net-small">
 
-            <h3 class="net-pop">
+            <h3 class="net-pop" id ="net-pop">
                       For this Project we had to rebuild the Netmatters webpage from scratch
                       using a mix of HTML, CSS, Javascript as well as PHP. I used javascript for certian functions 
                       such as the sliding nav menu and cookie sessions. I used PHP to not only store client information within
@@ -747,6 +764,30 @@
 
           </div>
         </div>
+
+        <div id="myModal-l" class="modal-l">
+          <div class="modal-content-l">
+            <span class="close-l">&times;</span>
+            <h2> Amy's Laragigs Website </h2>
+            <img src="img/laraimage.png" id="lara-small">
+
+            <h3 class="l-pop">
+                      For this Project I built a job listing site from scratch using Laravel,PHP,SQL and tailwind.<br>
+                      The site allows guests to register an account, log in and out with an authenicated password,
+                       as well<br> as create, edit and delete listings. Storing said listings and accounts in a SQL database
+                       to insure not only password authentication but stops duplicate accounts as well as linking accounts to thier 
+                       created listings. 
+                      
+        
+            </h3>
+            <button class="l-proj"><a
+                href="https://amyslaragigs.vincentwebdev.co.uk">Project</a></button>
+            <button class="l-git"><a href="https://github.com/Blackadder1712/Laravel-project">Github
+                Repository</a></button>
+
+          </div>
+        </div>
+
 
         <div id="myModal-5" class="modal-5">
           <div class="modal-content-5">
@@ -996,6 +1037,7 @@
   <script src="js/coding-ex-l.js"></script>
   <script src="js/hover.js"></script>
   <script src="js/hover-2.js"></script>
+  <script src="js/hover-l.js"></script>
   <script src="js/hover-w.js"></script>
   <script src="js/hover-3.js"></script>
   <script src="js/hover-4.js"></script>
