@@ -1,5 +1,6 @@
 //Get the modal
 var modal11 = document.getElementById("myModal-11");
+var background = document.getElementById("scroll-2");
 
 
 // Get the button that opens the modal
@@ -11,16 +12,25 @@ var span = document.getElementsByClassName("close-11")[0];
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal11.style.display = "block";
+  background.style.display = "flex";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal11.style.display = "none";
+  background.style.display = "none";
 }
+
+btn.onclick = function() {
+  modal11.style.display = "block";
+  background.style.display = "flex";
+}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal11) {
     modal11.style.display = "none";
+    background.style.display = "none";
   }
 }
