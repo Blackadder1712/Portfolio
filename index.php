@@ -180,7 +180,7 @@
                       <div class="laravel/tailwind" id="myBtn-l">
                       
                         <input type="image" src="img/laraimage.png" alt="Image of netmatters project" class="netbtn">
-                        <h1 class="html">LARAVEL/PHP/SQL<br>TAILWIND</h1>
+                        <h1 class="html">LARAVEL/PHP/SQL/TAILWIND</h1>
                         <h3 class="net-pop"> For this Project I built a job listing website from scratch.<br>
                         Allowing the user to create an account, log in/out as well as create,edit and delete listings. 
                       
@@ -190,7 +190,7 @@
                       <div class="html/css" id="myBtn-3">
                       
                         <input type="image" src="img/netmatters.jpg" alt="Image of netmatters project" class="netbtn">
-                        <h1 class="html">HTML/CSS/JAVASCRIPT<br>PHP/SQL</h1>
+                        <h1 class="html">HTML/CSS/JAVASCRIPT/PHP/SQL</h1>
                         <h3 class="net-pop"> For this Project we had to rebuild the Netmatters webpage from scratch
                           using a mix of HTML, CSS, Javascript as well as PHP.....
                           
@@ -206,7 +206,7 @@
 
                         <input type="image" src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" class="javabtn"
                           alt="coming soon image">
-                          <h1 class="java-1">Javascript</h1>
+                          <h1 class="java-1">JAVASCRIPT</h1>
                           <h3 class="js-pop" id = "js-pop">
                               For this Project we had to build a multi-dimensional array which consisted of
                               multiple Email addresses
@@ -219,7 +219,7 @@
                       <div class="Wordpress" id="myBtn-w">
                         <input type="image" src="img/silent-hill-pic.jpg" class="wordbtn"
                           alt="coming soon image">
-                          <h1 class="word-1">Wordpress</h1>
+                          <h1 class="word-1">WORDPRESS</h1>
                           <h3 class="word-pop" id = "word-pop">
                             Full 5 page Wordpress website created using Elementor in conjuction with
                             a variety of plug-ins as well as my own custom HTML/CSS.
@@ -580,11 +580,13 @@
               <h1 class="cyberpunk glitched" id="glitch">Certification</h1>
 
               <div class="netmatters-cert-l">
-                 <h2 class="cyberpunk glitched"> Netmatters Scion Training Programme</h2>
+                 <h2 class="cyberpunk glitched" id = "netmatters-glitch"> Netmatters Scion Training Programme</h2>
                  <div class= "netmatters-btn">
-                  <img class = "cert-img" src = "img/cert-image.png">
+                  <a href = "img/netmatters certificate.pdf" class="c-snip"><img class = "cert-img" src = "img/cert-image.png"></a> 
                  </div>
-                
+
+                 <h2 class="cyberpunk glitched" id = "netmatters-glitch-click">Click to view PDF</h2>
+
               </div>            
 
             </div>
@@ -798,7 +800,11 @@
 
             <li><h1 class = "cyberpunk glitched" id = "schemeL"><div>SCS Scheme</div></h1></li>
 
+            <li><h1 class = "cyberpunk glitched" id = "certifyL"><div>Certification</div></h1></li>
+
             <li><h1 class = "cyberpunk glitched" id = "contactL"><div>Contact Me</div></h1></li>
+
+         
             
             <li><a href="https://github.com/Blackadder1712/Portfolio" target="_blank">
                   <img src="img/git.png" alt="Github logo" class="gitbtn">
@@ -892,6 +898,7 @@
   <script src = "js/contact.js"></script>
   <script src = "js/contact-l.js"></script>
   <script src = "js/certify.js"></script>
+  <script src = "js/certify-l.js"></script>
   <!--sticky nav-->
 
   <script src="sticky.js"></script>

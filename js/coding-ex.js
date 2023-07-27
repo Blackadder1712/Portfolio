@@ -10,6 +10,7 @@ var home = document.getElementById("caption-text-index");
 var port = document.getElementById("portfolio");
 var scheme = document.getElementById("scheming");
 var buttons = document.getElementById("c-buttons");
+var certify = document.getElementById("certificate");
 // When the user clicks on the button, open the modal and background
 btn.onclick = function() {
     
@@ -19,4 +20,5 @@ btn.onclick = function() {
     code.style.display ="flex";
     scheme.style.display = "none";
     me.style.display = "none";
+    certify.style.display = "none";
   }

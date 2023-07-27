@@ -1,6 +1,20 @@
 @media screen and (min-width: 576px)
 {
 
+  .certificate
+  {
+    margin-top:-80px;
+  }
+
+  .netmatters-btn
+  {
+    width:80%;
+    align-self: center;
+    margin:auto;
+  }
+
+
+
   .caption-text-about
   {
     margin-top:-70px;
@@ -85,6 +99,15 @@
 /* Medium devices ? min-width: 768px and up (small screen/laptops)*/
 @media screen and (min-width: 768px) 
 {
+
+  .netmatters-btn
+  {
+    width:50%;
+  }
+  .certificate
+  {
+    margin-top:10px;
+  }
 
   #former
   {
@@ -754,6 +777,11 @@
 /* Large devices ? min-width: 992px and up(small Desktop)*/
 @media screen and (min-width: 992px)
  {
+
+  .netmatters-btn
+  {
+    width:40%;
+  }
 
   .net-pop
   {

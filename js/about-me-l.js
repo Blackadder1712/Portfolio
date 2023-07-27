@@ -10,7 +10,8 @@ var home = document.getElementById("caption-text-index");
 var port = document.getElementById("portfolio");
 var scheme = document.getElementById("scheming");
 var form = document.getElementById("former");
-
+var code = document.getElementById("coding");
+var certify = document.getElementById("certificate");
 
 
   //large nav
@@ -22,6 +23,8 @@ Lbtn.onclick = function()
   port.style.display = "none";
   scheme.style.display = "none";
   form.style.display = "none";
+  code.style.display = "none";
+  certify.style.display = "none";
  
 }
   

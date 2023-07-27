@@ -11,6 +11,7 @@ var port = document.getElementById("portfolio");
 var scheme = document.getElementById("scheming");
 var buttons = document.getElementById("c-buttons");
 var form = document.getElementById("former");
+var certify = document.getElementById("certificate");
 // When the user clicks on the button, open the modal and background
 Cbtn.onclick = function() {
     
@@ -21,4 +22,5 @@ Cbtn.onclick = function() {
     scheme.style.display = "none";
     me.style.display = "none";
     form.style.display = "none";
+    certify.style.display = "none";
   }
