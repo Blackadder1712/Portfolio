@@ -179,17 +179,15 @@
                   <div class ="portfolio-info">
                       <div class="laravel/tailwind" id="myBtn-l">
                       
-                        <input type="image" src="img/laraimage.png" alt="Image of netmatters project" class="netbtn">
-                        <h1 class="html">LARAVEL/PHP/SQL/TAILWIND</h1>
-                        <h3 class="net-pop"> For this Project I built a job listing website from scratch.<br>
-                        Allowing the user to create an account, log in/out as well as create,edit and delete listings. 
-                      
+                        <input type="image" src="img/foxy.png" alt="Image of netmatters project" class="netbtn">
+                        <h1 class="html">C#/Unity</h1>
+                        <h3 class="net-pop"> 
                         </h3>
                       </div>
 
                       <div class="html/css" id="myBtn-3">
                       
-                        <input type="image" src="img/netmatters.jpg" alt="Image of netmatters project" class="netbtn">
+                        <input type="image" src="img/netmattersphoto.png" alt="Image of netmatters project" class="netbtn">
                         <h1 class="html">HTML/CSS/JAVASCRIPT/PHP/SQL</h1>
                         <h3 class="net-pop"> For this Project we had to rebuild the Netmatters webpage from scratch
                           using a mix of HTML, CSS, Javascript as well as PHP.....
@@ -204,7 +202,7 @@
                       <div class="Javascript" id="myBtn-4">
                       
 
-                        <input type="image" src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" class="javabtn"
+                        <input type="image" src="img/javaimage.png" class="javabtn"
                           alt="coming soon image">
                           <h1 class="java-1">JAVASCRIPT</h1>
                           <h3 class="js-pop" id = "js-pop">
@@ -575,14 +573,27 @@
                   </div>
                 </div>  
             </div>  
+
             
+            <div id = "cookieModal" class = "cookie">
+              <h1> This Portfolio website only uses essential, necessary cookies.
+                These cookies let you use all the different parts of the website. 
+                Without them, services that you’ve asked for can’t be provided.
+                They are purely for functionality. These cookies are on by default but 
+                if you are unhappy you can switch them off within the settings of your browser.
+              </h1>
+              
+              
+            
+            </div>
+                
             <div class= "certificate" id = "certificate">
               <h1 class="cyberpunk glitched" id="glitch">Certification</h1>
 
               <div class="netmatters-cert-l">
                  <h2 class="cyberpunk glitched" id = "netmatters-glitch"> Netmatters Scion Training Programme</h2>
                  <div class= "netmatters-btn">
-                  <a href = "img/netmatters certificate.pdf" class="c-snip"><img class = "cert-img" src = "img/cert-image.png"></a> 
+                  <a href = "img/netmatters certificate.pdf" class="c-snip"><img class = "cert-img" src = "img/netcert.png"></a> 
                  </div>
 
                  <h2 class="cyberpunk glitched" id = "netmatters-glitch-click">Click to view PDF</h2>
@@ -597,6 +608,7 @@
     
       <!--holds modal pop ups-->
       <div class="scroll-2" id="scroll-2">
+
 
         <!--pro bio modal-->
         <div id="myModal" class="modal">
@@ -632,7 +644,7 @@
           <div class="modal-content-3">
             <span class="close-3">&times;</span>
             <h2> Netmatter's HTML/CSS Reflection</h2>
-            <img src="img/netmatters.jpg" id="net-small">
+            <img src="img/netmattersphoto.png" id="net-small">
 
             <h3 class="net-pop" id ="net-pop">
                       For this Project we had to rebuild the Netmatters webpage from scratch
@@ -655,19 +667,22 @@
         <div id="myModal-l" class="modal-l">
           <div class="modal-content-l">
             <span class="close-l">&times;</span>
-            <h2> Amy's Laragigs Website </h2>
-            <img src="img/laraimage.png" id="lara-small">
+            <h2> Freddy in Space Game </h2>
+            <img src="img/foxy.png" id="lara-small">
 
             <h3 class="l-pop">
-                      For this Project I built a job listing site from scratch using Laravel,PHP,SQL and tailwind.<br>
-                      The site allows guests to register an account, log in and out with an authenicated password,
-                       as well<br> as create, edit and delete listings. Storing said listings and accounts in a SQL database
-                       to insure not only password authentication but stops duplicate accounts as well as linking accounts to thier 
-                       created listings.         
+                         This is a game I am currently creating using C# and Unity, it consists of a variety ofdifferent 
+                         C# methods, variables and classes to create an interesting variety of game mechanics, from detecting collisions and 
+                         differentiating between different gameobjects, to mapping enemy AI .
+                         Using C# in conjuction with Unity Ive been able to use C# to manipulate and control game objects,
+                          set player actions constraints etc.
+                         Unity has allowed me to learn about a variety of different tools in game design such as building terrain,
+                         setting lighting and audio etc.
+                             
             </h3>
             <button class="l-proj"><a
-                href="https://amyslaragigs.vincentwebdev.co.uk">Project</a></button>
-            <button class="l-git"><a href="https://github.com/Blackadder1712/Laravel-project">Github
+                href="https://sharemygame.com/@VincentWebDev/freddy-in-space">Project</a></button>
+            <button class="l-git"><a href="https://github.com/Blackadder1712/Shooter-level">Github
                 Repository</a></button>
 
           </div>
@@ -678,7 +693,7 @@
           <div class="modal-content-5">
             <span class="close-5">&times;</span>
             <h2> Javascript Array Reflection</h2>
-            <img src="https://i.gyazo.com/8ed277a14a53c421e46b51563fceb020.jpg" id="js-small">
+            <img src="img/javaimage.png" id="js-small">
             <h3 class="js-pop">
                           For this Project we had to build a multi-dimensional array which consisted of
                           multiple Email addresses
@@ -899,6 +914,9 @@
   <script src = "js/contact-l.js"></script>
   <script src = "js/certify.js"></script>
   <script src = "js/certify-l.js"></script>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src ="js/cookie.js"></script>
   <!--sticky nav-->
 
   <script src="sticky.js"></script>

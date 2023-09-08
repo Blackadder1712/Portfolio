@@ -2004,7 +2004,7 @@ hr {
 .modal, .modal-2 {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   left: 0;
 
   width: 100%; /* Full width */
@@ -2012,6 +2012,22 @@ hr {
   overflow: scroll; /* Enable scroll if needed */
  
  
+}
+
+.cookie
+{
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  display:none;
+  width: auto; /* Full width */
+  height: auto; /* Full height */
+  margin-left:100px;
+  margin-right:100px;
+  margin-top:150px;
+  overflow: scroll; /* Enable scroll if needed */
+  background-color: black;
+  border-color: green;
 }
 
 
