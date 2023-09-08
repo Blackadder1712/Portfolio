@@ -589,6 +589,10 @@
                 
             <div class= "certificate" id = "certificate">
               <h1 class="cyberpunk glitched" id="glitch">Certification</h1>
+              <h2 class="Certification">Scroll Down to see pdf's of my course certificates
+                from companies such as Netmatters and Udemy
+              </h2>
+              
 
               <div class="netmatters-cert-l">
                  <h2 class="cyberpunk glitched" id = "netmatters-glitch"> Netmatters Scion Training Programme</h2>
@@ -598,7 +602,16 @@
 
                  <h2 class="cyberpunk glitched" id = "netmatters-glitch-click">Click to view PDF</h2>
 
-              </div>            
+              </div>       
+              
+              <div class="udemy-cert-l">
+                 <h2 class="cyberpunk glitched" id = "netmatters-glitch">Complete C# Unity Game Developer 3D</h2>
+                 <div class= "udemy-btn">
+                  <a href = "img/udemy-pdf.pdf" class="c-snip"><img class = "cert-img" src = "img/udemycert.jpg"></a> 
+                 </div>
+
+              </div>  
+              <h2 class="cyberpunk glitched" id = "netmatters-glitch-click">Click to view PDF</h2>      
 
             </div>
           
@@ -666,24 +679,46 @@
 
         <div id="myModal-l" class="modal-l">
           <div class="modal-content-l">
-            <span class="close-l">&times;</span>
-            <h2> Freddy in Space Game </h2>
-            <img src="img/foxy.png" id="lara-small">
+            
+            <div class = "first-game">
+                <span class="close-l">&times;</span>
+                  <h2> Freddy Shooter</h2>
+                  <img src="img/zomibe.png" id="lara-small">
 
-            <h3 class="l-pop">
-                         This is a game I am currently creating using C# and Unity, it consists of a variety ofdifferent 
-                         C# methods, variables and classes to create an interesting variety of game mechanics, from detecting collisions and 
-                         differentiating between different gameobjects, to mapping enemy AI .
-                         Using C# in conjuction with Unity Ive been able to use C# to manipulate and control game objects,
-                          set player actions constraints etc.
-                         Unity has allowed me to learn about a variety of different tools in game design such as building terrain,
-                         setting lighting and audio etc.
-                             
-            </h3>
-            <button class="l-proj"><a
-                href="https://sharemygame.com/@VincentWebDev/freddy-in-space">Project</a></button>
-            <button class="l-git"><a href="https://github.com/Blackadder1712/Shooter-level">Github
-                Repository</a></button>
+                  <h3 class="l-pop">
+                              This is a game I am currently creating using C# and Unity, It is a First person shooter 
+                              where the player has to collect pizza slices and shoot animated zombies to survive , there are battery
+                              and ammo pick ups to help the player along the way. This game takes advantage on animations, raycasting, clickable AI,
+                              a variety of complex classes as well as many different packages such as ProBuilder. 
+                                  
+                  </h3>
+
+                  <button class="l-proj"><a
+                      href="https://sharemygame.com/@VincentWebDev/freddy-shooter">Project</a></button>
+                  <button class="l-git"><a href="https://github.com/Blackadder1712/first-person-shooter">Github
+                      Repository</a></button>
+            </div>
+
+              <div class="second-game">
+                <h2> Freddy In Space </h2>
+                <img src="img/foxy.png" id="lara-small">
+
+                <h3 class="l-pop">
+                            This is a game I am currently creating using C# and Unity, it consists of a variety ofdifferent 
+                            C# methods, variables and classes to create an interesting variety of game mechanics, from detecting collisions and 
+                            differentiating between different gameobjects, to mapping enemy AI .
+                            Using C# in conjuction with Unity Ive been able to use C# to manipulate and control game objects,
+                              set player actions constraints etc.
+                            Unity has allowed me to learn about a variety of different tools in game design such as building terrain,
+                            setting lighting and audio etc.
+                                
+                </h3>
+
+                <button class="l-proj"><a
+                    href="https://sharemygame.com/@VincentWebDev/freddy-in-space">Project</a></button>
+                <button class="l-git"><a href="https://github.com/Blackadder1712/Shooter-level">Github
+                    Repository</a></button>
+               </div>
 
           </div>
         </div>
